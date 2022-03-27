@@ -1,0 +1,223 @@
+---
+title: "01-Import and Clean"
+author: "Ian Adams"
+date: "3/27/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+
+library(tidyverse)
+library(readr)
+library(here)
+library(skimr)
+```
+
+## Import
+
+Don't forget to pull from the git before start, so as to get fresh data from WAPO.
+
+```{r remedy001, message=FALSE, warning=FALSE, echo=FALSE}
+
+df_full <- read_csv("fatal-police-shootings-data.csv")
+
+#skim(df_full)
+
+```
+
+
+## Wrangle
+
+```{r remedy002}
+
+#questionr:::irec()
+
+## Recoding df_full$armed into df_full$armed_rec
+df_full$armed_bucket <- df_full$armed %>%
+  fct_recode(
+    "strange" = "air conditioner",
+    "gun like" = "air pistol",
+    "gun like" = "Airsoft pistol",
+    "sharp" = "ax",
+    "blunt" = "barstool",
+    "blunt" = "baseball bat",
+    "blunt" = "baseball bat and bottle",
+    "blunt" = "baseball bat and fireplace poker",
+    "blunt" = "baseball bat and knife",
+    "blunt" = "baton",
+    "gun like" = "BB gun",
+    "gun like" = "BB gun and vehicle",
+    "gun like" = "bean-bag gun",
+    "blunt" = "beer bottle",
+    "strange object" = "binoculars",
+    "blunt" = "blunt object",
+    "blunt" = "bottle",
+    "sharp" = "bow and arrow",
+    "sharp" = "box cutter",
+    "blunt" = "brick",
+    "sharp" = "car, knife and mace",
+    "blunt" = "chain",
+    "sharp" = "chain saw",
+    "sharp" = "chainsaw",
+    "blunt" = "chair",
+    "claim" = "claimed to be armed",
+    "blunt" = "contractor's level",
+    "strange" = "cordless drill",
+    "sharp" = "crossbow",
+    "blunt" = "crowbar",
+    "explosive" = "fireworks",
+    "blunt" = "flagpole",
+    "blunt" = "flashlight",
+    "blunt" = "garden tool",
+    "sharp" = "glass shard",
+    "explosive" = "grenade",
+    "gun" = "gun and car",
+    "gun" = "gun and knife",
+    "gun" = "gun and machete",
+    "gun" = "gun and sword",
+    "gun" = "gun and vehicle",
+    "gun" = "guns and explosives",
+    "blunt" = "hammer",
+    "strange" = "hand torch",
+    "sharp" = "hatchet",
+    "gun" = "hatchet and gun",
+    "sharp" = "ice pick",
+    "explosive" = "incendiary device",
+    "sharp" = "knife",
+    "sharp" = "knife and vehicle",
+    "sharp" = "lawn mower blade",
+    "sharp" = "machete",
+    "gun" = "machete and gun",
+    "sharp" = "meat cleaver",
+    "blunt" = "metal hand tool",
+    "blunt" = "metal object",
+    "blunt" = "metal pipe",
+    "blunt" = "metal pole",
+    "blunt" = "metal rake",
+    "blunt" = "metal stick",
+    "strange" = "microphone",
+    "vehicle" = "motorcycle",
+    "gun like" = "nail gun",
+    "blunt" = "oar",
+    "gun like" = "pellet gun",
+    "strange" = "pen",
+    "chemical" = "pepper spray",
+    "sharp" = "pick-axe",
+    "blunt" = "piece of wood",
+    "blunt" = "pipe",
+    "sharp" = "pitchfork",
+    "blunt" = "pole",
+    "blunt" = "pole and knife",
+    "sharp" = "railroad spikes",
+    "blunt" = "rock",
+    "sharp" = "samurai sword",
+    "sharp" = "scissors",
+    "sharp" = "screwdriver",
+    "sharp" = "sharp object",
+    "blunt" = "shovel",
+    "sharp" = "spear",
+    "strange" = "stapler",
+    "sharp" = "straight edge razor",
+    "sharp" = "sword",
+    "taser" = "Taser",
+    "blunt" = "tire iron",
+    "gun like" = "toy weapon",
+    "unknown" = "unknown weapon",
+    "gun" = "vehicle and gun",
+    "vehicle" = "vehicle and machete",
+    "blunt" = "walking stick",
+    "strange" = "wasp spray",
+    "blunt" = "wrench"
+  )
+
+## Recoding df_full$gender into df_full$gender_rec
+df_full$gender <- df_full$gender %>%
+  fct_recode(
+    "Female" = "F",
+    "Male" = "M"
+  )
+
+## Recoding df_full$race into df_full$race_rec
+df_full$race_rec <- df_full$race %>%
+  fct_recode(
+    "Asian" = "A",
+    "Black" = "B",
+    "Hispanic" = "H",
+    "Native American" = "N",
+    "Other" = "O",
+    "White" = "W"
+  )
+
+
+## Recoding df_full$signs_of_mental_illness into df_full$signs_of_mental_illness_rec
+df_full$mental_ill <- df_full$signs_of_mental_illness %>%
+  as.factor() %>%
+  fct_recode(
+    "No" = "FALSE",
+    "Yes" = "TRUE"
+  )
+
+## Recoding df_full$threat_level into df_full$threat_level_rec
+df_full$threat <- df_full$threat_level %>%
+  fct_recode(
+    "Attack" = "attack",
+    "Other" = "other",
+    "Undetermined" = "undetermined"
+  )
+
+df_full$flee_bucket <- df_full$flee %>%
+  fct_recode(
+    "Yes" = "Car",
+    "Yes" = "Foot",
+    "No" = "Not fleeing",
+    NULL = "Other"
+  )
+
+## Recoding df_full$body_camera into df_full$body_camera_rec
+df_full$body_camera <- df_full$body_camera %>%
+  as.factor() %>%
+  fct_recode(
+    "No" = "FALSE",
+    "Yes" = "TRUE"
+  )
+
+#questionr:::irec()
+#skim(df_full)
+
+```
+
+## Selection
+
+```{r remedy003}
+
+df <- df_full %>% select(
+  id,
+  date,
+  name,
+  city,
+  state,
+  gender,
+  age,
+  race_rec,
+  mental_ill,
+  body_camera,
+  armed_bucket,
+  threat,
+  flee_bucket,
+  longitude,
+  latitude
+)
+
+```
+
+
+## Export
+
+```{r remedy004}
+
+write_rds(df, file = here("Data", "Clean", "WAPO_clean.rds"))
+
+write_csv(df, file = here("Data", "Clean", "WAPO_clean.csv"))
+
+```

@@ -1,0 +1,82 @@
+---
+title: "02-Analyze"
+author: "Ian Adams"
+date: "3/27/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+
+library(tidyverse)
+library(readr)
+library(here)
+library(skimr)
+library(ggplot2)
+```
+
+## Import
+
+Don't forget to pull from the git before start, so as to get fresh data from WAPO.
+
+```{r remedy001, message=FALSE, warning=FALSE, echo=FALSE}
+
+df <- read_rds(here("Data", "Clean", "WAPO_clean.rds"))
+
+```
+
+## Armed Status Breakdown 
+
+```{r remedy002}
+
+## Recoding df$armed_bucket into df$armed_bucket_rec
+df$armed_small <- df$armed_bucket %>%
+  fct_recode(
+    "armed" = "strange",
+    "armed" = "gun like",
+    "armed" = "sharp",
+    "armed" = "blunt",
+    "armed" = "strange object",
+    "armed" = "carjack",
+    "unarmed" = "claim",
+    "armed" = "explosive",
+    "armed" = "gun",
+    "armed" = "vehicle",
+    "armed" = "chemical",
+    "armed" = "taser",
+    "unknown" = "undetermined"
+  )
+
+## Armed Status by Race
+p1 <- df %>% 
+  na.omit(race_rec) %>%
+  ggplot(aes(x = race_rec, fill = armed_small)) +
+  geom_bar(position = "stack")
+
+## Armed status by gender
+
+p2 <- df %>% 
+  na.omit(gender) %>%
+  ggplot(aes(x = gender, fill = armed_small)) +
+  geom_bar(position = "stack")
+
+## Shootings over time, by armed and threat status
+
+p3 <- df %>%
+ filter(!is.na(armed_bucket)) %>%
+ ggplot() +
+  aes(x = armed_small, fill = threat) +
+  geom_bar(position = "stack") +
+  scale_fill_hue(direction = 1) +
+  labs(
+    y = "Number of Shootings",
+    x = NULL,
+    title = "Police Fatal Shootings",
+    subtitle = "2015-2022, by armed and threat status",
+    caption = "Data from Washington Post Police Shootings Database"
+  ) +
+  hrbrthemes::theme_ipsum_tw()
+
+ggsave(p3, filename = here("Output", "time_armed_threat.jpg"))
+
+```
