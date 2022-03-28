@@ -804,7 +804,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 946,2015-10-22,Stephen H. Brock,Pine Top,KY,Male,53,White,No,No,undetermined,Other,No,-82.86,37.284
 947,2015-10-24,Juan Ulloa,Highgrove,CA,Male,34,Hispanic,No,No,gun,Attack,No,-117.34,34.019
 948,2015-10-24,Rolly Thomas,Cape Coral,FL,Male,34,Black,No,Yes,gun,Attack,No,-81.943,26.739
-950,2015-10-24,Dominic Hutchinson,Cathedral City,CA,Male,30,Black,No,No,strange object,Undetermined,No,-116.464,33.809
+950,2015-10-24,Dominic Hutchinson,Cathedral City,CA,Male,30,Black,No,No,strange,Undetermined,No,-116.464,33.809
 951,2015-10-24,Arthur West,Zanesville,OH,Male,28,White,Yes,No,gun,Attack,No,-82.044,39.898
 952,2015-10-24,Darren Myron Fude,Paddock Lake,WI,Male,47,White,No,No,gun,Attack,No,-88.095,42.583
 953,2015-10-24,Jon Ployhar,Kenai Peninsula,AK,Male,49,White,No,No,taser,Attack,No,-151.283,60.287
