@@ -20,9 +20,17 @@ Don't forget to pull from the git before start, so as to get fresh data from WAP
 
 ```{r remedy001, message=FALSE, warning=FALSE, echo=FALSE}
 
-df_full <- read_csv(here("fatal-police-shootings-data.csv"))
+here::here("WAPO data-police-shootings")
+
+#df_full <- read_csv(here("fatal-police-shootings-data.csv"))
 
 #skim(df_full)
+
+## Or PULL DIRECTLY FROM WAPO GITHUB
+
+urlfile="https://raw.githubusercontent.com/washingtonpost/data-police-shootings/master/fatal-police-shootings-data.csv"
+
+df_full <-read_csv(url(urlfile))
 
 ```
 
