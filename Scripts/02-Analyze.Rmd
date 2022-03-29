@@ -74,7 +74,7 @@ p2 <- df %>%
   ggplot(aes(x = gender, fill = armed_small)) +
   geom_bar(position = "stack")
 
-## Shootings over time, by armed and threat status
+## Shootings by armed and threat status
 
 p3 <- df %>%
  filter(!is.na(armed_bucket)) %>%
@@ -145,6 +145,7 @@ ggplot(df, aes(x = race_rec)) +
   coord_flip() 
 
 ```
+
 ## Age Breakdowns
 
 ```{r remedy006}
@@ -273,7 +274,20 @@ armedinfo <- df %>% group_by(armed_bucket) %>% summarise(n = n()) %>%
         arrange(desc(n)) %>% top_n(15) %>% 
         mutate(armed = factor(armed_bucket, levels = rev(unique(armed_bucket))))
 
-ggplot(data = armedinfo, aes(x = n, y = armed)) +
+## For testing only, drop all "unknowns"
+# armedinfo$armed <- armedinfo$armed %>%
+#   fct_recode(
+#     NULL = "unknown"
+#   )
+
+
+## add percentage column for labeling
+armedinfo <- armedinfo %>% dplyr::mutate(perc = scales::percent(n / sum(n), accuracy = .1, trim = FALSE)) %>% drop_na()
+
+
+
+## Plot it
+p1 <- ggplot(data = armedinfo, aes(x = n, y = armed)) +
   geom_barh(stat = "identity", aes(fill = n)) +
   theme_minimal(base_size = 13) +
   theme(legend.position = "none") +
@@ -282,12 +296,24 @@ ggplot(data = armedinfo, aes(x = n, y = armed)) +
   labs(
     y = NULL,
     x = "Number of deaths",
-    title = "Top 15 Suspect Weapon Types in Police Fatal Shootings",
+    title = "Top Suspect Weapon Types in Police Fatal Shootings",
     subtitle = "2015-2022",
     caption = "Washington Post data"
-  )
+  ) +
+  geom_text(aes(label = perc),
+            hjust = -.25,
+            size = 4, fontface = "bold", family = "Fira Sans")
 
+p1 + coord_cartesian(xlim = c(0, 4800), clip = "off")
+
+## Save it
 ggsave(filename = here("Output", "top15_suspect-weapon-type.jpg"))
+
+
+
+
+
+
 
 ``` 
 
