@@ -219,12 +219,12 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 312,2015-03-21,Jason Smith,Columbus,OH,Male,42,White,No,No,gun,Attack,No,-82.999,40.03
 231,2015-03-22,Phillip Conley,Vallejo,CA,Male,37,White,Yes,No,sharp,Other,No,-122.222,38.133
 233,2015-03-22,Christopher Ryan Healy,Portland,OR,Male,36,White,Yes,No,sharp,Other,Yes,-122.53,45.506
-234,2015-03-22,Denzel Brown,Islip,NY,Male,21,Black,No,No,undetermined,Attack,Yes,-73.238,40.74
+234,2015-03-22,Denzel Brown,Islip,NY,Male,21,Black,No,No,unknown,Attack,Yes,-73.238,40.74
 237,2015-03-23,Devin Gates,Santa Clara,CA,Male,24,Black,No,No,gun,Attack,No,-121.959,37.361
 238,2015-03-24,Walter J. Brown III,Portsmouth,VA,Male,29,Black,Yes,No,gun,Attack,Yes,-76.37,36.819
 247,2015-03-24,Scott Dunham,San Jose,CA,Male,57,White,Yes,No,gun,Attack,No,-121.841,37.302
 313,2015-03-24,Stephen Snyder,Fond du Lac,WI,Male,38,White,No,No,gun,Attack,No,-88.475,43.782
-239,2015-03-25,Nicholas Thomas,Smyrna,GA,Male,23,Black,No,Yes,undetermined,Other,Yes,-84.477,33.866
+239,2015-03-25,Nicholas Thomas,Smyrna,GA,Male,23,Black,No,Yes,unknown,Other,Yes,-84.477,33.866
 240,2015-03-25,Jeremy Lorenza Kelly,Johnsonville,SC,Male,27,Black,No,No,gun,Attack,Yes,-79.462,33.819
 241,2015-03-25,Victor Terrazas,South Los Angeles,CA,Male,28,Hispanic,No,No,gun,Attack,Yes,-118.292,33.94
 242,2015-03-25,Joseph Tassinari,Glendale,AZ,Male,63,White,Yes,No,gun,Other,No,-112.203,33.638
@@ -277,7 +277,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 357,2015-04-12,Richard Dale Weaver,Oklahoma City,OK,Male,83,White,Yes,No,sharp,Other,No,-97.34,35.404
 362,2015-04-12,Jason Lee Evans,Salemburg,NC,Male,32,White,Yes,No,gun,Attack,Yes,-78.491,35.064
 356,2015-04-13,Isaac Jimenez,Alton,IL,Male,27,Hispanic,No,No,gun,Attack,No,-90.135,38.892
-363,2015-04-14,Colby Robinson,DeSoto,TX,Male,26,Black,No,No,undetermined,Other,Yes,-96.823,32.662
+363,2015-04-14,Colby Robinson,DeSoto,TX,Male,26,Black,No,No,unknown,Other,Yes,-96.823,32.662
 364,2015-04-14,Christopher Grant Finley,Jonesboro,AR,Male,31,White,Yes,No,sharp,Attack,No,-90.718,35.834
 365,2015-04-15,Tevin Barkley,Miami,FL,Male,22,Black,No,No,gun,Other,Yes,-80.212,25.844
 366,2015-04-15,Dante Noble,Spartanburg,SC,Male,41,Black,No,No,sharp,Attack,No,-81.912,34.904
@@ -381,7 +381,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 475,2015-05-25,Cassandra Bolin,Austin,TX,Female,31,White,Yes,No,gun,Attack,No,-97.721,30.332
 476,2015-05-25,Anthony Briggs,Huntsville,AL,Male,36,Black,Yes,No,sharp,Attack,No,-86.564,34.614
 477,2015-05-26,Dalton Branch,Queens,NY,Male,51,Black,No,No,gun,Attack,No,-73.889,40.657
-479,2015-05-26,Jessie  Williams,Bossier City,LA,Male,24,White,No,No,undetermined,Attack,No,-93.708,32.517
+479,2015-05-26,Jessie  Williams,Bossier City,LA,Male,24,White,No,No,unknown,Attack,No,-93.708,32.517
 530,2015-05-26,Millard Tallant III,Snohomish,WA,Male,62,White,Yes,No,gun,Attack,No,-122.014,47.838
 480,2015-05-27,Scott McAllister,Ideal Beach,NJ,Male,39,White,No,No,sharp,Attack,No,-74.113,40.444
 481,2015-05-27,Garrett  Sandeno,Edmond,OK,Male,24,White,Yes,No,gun like,Attack,No,-97.455,35.634
@@ -426,7 +426,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 540,2015-06-10,Isiah Hampton,Bronx,NY,Male,19,Black,No,No,gun,Attack,No,-73.896,40.856
 541,2015-06-11,Charles Ziegler,Pompano Beach,FL,Male,40,Black,No,No,gun,Attack,No,-80.105,26.276
 542,2015-06-11,Raymond  Phillips,Columbia,TN,Male,86,NA,Yes,No,gun,Attack,No,-86.943,35.633
-543,2015-06-11,Fritz Severe,Miami,FL,Male,46,Black,No,No,undetermined,Other,No,-80.2,25.787
+543,2015-06-11,Fritz Severe,Miami,FL,Male,46,Black,No,No,unknown,Other,No,-80.2,25.787
 544,2015-06-11,Mark Flores,Bexar County,TX,Male,28,Hispanic,Yes,No,gun,Attack,No,-98.355,29.523
 545,2015-06-11,Raymond Peralta-Lantigua,Hackensack,NJ,Male,22,Hispanic,Yes,No,sharp,Other,No,-74.04,40.907
 553,2015-06-12,Shelly Haendiges,Kokomo,IN,Female,17,White,Yes,No,gun like,Attack,No,-86.165,40.469
@@ -575,7 +575,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 698,2015-08-03,Joshua Malave,Campbelltown,PA,Male,18,White,No,No,gun,Attack,Yes,-76.571,40.279
 699,2015-08-03,Franklin Short,Powhatan County,VA,Male,71,White,No,No,gun,Attack,No,-77.791,37.511
 700,2015-08-03,Shawn Ruble,Muncie,IN,Male,35,White,Yes,No,gun like,Attack,No,-85.378,40.176
-701,2015-08-04,Daniel Robert Avila,San Diego County,CA,Male,55,Hispanic,Yes,No,undetermined,Other,No,-117.465,33.299
+701,2015-08-04,Daniel Robert Avila,San Diego County,CA,Male,55,Hispanic,Yes,No,unknown,Other,No,-117.465,33.299
 702,2015-08-04,Darius D. Graves,Rantoul,IL,Male,31,Black,Yes,Yes,blunt,Other,No,-88.175,40.308
 703,2015-08-05,Tyler Alexander Dattilo,Louisville,KY,Male,18,White,No,No,sharp,Attack,No,-85.752,38.253
 704,2015-08-05,John Dieringer,Greenfield,WI,Male,51,White,Yes,No,sharp,Other,No,-88.026,42.972
@@ -631,7 +631,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 760,2015-08-21,Charles S. Hall,North East,MD,Male,30,White,No,No,NA,Attack,Yes,-75.951,39.61
 761,2015-08-21,Alan Joseph Rushton,Wake Forest,NC,Male,38,White,No,No,sharp,Other,No,-78.511,36.008
 762,2015-08-22,Adam Schneider,Cohasset,MN,Male,31,White,No,No,gun,Attack,No,-93.629,47.263
-764,2015-08-22,Jason Lee Alderman,Bakersfield,CA,Male,29,White,No,No,carjack,Other,No,-119.047,35.411
+764,2015-08-22,Jason Lee Alderman,Bakersfield,CA,Male,29,White,No,No,unknown,Other,No,-119.047,35.411
 765,2015-08-22,Nicholas Garner,Wichita,KS,Male,26,White,No,No,NA,Attack,Yes,-97.413,37.673
 766,2015-08-22,Kenneth Henry Morgan,King George,VA,Male,64,White,No,No,sharp,Other,No,-77.17,38.265
 763,2015-08-22,Thaddeus Faison,Troy,NY,Male,39,Black,No,No,gun,Attack,Yes,-73.707,42.723
@@ -652,7 +652,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 783,2015-08-27,Robert Hober,San Diego,CA,Male,54,White,No,Yes,sharp,Other,No,-117.1,32.792
 784,2015-08-27,Manuel Soriano,Los Angeles,CA,Male,29,Hispanic,No,No,blunt,Attack,No,-118.451,34.205
 781,2015-08-27,Bertrand Davis,Dallas,TX,Male,42,Black,No,No,sharp,Attack,No,-96.753,32.771
-785,2015-08-28,Gilbert Flores,San Antonio,TX,Male,41,Hispanic,Yes,No,undetermined,Undetermined,No,-98.651,29.669
+785,2015-08-28,Gilbert Flores,San Antonio,TX,Male,41,Hispanic,Yes,No,unknown,Undetermined,No,-98.651,29.669
 786,2015-08-28,William Evans,Spanish Fork,UT,Male,28,White,Yes,Yes,gun,Attack,No,-111.65,40.11
 788,2015-08-28,Felix Kumi,Mount Vernon,NY,Male,61,Black,No,No,unarmed,Other,No,-73.825,40.908
 793,2015-08-28,Devin Brian Dial,Longview,TX,Male,23,White,No,No,gun,Attack,No,-94.783,32.526
@@ -692,7 +692,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 823,2015-09-10,Eddie Tapia,Downey,CA,Male,41,Hispanic,No,No,gun,Attack,Yes,-118.114,33.955
 824,2015-09-11,Robert T. Edwards,Chester,PA,Male,31,White,No,No,gun,Attack,No,-75.393,39.834
 831,2015-09-11,Phillip Pfleghardt,Broomfield,CO,Male,44,White,No,No,gun,Attack,Yes,-105.062,39.958
-822,2015-09-12,Derick Davis,Sylacauga,AL,Male,23,White,No,No,undetermined,Undetermined,NA,-86.26,33.178
+822,2015-09-12,Derick Davis,Sylacauga,AL,Male,23,White,No,No,unknown,Undetermined,NA,-86.26,33.178
 878,2015-09-12,Jack Stevens Jr.,West Knox,TN,Male,45,White,No,No,gun,Attack,No,-84.092,35.965
 821,2015-09-13,Martin Francis Hammen,Wellman,IA,Male,39,White,Yes,No,gun,Attack,No,-91.927,41.469
 825,2015-09-13,Clifford Butler,McAlester,OK,Male,67,Black,Yes,No,gun,Attack,No,-95.77,34.933
@@ -708,7 +708,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 838,2015-09-17,Mark Gary,Beaverton,MI,Male,50,White,No,No,gun,Attack,No,-84.426,43.886
 839,2015-09-17,Lawrence Price,Brodhead,KY,Male,61,White,No,No,gun,Attack,No,-84.419,37.386
 843,2015-09-18,Nicholas Alan Johnson,San Bernardino,CA,Male,32,White,No,No,NA,Undetermined,Yes,-117.365,34.211
-844,2015-09-18,Gregory Herrell,Dickson,TN,Male,47,White,No,No,undetermined,Undetermined,No,-87.388,36.077
+844,2015-09-18,Gregory Herrell,Dickson,TN,Male,47,White,No,No,unknown,Undetermined,No,-87.388,36.077
 842,2015-09-19,Lucien Rolland,Slidell,LA,Male,46,White,No,No,gun,Attack,Yes,-89.749,30.284
 846,2015-09-19,Scott Beech,Washington County,AL,Male,57,White,Yes,Yes,gun,Attack,No,-88.212,31.623
 845,2015-09-20,Michael Thomas Pierce,Harrisonburg,VA,Male,23,White,No,Yes,gun,Attack,No,-78.875,38.48
@@ -764,7 +764,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 904,2015-10-10,William Combs,Pinion Hills,CA,Male,38,White,Yes,No,NA,Other,Yes,-117.603,34.401
 905,2015-10-10,Travis Quay,Cato Township,MI,Male,40,White,No,No,sharp,Attack,No,-85.244,43.446
 906,2015-10-10,Anthony Aguilar,Lisle,IL,Male,35,Hispanic,No,No,unknown,Undetermined,No,-88.093,41.805
-899,2015-10-11,Joe Pasquez Ortiz,San Bernardino,CA,Male,34,Hispanic,No,No,undetermined,Undetermined,NA,-117.285,34.108
+899,2015-10-11,Joe Pasquez Ortiz,San Bernardino,CA,Male,34,Hispanic,No,No,unknown,Undetermined,NA,-117.285,34.108
 900,2015-10-11,Kevin Lau,Lakes Charles,LA,Male,44,Asian,No,No,gun,Attack,No,-93.229,30.174
 901,2015-10-11,Bernard Brandon Powers,Taylors,SC,Male,23,Black,No,No,gun,Attack,No,-82.308,34.949
 907,2015-10-11,Robert Humberto Medellin,West Odessa,TX,Male,43,Hispanic,No,No,sharp,Other,Yes,-102.442,31.867
@@ -784,7 +784,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 923,2015-10-15,Martin  Ryans Jr.,Houston,TX,Male,20,Black,No,No,gun,Attack,No,-95.465,29.849
 924,2015-10-16,Johnny Angel Rangel,Valinda,CA,Male,27,Hispanic,No,No,unarmed,Attack,No,-117.916,34.031
 926,2015-10-16,Jason Foreman,Barrow County,GA,Male,45,NA,No,No,gun,Attack,No,-83.659,34.033
-927,2015-10-16,Ricky Javenta Ball,Columbus,MS,Male,33,Black,No,Yes,undetermined,Undetermined,Yes,-88.41,33.511
+927,2015-10-16,Ricky Javenta Ball,Columbus,MS,Male,33,Black,No,Yes,unknown,Undetermined,Yes,-88.41,33.511
 2868,2015-10-16,Jeffrey Womack,Houston,TX,Male,27,White,Yes,No,gun,Attack,No,-95.363,29.786
 929,2015-10-17,Gino Paredes,Modesto,CA,Male,22,Hispanic,No,No,gun like,Attack,No,-120.92,37.667
 930,2015-10-17,Dequan Williams,York,PA,Male,28,Black,Yes,No,sharp,Other,No,-76.749,39.973
@@ -801,7 +801,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 944,2015-10-21,Timothy Arnold,Kentwood,MI,Male,47,White,Yes,No,gun,Attack,No,-85.63,42.857
 943,2015-10-22,Lawrence Green,Shreveport,LA,Male,38,Black,No,No,sharp,Attack,No,-93.746,32.518
 945,2015-10-22,Adriene Jamarr Ludd,Carmichael,CA,Male,36,Black,No,No,gun,Attack,Yes,-121.337,38.639
-946,2015-10-22,Stephen H. Brock,Pine Top,KY,Male,53,White,No,No,undetermined,Other,No,-82.86,37.284
+946,2015-10-22,Stephen H. Brock,Pine Top,KY,Male,53,White,No,No,unknown,Other,No,-82.86,37.284
 947,2015-10-24,Juan Ulloa,Highgrove,CA,Male,34,Hispanic,No,No,gun,Attack,No,-117.34,34.019
 948,2015-10-24,Rolly Thomas,Cape Coral,FL,Male,34,Black,No,Yes,gun,Attack,No,-81.943,26.739
 950,2015-10-24,Dominic Hutchinson,Cathedral City,CA,Male,30,Black,No,No,strange,Undetermined,No,-116.464,33.809
@@ -843,7 +843,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 987,2015-11-05,Laura Lemieux,Goose Creek,SC,Female,36,White,Yes,No,gun,Attack,No,-80.02,32.964
 986,2015-11-06,Michael  Johnson,Portland,OR,Male,51,White,Yes,No,gun,Attack,No,-122.698,45.53
 988,2015-11-06,James Francis Smyth,Las Vegas,NV,Male,55,White,No,No,NA,Other,Yes,-115.137,36.038
-992,2015-11-06,Kim Lee Long,Wadesboro,NC,Male,48,White,No,No,undetermined,Undetermined,No,-80.04,34.981
+992,2015-11-06,Kim Lee Long,Wadesboro,NC,Male,48,White,No,No,unknown,Undetermined,No,-80.04,34.981
 989,2015-11-09,Delvin Simmons,Spartanburg,SC,Male,20,Black,No,No,NA,Attack,Yes,-81.979,34.949
 991,2015-11-09,Cesar Cuellar,North Laredo,TX,Male,25,Hispanic,Yes,No,gun,Attack,No,-99.453,27.603
 993,2015-11-09,Dale Maverick Hudson,Braxton County,WV,Male,26,White,No,No,gun,Attack,No,-80.675,38.592
@@ -859,7 +859,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1000,2015-11-11,Ryan Quinn Martin,Baltimore,MD,Male,32,Black,No,No,gun,Attack,No,-76.677,39.343
 1002,2015-11-12,Moises Nero,Sunnyvale,CA,Male,42,Black,No,No,sharp,Other,No,-122.053,37.384
 1005,2015-11-13,Michael Joseph Bartkiewicz,Gibson County,TN,Male,52,White,No,No,gun like,Attack,No,-88.874,35.957
-1007,2015-11-13,Ernesto Gamino,Jurupa Valley,CA,Male,25,Hispanic,No,No,undetermined,Undetermined,NA,-117.511,34.029
+1007,2015-11-13,Ernesto Gamino,Jurupa Valley,CA,Male,25,Hispanic,No,No,unknown,Undetermined,NA,-117.511,34.029
 1008,2015-11-13,Matthew Coleman,Eden,GA,Male,25,White,No,No,gun,Attack,Yes,-81.395,32.172
 1006,2015-11-14,Ramon Salazar,Jurupa Valley,CA,Male,31,Hispanic,No,No,blunt,Other,No,-117.4,34.005
 1003,2015-11-15,Richard Perkins,Oakland,CA,Male,39,Black,No,No,gun like,Attack,No,-122.166,37.754
@@ -904,7 +904,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1042,2015-11-29,Zachary Grigsby,Lincoln,NE,Male,29,White,No,No,gun,Attack,NA,-96.623,40.842
 1043,2015-11-30,Tuan Hoang,Aurora,CO,Male,25,Asian,No,No,NA,Attack,Yes,-104.776,39.704
 1044,2015-11-30,Darius Smith,Atlanta,GA,Male,18,Black,No,No,gun,Attack,Yes,-84.387,33.779
-1227,2015-11-30,Fernando Sauceda,Wink,TX,Male,31,Hispanic,No,No,undetermined,Other,No,-103.163,31.74
+1227,2015-11-30,Fernando Sauceda,Wink,TX,Male,31,Hispanic,No,No,unknown,Other,No,-103.163,31.74
 1045,2015-12-01,Joshua  Jozefowicz,Bangor,ME,Male,23,White,No,No,gun,Attack,Yes,-68.817,44.789
 1047,2015-12-01,John Anthony Gonzalez,Norwalk,CA,Male,18,Hispanic,No,No,gun,Attack,No,-118.082,33.917
 1049,2015-12-02,Phillip Munoz,Denver,CO,Male,35,Hispanic,No,No,gun,Attack,Yes,-105.037,39.755
@@ -945,7 +945,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1084,2015-12-13,Nephi  Leiataua,Thurston County,WA,Male,30,Other,No,No,sharp,Attack,No,-122.762,47.002
 1089,2015-12-13,Enrique Gonzalez,Mountain View,CO,Male,32,Hispanic,No,No,gun,Attack,No,-105.051,39.777
 1085,2015-12-14,Calvin McKinnis,New Orleans,LA,Male,33,Black,No,Yes,gun,Attack,No,-89.905,30.038
-1090,2015-12-14,Michael  Thomason,Humboldt,TN,Male,56,White,No,No,undetermined,Undetermined,No,-88.845,35.852
+1090,2015-12-14,Michael  Thomason,Humboldt,TN,Male,56,White,No,No,unknown,Undetermined,No,-88.845,35.852
 1091,2015-12-14,Brenda Dean Kimberling,Las Vegas,NV,Female,48,White,Yes,No,gun,Attack,No,-115.057,36.244
 1092,2015-12-14,Mharloun Verdejo  Saycon,Long Beach,CA,Male,39,Asian,No,No,sharp,Other,No,-118.189,33.803
 1093,2015-12-14,Hector Alvarez,Gilroy,CA,Male,19,Hispanic,No,Yes,unarmed,Other,No,-121.573,36.995
@@ -959,7 +959,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1100,2015-12-18,Erica Lauro,Northwood,OH,Female,22,White,No,No,gun,Attack,NA,-83.462,41.618
 1101,2015-12-18,Amos Frerichs,Knoxville,TN,Male,32,White,No,No,NA,Attack,Yes,-84.092,35.908
 1102,2015-12-18,Robert L. Martinez,Taos,NM,Male,58,Hispanic,Yes,No,gun like,Attack,No,-105.573,36.407
-1105,2015-12-19,Ruben Jose Herrera,Los Angeles,CA,Male,26,Hispanic,Yes,No,undetermined,Attack,No,-118.307,33.843
+1105,2015-12-19,Ruben Jose Herrera,Los Angeles,CA,Male,26,Hispanic,Yes,No,unknown,Attack,No,-118.307,33.843
 1106,2015-12-20,Leroy Browning,Palmdale,CA,Male,30,Black,No,No,gun,Attack,No,-118.045,34.572
 1107,2015-12-20,Mark  Ramirez,Amarillo,TX,Male,31,Hispanic,Yes,No,gun,Attack,No,-101.855,35.207
 1108,2015-12-21,Guadalupe Quiroz,Hemet,CA,Male,34,Hispanic,No,No,gun,Attack,No,-116.971,33.724
@@ -971,7 +971,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1119,2015-12-21,Brandon Barsnick,Smartsville,CA,Male,30,White,No,No,gun,Attack,No,-121.29,39.189
 1114,2015-12-22,Charles Reynolds,Ludlow,KY,Male,61,NA,No,Yes,gun,Attack,No,-84.546,39.095
 1115,2015-12-22,Kenneth Stephens,Burlington,VT,Male,56,White,No,Yes,gun,Attack,No,-73.214,44.483
-1116,2015-12-22,Michael Hilber,Brooksville,FL,Male,29,White,No,No,undetermined,Undetermined,Yes,-82.384,28.466
+1116,2015-12-22,Michael Hilber,Brooksville,FL,Male,29,White,No,No,unknown,Undetermined,Yes,-82.384,28.466
 1117,2015-12-22,Jose  Rodriguez,Albuquerque,NM,Male,19,Hispanic,No,Yes,gun,Undetermined,Yes,-106.566,35.076
 1118,2015-12-23,Kevin Matthews,Dearborn,MI,Male,35,Black,Yes,No,unarmed,Other,No,-83.194,42.351
 1120,2015-12-24,Schuylar Gunning,Winnsboro,LA,Male,36,White,No,No,NA,Other,Yes,-91.722,32.166
@@ -984,14 +984,14 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1123,2015-12-26,Bettie Jones,Chicago,IL,Female,55,Black,No,No,unarmed,Other,NA,-87.744,41.893
 1124,2015-12-26,Quintonio LeGrier,Chicago,IL,Male,19,Black,Yes,No,blunt,Undetermined,No,-87.744,41.893
 1151,2015-12-26,Gilbert Heredia,Homedale,ID,Male,38,Hispanic,No,Yes,gun,Attack,No,-116.94,43.62
-1128,2015-12-27,Michael Parker,Lucedale,MS,Male,36,White,No,No,undetermined,Undetermined,Yes,-88.643,30.889
+1128,2015-12-27,Michael Parker,Lucedale,MS,Male,36,White,No,No,unknown,Undetermined,Yes,-88.643,30.889
 1132,2015-12-27,Sean Mould,Tempe,AZ,Male,34,White,Yes,Yes,sharp,Other,No,-111.922,33.381
-1143,2015-12-27,Gayneaux Paul Trahan,Franklin,LA,Male,52,White,No,No,undetermined,Undetermined,No,-91.613,29.849
+1143,2015-12-27,Gayneaux Paul Trahan,Franklin,LA,Male,52,White,No,No,unknown,Undetermined,No,-91.613,29.849
 1131,2015-12-28,Corey Jason Achstein,Suffolk,VA,Male,28,White,No,Yes,gun like,Attack,No,-76.596,36.727
 1133,2015-12-29,Siolosega Velega-Nuufolau,Santa Nella,CA,Female,50,Asian,Yes,No,sharp,Other,No,-121.022,37.09
 1134,2015-12-29,Tien Hua,Rosemead,CA,Male,NA,Asian,No,No,unknown,Undetermined,No,-118.056,34.073
 1135,2015-12-30,Fred Perez,Fresno,CA,Male,55,Hispanic,No,Yes,sharp,Attack,No,-119.812,36.75
-1136,2015-12-30,John Randell Veach,Rawlins,WY,Male,39,NA,No,No,undetermined,Undetermined,NA,-107.216,41.799
+1136,2015-12-30,John Randell Veach,Rawlins,WY,Male,39,NA,No,No,unknown,Undetermined,NA,-107.216,41.799
 1137,2015-12-31,Keith Childress,Las Vegas,NV,Male,23,Black,No,Yes,unarmed,Other,No,-115.272,36.133
 1139,2016-01-01,Joshua Sisson,San Diego,CA,Male,30,White,No,Yes,sharp,Other,No,-117.16,32.755
 1195,2016-01-02,Lance Light,Maryneal,TX,Male,54,White,No,No,gun,Attack,Yes,-100.45,32.235
@@ -1079,7 +1079,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1231,2016-02-02,Justin Prescott,Rancho Cordova,CA,Male,30,White,Yes,No,sharp,Other,No,-121.291,38.596
 1233,2016-02-03,John Henry Neuman,Schulter,OK,Male,53,White,No,No,gun,Attack,No,-95.953,35.532
 1234,2016-02-03,Cristiaan Oliver Dubrino,Ocala,FL,Male,31,Hispanic,Yes,No,gun,Attack,No,-82.053,29.168
-1235,2016-02-03,Raymond Gassman,Rosebud,SD,Male,22,Native American,No,Yes,undetermined,Attack,No,-100.626,43.188
+1235,2016-02-03,Raymond Gassman,Rosebud,SD,Male,22,Native American,No,Yes,unknown,Attack,No,-100.626,43.188
 1236,2016-02-04,Kayden Clarke,Mesa,AZ,Male,24,White,Yes,Yes,sharp,Other,No,-111.659,33.437
 1237,2016-02-04,Antronie Scott,San Antonio,TX,Male,36,Black,No,No,unarmed,Other,No,-98.493,29.529
 1238,2016-02-04,Scott Harless,Kansas City,MO,Male,47,White,No,No,gun,Attack,Yes,-94.511,38.918
@@ -1117,26 +1117,26 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1269,2016-02-14,Marc Stoddart,Bradenton,FL,Male,50,White,Yes,No,sharp,Other,No,-82.499,27.457
 1271,2016-02-14,Eduardo Rodriguez,Los Angeles,CA,Male,29,Hispanic,No,No,gun,Other,No,-118.163,34.022
 1280,2016-02-14,Rammy Jaradat,Van Nuys,CA,Male,26,White,No,No,sharp,Other,No,-118.457,34.196
-1274,2016-02-15,Brandon Lee Witt,Yorba Linda,CA,Male,39,White,No,No,undetermined,Undetermined,No,-117.741,33.872
+1274,2016-02-15,Brandon Lee Witt,Yorba Linda,CA,Male,39,White,No,No,unknown,Undetermined,No,-117.741,33.872
 1282,2016-02-15,Guadalupe Sauceda,Jal,NM,Male,52,Hispanic,No,No,gun,Attack,No,-103.426,32.166
 1275,2016-02-16,Christopher Andrews,Fairfield,CT,Male,51,White,Yes,No,sharp,Other,No,-73.267,41.182
 1278,2016-02-16,Destry Meikle,Republic,MO,Male,48,White,No,No,NA,Attack,Yes,-93.469,37.118
 1279,2016-02-16,Shawn Henry Allen Dickens,Mena,AR,Male,30,White,No,No,gun,Other,Yes,-94.249,34.58
 1281,2016-02-17,Paul Gaston,Cincinnati,OH,Male,37,Black,No,No,gun like,Other,NA,-84.605,39.155
-1285,2016-02-18,Jose Quintanilla,Santa Ana,CA,Male,30,Hispanic,No,No,undetermined,Undetermined,No,-117.854,33.748
-1286,2016-02-18,Oscar Reyes,Santa Ana,CA,Male,35,Hispanic,No,No,undetermined,Undetermined,No,-117.85,33.748
+1285,2016-02-18,Jose Quintanilla,Santa Ana,CA,Male,30,Hispanic,No,No,unknown,Undetermined,No,-117.854,33.748
+1286,2016-02-18,Oscar Reyes,Santa Ana,CA,Male,35,Hispanic,No,No,unknown,Undetermined,No,-117.85,33.748
 1287,2016-02-18,Ronnie Padron,Reno,TX,Male,32,Hispanic,No,No,gun,Attack,No,-97.578,32.944
-1284,2016-02-18,Joseph Noel,Commerce,GA,Male,25,White,No,No,undetermined,Other,No,-83.45,34.199
+1284,2016-02-18,Joseph Noel,Commerce,GA,Male,25,White,No,No,unknown,Other,No,-83.45,34.199
 1295,2016-02-19,Justin Patrick Moses,Ogden,UT,Male,35,White,Yes,No,sharp,Attack,No,-111.964,40.267
 1297,2016-02-19,Curtis James Dugger,Elizabethton,TN,Male,31,White,No,No,gun,Attack,No,-82.211,36.349
 1291,2016-02-20,Danny Rendon,Anaheim,CA,Male,30,Hispanic,No,Yes,gun,Attack,Yes,-117.952,33.808
 1294,2016-02-20,Edgar Camacho-Alvarado,Albuquerque,NM,Male,23,Hispanic,No,No,gun,Attack,Yes,-106.72,35.08
 1296,2016-02-20,Marcos Perea,Lakewood,WA,Male,41,Black,No,No,gun,Attack,Yes,-122.559,47.12
 1298,2016-02-20,Charles Lee Lambert,Iuka,MS,Male,45,White,Yes,No,gun,Attack,No,-88.19,34.812
-1289,2016-02-21,Che Taylor,Seattle,WA,Male,46,Black,No,No,undetermined,Other,No,-122.306,47.691
+1289,2016-02-21,Che Taylor,Seattle,WA,Male,46,Black,No,No,unknown,Other,No,-122.306,47.691
 1290,2016-02-21,Sherrisa Homer,Phoenix,AZ,Female,36,Native American,Yes,No,gun,Attack,Yes,-112.108,33.495
 1292,2016-02-21,Kisha Michael,Inglewood,CA,Female,31,Black,No,No,gun,Other,No,-118.362,33.962
-1293,2016-02-21,Marquintan Sandlin,Inglewood,CA,Male,32,Black,No,No,undetermined,Other,No,-118.362,33.962
+1293,2016-02-21,Marquintan Sandlin,Inglewood,CA,Male,32,Black,No,No,unknown,Other,No,-118.362,33.962
 1305,2016-02-21,Patricia Kruger,Houston,AK,Female,38,Native American,No,No,gun,Attack,No,-149.778,61.585
 1301,2016-02-22,Gerardino Cayetano Gonzalez,Denver,CO,Male,33,Hispanic,No,No,gun,Attack,NA,-105.035,39.766
 1302,2016-02-22,Jamie Clark Long,Bakersfield,CA,Male,45,White,No,No,sharp,Attack,No,-119.008,35.372
@@ -1166,7 +1166,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1331,2016-03-02,Travis Boyd Bradley,Bel Air,MD,Male,36,White,Yes,No,unarmed,Other,No,-76.333,39.492
 1341,2016-03-02,Daniel Burkhardt,Johnstown,PA,Male,41,White,No,No,sharp,Other,No,-78.922,40.327
 1335,2016-03-03,Sergio Ochoa,Gilbert,AZ,Male,27,Hispanic,No,No,sharp,Other,Yes,-111.777,33.33
-1338,2016-03-04,John Alan Chamberlain,Sims,AR,Male,66,NA,No,No,undetermined,Undetermined,NA,-93.691,34.659
+1338,2016-03-04,John Alan Chamberlain,Sims,AR,Male,66,NA,No,No,unknown,Undetermined,NA,-93.691,34.659
 1342,2016-03-04,Brandon Stanley,East Bernstadt,KY,Male,30,White,No,No,unarmed,Undetermined,No,-84.108,37.19
 1334,2016-03-05,Darrell Bosell,Cheektowaga,NY,Male,34,White,Yes,No,gun,Attack,No,-78.715,42.936
 1336,2016-03-05,Herbert Ballance,Beaumont,TX,Male,22,White,Yes,No,gun,Other,No,-94.143,30.059
@@ -1175,7 +1175,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1340,2016-03-06,Osvaldo Torres,South Gate,CA,Male,41,Hispanic,No,No,gun,Attack,NA,-118.176,33.941
 1339,2016-03-07,Philip Vitullo,Rochester,NY,Male,49,White,Yes,No,gun,Attack,No,-77.623,43.238
 1343,2016-03-07,Byron Rosas,San Jose,CA,Male,45,Hispanic,No,No,sharp,Other,No,-121.878,37.324
-1344,2016-03-07,Randall J. Selsor,Topeka,KS,Male,45,White,No,No,undetermined,Undetermined,No,-95.682,39.055
+1344,2016-03-07,Randall J. Selsor,Topeka,KS,Male,45,White,No,No,unknown,Undetermined,No,-95.682,39.055
 1345,2016-03-07,"John Charles ""JC"" Graham",Billings,MT,Male,42,White,No,No,gun,Attack,No,-108.501,45.783
 1348,2016-03-07,Daniel H. Chavez,Carlsbad,NM,Male,41,Hispanic,No,No,NA,Other,Yes,-104.277,32.422
 1347,2016-03-08,Jeffrey Glen Casale,Tampa,FL,Male,27,White,Yes,No,gun like,Attack,No,-82.462,28.084
@@ -1212,7 +1212,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1386,2016-03-18,Michael Mallet,Byron,CA,Male,49,NA,Yes,No,gun,Attack,No,-121.66,37.882
 1401,2016-03-18,David Alma Giles,Idaho Falls,ID,Male,60,White,No,No,gun,Other,No,-112.155,43.503
 1382,2016-03-19,India Beaty,Norfolk,VA,Female,25,Black,No,No,gun like,Attack,No,-76.191,36.927
-1387,2016-03-19,Joshua Douglas,Covington,LA,Male,24,White,No,No,undetermined,Undetermined,Yes,-90.06,30.426
+1387,2016-03-19,Joshua Douglas,Covington,LA,Male,24,White,No,No,unknown,Undetermined,Yes,-90.06,30.426
 1388,2016-03-19,Thurman Reynolds,Chicago,IL,Male,21,Black,No,No,gun,Attack,Yes,-87.793,41.992
 1392,2016-03-19,Dylan R. Whitaker,White Plains,KY,Male,23,White,No,No,gun,Attack,NA,-87.408,37.145
 1380,2016-03-20,Boyd Keith Ballard,Hopewell,VA,Male,61,White,Yes,Yes,sharp,Other,No,-77.289,37.291
@@ -1280,13 +1280,13 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1456,2016-04-12,Dion Daman,Denver,CO,Male,40,White,No,No,unarmed,Other,Yes,-104.99,39.737
 1457,2016-04-12,Joshua Moreno,Benton,IL,Male,38,Hispanic,No,No,gun,Attack,Yes,-88.935,37.957
 1458,2016-04-12,Travis Wood,Noma,FL,Male,20,White,No,Yes,NA,Other,Yes,-85.808,30.874
-1459,2016-04-13,Rodney Watts,Stockton,CA,Male,35,Black,No,No,undetermined,Attack,No,-121.295,38.024
+1459,2016-04-13,Rodney Watts,Stockton,CA,Male,35,Black,No,No,unknown,Attack,No,-121.295,38.024
 1460,2016-04-13,Jeffrey Gray Wise,Llano,TX,Male,52,White,No,No,gun,Attack,No,-98.639,30.718
 1462,2016-04-13,Koltlee Whitson,Sparta,TN,Male,26,White,No,No,gun,Attack,Yes,-85.493,36.035
 1463,2016-04-14,Jeff Robertson,McPherson,KS,Male,54,White,Yes,No,unarmed,Attack,No,-97.574,38.377
 1465,2016-04-15,Clemente Najera,Lake Elsinore,CA,Male,38,Hispanic,No,No,blunt,Other,No,-117.333,33.669
 1469,2016-04-15,David Swatsky,Cache,OK,Male,52,White,Yes,No,gun,Attack,No,-98.603,34.604
-1471,2016-04-15,Storm Allen Smith,Muncie,IN,Male,26,White,No,Yes,undetermined,Attack,Yes,-85.339,40.193
+1471,2016-04-15,Storm Allen Smith,Muncie,IN,Male,26,White,No,Yes,unknown,Attack,Yes,-85.339,40.193
 1473,2016-04-16,Gerald Robert Boyes,Antioch,IL,Male,53,White,No,No,gun,Attack,No,-88.144,42.473
 1464,2016-04-17,Kisha Arrone,Dayton,OH,Female,35,Black,No,No,gun,Other,Yes,-84.243,39.742
 1466,2016-04-17,Eric John Wilson,El Paso,TX,Male,22,White,Yes,No,unarmed,Other,No,-106.554,31.872
@@ -1332,7 +1332,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1509,2016-05-04,Richard Ferretti,Philadelphia,PA,Male,52,White,No,No,NA,Other,No,-75.25,39.988
 1511,2016-05-04,Cayce A. DiTullio,Burien,WA,Male,39,White,No,No,gun,Attack,Yes,-122.361,47.494
 1512,2016-05-04,Matthew Tucker,Temecula,CA,Male,18,Black,No,No,sharp,Other,No,-117.09,33.478
-1513,2016-05-04,Gerry J. Thompson,Buffalo,MO,Male,40,White,No,No,undetermined,Attack,No,-78.876,42.928
+1513,2016-05-04,Gerry J. Thompson,Buffalo,MO,Male,40,White,No,No,unknown,Attack,No,-78.876,42.928
 1516,2016-05-05,Corey DiGiovanni,Gretna,LA,Male,36,White,No,No,NA,Attack,Yes,-90.05,29.914
 1517,2016-05-05,Burt Johnson,Milwaukee,WI,Male,38,Black,No,Yes,gun,Attack,Yes,-88.006,43.134
 1518,2016-05-05,Deresha Armstrong,Orlando,FL,Female,26,Black,No,No,gun,Attack,No,-81.442,28.551
@@ -1385,7 +1385,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1568,2016-05-26,"Eugene ""Geno"" Francis Smith",St. Paul,MN,Male,29,White,No,No,gun,Attack,No,-93.012,44.963
 1569,2016-05-26,Warren Christian,Lansing,IL,Male,43,White,No,No,gun,Attack,Yes,-87.559,41.586
 1570,2016-05-26,NA,San Antonio,TX,Male,NA,NA,No,No,gun,Other,No,-98.65,29.418
-1571,2016-05-26,Devonte Gates,Washington Park,IL,Male,21,Black,No,No,undetermined,Undetermined,Yes,-90.097,38.632
+1571,2016-05-26,Devonte Gates,Washington Park,IL,Male,21,Black,No,No,unknown,Undetermined,Yes,-90.097,38.632
 1572,2016-05-26,Fernando Castro,Solvang,CA,Male,19,Hispanic,No,No,gun,Attack,Yes,NA,NA
 1581,2016-05-26,Tonnia Reshelle Jarvis,Sneads,FL,Female,48,White,No,No,sharp,Other,No,-84.941,30.708
 1583,2016-05-26,Angel Daniel Navarro,Socorro,NM,Male,25,Hispanic,No,No,gun,Attack,Yes,-106.892,34.058
@@ -1406,7 +1406,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1589,2016-06-02,Rodney Rodriguez Smith,Charlotte,NC,Male,18,Black,No,Yes,gun,Other,No,-80.757,35.291
 1590,2016-06-03,Joshua Smith,Wasilla,AK,Male,33,White,No,No,sharp,Other,No,-149.439,61.581
 1591,2016-06-03,"Hubert Thomas Burns, Jr.",Parker,AZ,Male,34,Native American,No,No,sharp,Other,No,-112.139,33.863
-1592,2016-06-04,Daniel Jonathan Shaham,Yreka,CA,Male,31,White,No,No,undetermined,Attack,No,-122.634,41.735
+1592,2016-06-04,Daniel Jonathan Shaham,Yreka,CA,Male,31,White,No,No,unknown,Attack,No,-122.634,41.735
 1594,2016-06-04,Demarco Rhymes,Eufaula,AL,Male,35,Black,No,Yes,gun,Attack,NA,NA,NA
 1598,2016-06-04,Larry Dustin Stepp,Muncie,IN,Male,31,White,Yes,Yes,sharp,Other,No,-85.401,40.173
 1593,2016-06-05,Christopher Michael Moran,Cape Coral,FL,Male,31,White,No,No,gun,Other,Yes,-81.991,26.556
@@ -1434,11 +1434,11 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1619,2016-06-13,Joshua Sciscm,Schenectady,NY,Male,33,White,No,No,gun,Attack,No,-73.954,42.802
 1620,2016-06-13,Michael Moore,Mobile,AL,Male,18,Black,No,No,gun,Other,No,-88.096,30.706
 1621,2016-06-13,Edward Acquisto,Tiverton,RI,Male,80,Hispanic,No,No,gun,Attack,Yes,-71.199,41.656
-1623,2016-06-13,Kenneth Allen Pointer,Vancouver,WA,Male,43,White,No,No,undetermined,Other,Yes,-122.661,45.639
+1623,2016-06-13,Kenneth Allen Pointer,Vancouver,WA,Male,43,White,No,No,unknown,Other,Yes,-122.661,45.639
 1618,2016-06-14,Noel Rodriguez,Boise,ID,Male,50,Hispanic,No,Yes,NA,Other,Yes,-116.289,43.647
 1622,2016-06-14,Nicholas Ferro,Odessa,MO,Male,47,White,No,No,gun,Attack,No,-93.954,38.999
 1624,2016-06-14,Mohammad Moghaddam,Amarillo,TX,Male,54,Other,No,No,gun,Attack,No,-101.863,35.17
-1625,2016-06-14,Fernando Geovanni Llanez,Chula Vista,CA,Male,22,Hispanic,No,No,undetermined,Attack,No,-116.961,32.662
+1625,2016-06-14,Fernando Geovanni Llanez,Chula Vista,CA,Male,22,Hispanic,No,No,unknown,Attack,No,-116.961,32.662
 1626,2016-06-15,Russell Rosser,Tulsa,OK,Male,43,White,No,No,NA,Attack,Yes,-95.933,36.177
 1627,2016-06-15,Michael Rasmussen,Pembine,WI,Male,38,White,Yes,No,gun,Attack,Yes,NA,NA
 1628,2016-06-16,Peter Grandpre,Butte,MT,Male,36,White,No,Yes,gun,Attack,No,-112.546,46.007
@@ -1489,7 +1489,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1675,2016-06-29,Michael William Schumacher,Madison,WI,Male,41,White,Yes,No,sharp,Other,No,-89.356,43.071
 1676,2016-06-30,Kawme Dejuan Patrick,Columbus,OH,Male,25,Black,No,No,gun,Other,NA,-82.965,39.929
 1677,2016-06-30,Tristan Vilters,Park County,CO,Male,24,White,No,No,gun,Attack,No,-105.594,39.09
-1678,2016-06-30,Jasen Scott Ramirez,Douglas,WY,Male,44,Hispanic,No,No,undetermined,Undetermined,No,-105.381,42.757
+1678,2016-06-30,Jasen Scott Ramirez,Douglas,WY,Male,44,Hispanic,No,No,unknown,Undetermined,No,-105.381,42.757
 1686,2016-07-01,Alexis George Mishtowt,Landrum,SC,Male,63,White,No,Yes,gun,Attack,No,-82.216,35.178
 1688,2016-07-01,Helmut Wihowski,Jackson,WI,Male,58,White,No,No,sharp,Other,No,-88.154,43.331
 1687,2016-07-01,Steven McQueen,Cartersville,GA,Male,30,White,No,No,gun,Attack,No,-84.821,34.179
@@ -1503,9 +1503,9 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1683,2016-07-04,Sidney Washington,Washington,DC,Male,21,Black,No,No,gun,Attack,No,-76.932,38.909
 1685,2016-07-04,NA,Rosser,TX,Male,NA,NA,No,Yes,sharp,Other,No,-96.423,32.475
 1692,2016-07-05,Joshua Bolster,Salem,OR,Male,29,White,No,No,sharp,Other,NA,-123.112,44.931
-1693,2016-07-05,Sam Newby,Temecula,CA,Male,49,White,No,No,undetermined,Other,Yes,-117.141,33.512
+1693,2016-07-05,Sam Newby,Temecula,CA,Male,49,White,No,No,unknown,Other,Yes,-117.141,33.512
 1695,2016-07-05,Melissa Ventura,Yuma,AZ,Female,24,Hispanic,No,No,sharp,Other,No,-114.667,32.713
-1680,2016-07-05,Alton Sterling,Baton Rouge,LA,Male,37,Black,No,Yes,undetermined,Undetermined,No,-91.14,30.468
+1680,2016-07-05,Alton Sterling,Baton Rouge,LA,Male,37,Black,No,Yes,unknown,Undetermined,No,-91.14,30.468
 1694,2016-07-06,Philando Castile,Falcon Heights,MN,Male,32,Black,No,Yes,gun,Other,No,-93.17,44.992
 1696,2016-07-06,Thomas Vandemark,Rush Springs,OK,Male,65,White,No,Yes,gun,Other,No,NA,NA
 1697,2016-07-07,Vinson Lee Ramos,Bell,CA,Male,37,Hispanic,No,No,sharp,Other,No,-118.188,33.971
@@ -1552,7 +1552,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1746,2016-07-27,Emil Ambrose Mecklenburg,Malta,MT,Male,20,White,No,No,sharp,Attack,No,-107.799,48.461
 1835,2016-07-27,Michael Adams,Estill Springs,TN,Male,33,White,No,Yes,sharp,Other,Yes,-86.132,35.265
 1737,2016-07-28,Jorge Moreno-Aguirre,Sparks,NV,Male,41,Hispanic,No,No,gun,Other,No,-119.745,39.551
-1741,2016-07-28,Jeffrey Smith,La Quinta,CA,Male,47,Black,No,No,undetermined,Other,Yes,-116.269,33.697
+1741,2016-07-28,Jeffrey Smith,La Quinta,CA,Male,47,Black,No,No,unknown,Other,Yes,-116.269,33.697
 1742,2016-07-28,Paul O'Neal,Chicago,IL,Male,18,Black,No,Yes,unarmed,Other,Yes,NA,NA
 1743,2016-07-28,Jesus Rael,Tucson,AZ,Male,31,Hispanic,No,No,gun,Attack,NA,-110.969,32.178
 1744,2016-07-28,Donnell Thompson,Compton,CA,Male,27,Black,No,No,unarmed,Attack,NA,-118.246,33.91
@@ -1565,7 +1565,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1750,2016-08-01,Korryn Gaines,Randallstown,MD,Female,23,Black,No,No,gun,Attack,No,-76.814,39.37
 1751,2016-08-01,Bryan N. Byrd,Edmund,SC,Male,43,White,No,No,NA,Attack,Yes,-81.2,33.862
 1753,2016-08-01,Kenneth Eugene Bonanno,Stafford,VA,Male,67,White,No,No,gun,Attack,No,-77.444,38.307
-2148,2016-08-01,Richard Swihart,Santa Ana,CA,Male,32,White,Yes,No,undetermined,Attack,No,-118.316,34.111
+2148,2016-08-01,Richard Swihart,Santa Ana,CA,Male,32,White,Yes,No,unknown,Attack,No,-118.316,34.111
 1754,2016-08-02,Richard Lance London,Lake City,SC,Male,22,White,No,No,gun,Attack,Yes,-79.763,33.862
 1757,2016-08-02,Adam Jo Klimek,Alexandria,MN,Male,31,White,No,No,sharp,Other,No,-95.375,45.889
 1758,2016-08-02,DeMarco Newman,Palm Bay,FL,Male,43,Black,Yes,No,gun,Attack,No,-80.589,28.034
@@ -1587,11 +1587,11 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1833,2016-08-08,James W. Jennings,Little Mountain,SC,Male,69,White,Yes,No,gun,Attack,No,-81.262,34.203
 1775,2016-08-09,Ronald Smith,Circleville,OH,Male,45,White,Yes,No,gun,Other,No,-81.164,33.836
 1776,2016-08-09,Jesse James Romero,Los Angeles,CA,Male,14,Hispanic,No,Yes,gun,Attack,Yes,-118.215,34.038
-1777,2016-08-09,Jeffrey Allen Morris,Piedmont,SC,Male,44,White,No,No,undetermined,Other,No,-82.529,34.734
+1777,2016-08-09,Jeffrey Allen Morris,Piedmont,SC,Male,44,White,No,No,unknown,Other,No,-82.529,34.734
 1778,2016-08-11,Jeff Martelli,Tukwila,WA,Male,59,White,Yes,No,gun,Attack,No,-122.261,47.466
 1785,2016-08-11,Sergio Daniel Weick,Vista,CA,Male,33,Hispanic,No,No,sharp,Other,NA,-117.258,33.196
 2149,2016-08-11,Tommy Seneca,Plaquemine,LA,Male,54,White,No,No,gun,Attack,No,-91.317,30.262
-1782,2016-08-12,Jesus Armando Carillo,Mesa,AZ,Male,22,Hispanic,No,No,undetermined,Other,Yes,-111.84,33.451
+1782,2016-08-12,Jesus Armando Carillo,Mesa,AZ,Male,22,Hispanic,No,No,unknown,Other,Yes,-111.84,33.451
 1783,2016-08-12,Dominic Rollice,Tahlequah,OK,Male,49,White,Yes,Yes,blunt,Other,No,-94.964,35.914
 1780,2016-08-13,Sylville Smith,Milwaukee,WI,Male,23,Black,No,Yes,gun,Other,Yes,-87.967,43.075
 1781,2016-08-13,Ruben Horacio Strand Alvear,Phoenix,AZ,Male,38,Hispanic,Yes,No,sharp,Attack,No,-112.152,33.495
@@ -1610,7 +1610,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1794,2016-08-18,Francisco Villarreal,Bakersfield,CA,Male,37,Hispanic,No,No,gun,Attack,Yes,-118.983,35.35
 1796,2016-08-18,Daniel Kevin Harris,Charlotte,NC,Male,29,White,No,Yes,unarmed,Other,Yes,-80.719,35.279
 1797,2016-08-18,Chad Irwin,Antelope,CA,Male,40,White,No,No,sharp,Other,No,-121.32,38.713
-1798,2016-08-18,Joseph Weber,Hays,KS,Male,36,White,No,No,undetermined,Other,Yes,-99.307,38.879
+1798,2016-08-18,Joseph Weber,Hays,KS,Male,36,White,No,No,unknown,Other,Yes,-99.307,38.879
 1801,2016-08-18,Trenton Lohman,Poway,CA,Male,38,White,No,No,gun,Attack,Yes,-117.028,32.956
 1807,2016-08-18,David Klassen,Ruidoso,NM,Male,29,White,No,No,gun,Other,No,-105.669,33.313
 1831,2016-08-18,David Fulton,McKinneyville,CA,Male,59,White,Yes,No,gun,Attack,No,-99.902,31.969
@@ -1627,7 +1627,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1813,2016-08-24,William Charbonneau,Orlando,FL,Male,43,White,Yes,No,gun,Other,No,-81.149,28.507
 1814,2016-08-24,Jeffrey Darren Hosea,Shelbyville,TN,Male,53,White,No,No,gun,Attack,No,-86.437,35.488
 1816,2016-08-25,Donta Taylor,Compton,CA,Male,31,Black,No,No,gun,Attack,Yes,-118.24,33.899
-2144,2016-08-25,David Coborubio,Compton,CA,Male,32,Hispanic,No,No,undetermined,Other,No,NA,NA
+2144,2016-08-25,David Coborubio,Compton,CA,Male,32,Hispanic,No,No,unknown,Other,No,NA,NA
 1815,2016-08-25,Jerry Lee Jackson,Fort Collins,CO,Male,63,NA,No,Yes,sharp,Other,No,-105.077,40.599
 1817,2016-08-26,Matthew Gibbon,Las Vegas,NV,Male,41,White,No,No,gun,Attack,Yes,-115.092,36.137
 1820,2016-08-27,Angel Torres Jr.,Phoenix,AZ,Male,26,Hispanic,No,No,gun like,Attack,No,-112.183,33.482
@@ -1653,7 +1653,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1853,2016-09-02,Michael Robert Musson,Round Lake,IL,Male,22,White,No,No,sharp,Other,No,-88.088,42.349
 1856,2016-09-02,Michael Thompson,St. Louis,MO,Male,38,Black,No,No,gun,Attack,NA,-90.232,38.722
 1854,2016-09-03,Jerome Damon,Atlantic City,NJ,Male,25,Black,No,No,gun,Other,Yes,-74.436,39.356
-1855,2016-09-03,Cameron Ayers,East Wenatchee,WA,Male,25,White,No,No,undetermined,Undetermined,No,-120.303,47.44
+1855,2016-09-03,Cameron Ayers,East Wenatchee,WA,Male,25,White,No,No,unknown,Undetermined,No,-120.303,47.44
 1860,2016-09-03,Donny Max Daugherty,Metropolis,IL,Male,36,White,No,No,gun,Attack,NA,-88.732,37.151
 1861,2016-09-03,Jeremiah Richard Ramirez,Temple,TX,Male,NA,NA,No,No,gun,Attack,Yes,-97.357,31.093
 1852,2016-09-04,Jose Romero,Long Beach,CA,Male,NA,Hispanic,Yes,No,sharp,Other,No,-118.155,33.787
@@ -1666,7 +1666,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1865,2016-09-06,Larry Grant Whitehead,Gray,TN,Male,70,White,No,Yes,gun,Other,No,-82.465,36.377
 1868,2016-09-06,Dylan Papa,Phoenix,AZ,Male,25,White,Yes,No,sharp,Attack,No,-112.162,33.484
 1867,2016-09-07,Robert Lee Brown,Albany,GA,Male,55,Black,No,No,sharp,Attack,No,-84.162,31.569
-1869,2016-09-07,Jesse Daniel Joynt,Titusville,FL,Male,35,White,No,No,undetermined,Other,No,-80.819,28.585
+1869,2016-09-07,Jesse Daniel Joynt,Titusville,FL,Male,35,White,No,No,unknown,Other,No,-80.819,28.585
 1871,2016-09-07,Sadiq Bishara-Abaker Idris,Wyoming,MI,Male,25,Black,No,No,gun,Attack,No,-85.647,42.906
 1872,2016-09-08,Francis Perry,Lakeland,FL,Male,32,White,No,No,gun,Attack,No,-81.906,28.053
 1873,2016-09-08,Jose Torres,Delhi,CA,Male,38,Hispanic,No,No,gun like,Attack,No,-120.781,37.422
@@ -1716,10 +1716,10 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1920,2016-09-28,Johnathan Lozano-Murillo,Valdosta,GA,Male,28,Hispanic,No,Yes,sharp,Attack,No,-83.266,30.871
 1921,2016-09-29,Jeffrey Clair Cave,Kingman,AZ,Male,53,White,No,Yes,gun,Attack,No,-114.04,35.213
 1926,2016-09-30,Clayton Eugene Baker,Groveton,TX,Male,38,White,No,No,NA,Undetermined,No,-95.126,31.055
-1927,2016-09-30,George Richards-Meyers,Newark,NJ,Male,18,Black,No,No,undetermined,Undetermined,No,-74.184,40.767
+1927,2016-09-30,George Richards-Meyers,Newark,NJ,Male,18,Black,No,No,unknown,Undetermined,No,-74.184,40.767
 1928,2016-09-30,Douglas Marrickus Rainey,Campobello,SC,Male,32,Black,No,No,gun,Attack,Yes,-82.216,35.113
 1929,2016-09-30,Richard Parent,Belleville,MI,Male,37,White,No,No,gun,Attack,NA,-83.432,42.173
-1930,2016-09-30,Najier Salaam,Newark,NJ,Male,18,Black,No,No,undetermined,Undetermined,No,-74.184,40.767
+1930,2016-09-30,Najier Salaam,Newark,NJ,Male,18,Black,No,No,unknown,Undetermined,No,-74.184,40.767
 1931,2016-09-30,Jacquarius M. Robinson,Columbus,OH,Male,20,Black,No,No,gun,Other,Yes,-82.848,39.951
 1923,2016-10-01,Joshua Allen Perry,Hometown,WV,Male,28,White,No,No,gun,Attack,Yes,-81.86,38.535
 1925,2016-10-01,Carnell Snell,Los Angeles,CA,Male,18,Black,No,Yes,gun,Other,Yes,-118.307,33.939
@@ -1732,7 +1732,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1938,2016-10-04,Dean Bruning,Hessel,MI,Male,51,White,Yes,No,gun,Other,No,-84.426,46.004
 1937,2016-10-05,Brandon Simmons,Boulder,CO,Male,28,White,Yes,No,sharp,Other,No,-105.264,40.011
 1939,2016-10-05,Lucas M. Felkel,Moncks Corner,SC,Male,35,White,No,No,gun,Attack,Yes,-80.006,33.082
-1944,2016-10-07,Larry Daniel Matthews,Macon,GA,Male,57,Black,No,No,chemical,Other,No,-83.644,32.812
+1944,2016-10-07,Larry Daniel Matthews,Macon,GA,Male,57,Black,No,No,explosive/chemical,Other,No,-83.644,32.812
 1945,2016-10-07,Joseph S. Schroeder,Fort Wayne,IN,Male,36,White,No,No,sharp,Other,No,-85.13,41.128
 1946,2016-10-07,Eddie Collins,Killeen,AL,Male,42,White,No,No,gun,Attack,No,-87.492,34.859
 1948,2016-10-07,Christopher Darnell Shackleford,Alexandria,LA,Male,NA,Black,No,No,gun,Attack,No,-92.517,31.34
@@ -1788,7 +1788,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 1996,2016-10-26,William Clifford Cole,Bartlesville,OK,Male,36,White,No,No,unarmed,Attack,No,-95.944,36.753
 1995,2016-10-27,Kyle Killough,Billings,MT,Male,32,White,Yes,No,gun,Other,No,-108.552,45.752
 1997,2016-10-27,Thad Demarco Hale,San Antonio,TX,Male,33,Black,No,No,gun,Other,No,-98.44,29.493
-1998,2016-10-27,Edwin Amaya Maldonado,Elberton,GA,Male,24,Hispanic,No,No,undetermined,Attack,Yes,-82.897,34.233
+1998,2016-10-27,Edwin Amaya Maldonado,Elberton,GA,Male,24,Hispanic,No,No,unknown,Attack,Yes,-82.897,34.233
 2000,2016-10-28,Jay Johannes Holmgren,Morris,MN,Male,37,White,No,No,gun,Attack,NA,-96.008,45.818
 2001,2016-10-28,Jason King,Sacramento,CA,Male,38,Black,Yes,No,gun,Attack,No,-121.355,38.659
 2002,2016-10-28,Jun Wang,North Royalton,OH,Male,45,Asian,Yes,No,sharp,Attack,No,-81.767,41.326
@@ -1890,7 +1890,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2105,2016-12-06,Steven Wayne Liffel,Portland,OR,Male,52,White,No,No,gun,Attack,No,-122.511,45.522
 2106,2016-12-06,Wayne Donald Dorsey,Fruitland Park,FL,Male,49,White,No,No,blunt,Attack,NA,-81.906,28.861
 2109,2016-12-07,Redrick Jevon Batiste,Houston,TX,Male,37,Black,No,No,gun,Attack,No,-95.396,29.94
-2111,2016-12-07,Daniel Riedmann,Sioux City,IA,Male,36,White,No,No,undetermined,Other,No,NA,NA
+2111,2016-12-07,Daniel Riedmann,Sioux City,IA,Male,36,White,No,No,unknown,Other,No,NA,NA
 2129,2016-12-07,Steven Garrett Ward,Avella,PA,Male,20,NA,Yes,No,sharp,Attack,No,-80.502,40.31
 2107,2016-12-07,Mark Anthony Hicks,Fayetteville,NC,Male,31,Black,No,Yes,sharp,Other,No,-78.987,35.089
 2110,2016-12-08,NA,Allen,TX,Male,NA,NA,No,No,gun,Attack,No,-96.624,33.098
@@ -2072,7 +2072,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2314,2017-02-08,Henry James Hunter,Anadarko,OK,Male,34,Native American,No,No,sharp,Other,NA,-98.246,35.082
 2343,2017-02-08,Chad Robertson,Chicago,IL,Male,25,Black,No,No,unarmed,Other,Yes,-87.64,41.879
 2316,2017-02-09,Quanice Derrick Hayes,Portland,OR,Male,17,Black,No,No,gun like,Other,Yes,-122.578,45.536
-2319,2017-02-09,NA,Crownpoint,NM,Male,NA,NA,No,No,undetermined,Undetermined,NA,-108.136,35.68
+2319,2017-02-09,NA,Crownpoint,NM,Male,NA,NA,No,No,unknown,Undetermined,NA,-108.136,35.68
 2313,2017-02-09,Vincent Palma,Geneva Township,OH,Male,26,White,No,No,unarmed,Other,No,-80.916,41.804
 2315,2017-02-09,Juan Salinas,Lake Stevens,WA,Male,33,Hispanic,Yes,No,sharp,Other,No,-122.088,47.979
 2317,2017-02-10,Justin Burton,Vancouver,WA,Male,25,White,No,No,sharp,Other,Yes,-122.613,45.652
@@ -2214,7 +2214,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2466,2017-03-29,Daniel Hendrix,Chattanooga,TN,Male,26,White,No,No,gun,Other,No,-85.232,35.021
 2468,2017-03-29,Troy Boyle,Stockton,IL,Male,41,White,No,No,gun,Attack,Yes,-90.014,42.35
 2469,2017-03-29,Doyle Wayne Johnson,Byars,OK,Male,59,White,No,No,gun,Attack,Yes,-97.052,34.872
-2470,2017-03-29,Leroy Brown,New Castle,DE,Male,28,Black,No,No,undetermined,Other,Yes,-75.567,39.678
+2470,2017-03-29,Leroy Brown,New Castle,DE,Male,28,Black,No,No,unknown,Other,Yes,-75.567,39.678
 2471,2017-03-29,Fred Ratliff,Lawrenceburg,KY,Male,45,White,No,No,gun,Attack,No,-85.146,37.964
 2473,2017-03-29,Dennis Wasson,Whitewright,TX,Male,27,White,No,No,NA,Other,Yes,-96.296,33.523
 2474,2017-03-30,Christopher Angelo Pizzichetta,Cranbury Township,NJ,Male,46,White,No,No,NA,Other,Yes,-74.492,40.309
@@ -2295,7 +2295,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2556,2017-05-03,Nicholas Flusche,San Francisco,CA,Male,26,White,No,Yes,sharp,Attack,No,-122.408,37.784
 2561,2017-05-04,Lucille Espinosa,Katy,TX,Female,54,Hispanic,Yes,No,gun,Other,No,-95.739,29.804
 2557,2017-05-06,Jacob Peterson,San Diego,CA,Male,15,White,Yes,Yes,gun like,Attack,No,-117.226,32.957
-2558,2017-05-07,Cedric Jamal Mifflin,Phenix City,AL,Male,27,Black,No,Yes,undetermined,Undetermined,NA,-85.01,32.471
+2558,2017-05-07,Cedric Jamal Mifflin,Phenix City,AL,Male,27,Black,No,Yes,unknown,Undetermined,NA,-85.01,32.471
 2559,2017-05-07,Jose Hernandez-Rossy,Buffalo,NY,Male,26,Hispanic,No,No,gun,Attack,Yes,-78.904,42.944
 2560,2017-05-07,Steven Price,Las Vegas,NV,Male,62,White,Yes,No,sharp,Other,No,-115.06,36.2
 2562,2017-05-07,Landon Nobles,Austin,TX,Male,24,Black,No,No,gun,Attack,Yes,-97.739,30.267
@@ -2322,7 +2322,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2581,2017-05-15,Jonie Block,Phoenix,AZ,Female,27,Black,No,No,gun,Other,No,-112.076,33.462
 2582,2017-05-15,Jaison Fitzgerald,Richmond,VA,Male,29,Black,No,No,gun,Other,No,-77.44,37.472
 2583,2017-05-15,Buford Shane Whitson,Johnson City,TN,Male,47,White,Yes,No,gun,Attack,NA,-82.301,36.298
-2584,2017-05-15,NA,Long Beach,CA,Male,NA,NA,No,No,undetermined,Attack,NA,-118.165,33.874
+2584,2017-05-15,NA,Long Beach,CA,Male,NA,NA,No,No,unknown,Attack,NA,-118.165,33.874
 2585,2017-05-15,Emmanuel Ibarra,Del Mar,CA,Male,34,Hispanic,Yes,No,sharp,Attack,Yes,-117.269,32.977
 2589,2017-05-15,Keith Andrew Chesser,Wewoka,OK,Male,48,White,No,No,sharp,Attack,No,-96.493,35.153
 2586,2017-05-16,Isabelle Duval,Washington,DC,Female,41,White,No,No,gun,Attack,No,-77.006,38.822
@@ -2330,7 +2330,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2588,2017-05-16,Edwin Fuentes,Tustin,CA,Male,24,Hispanic,Yes,No,gun,Attack,No,-117.842,33.742
 2591,2017-05-16,Marshall Barrus,Three Forks,MT,Male,38,White,No,No,gun,Attack,Yes,-111.541,45.904
 2590,2017-05-17,Daniel George Boak,Arlington,VA,Male,28,White,No,No,NA,Attack,Yes,-77.107,38.876
-2592,2017-05-20,Anthony Paul Ardo,Lower Mount Bethel,PA,Male,47,White,Yes,No,explosive,Other,No,-75.201,40.809
+2592,2017-05-20,Anthony Paul Ardo,Lower Mount Bethel,PA,Male,47,White,Yes,No,explosive/chemical,Other,No,-75.201,40.809
 2593,2017-05-20,Roger Bubar,Belgrade,ME,Male,65,White,No,No,gun,Attack,No,-69.808,44.482
 2599,2017-05-20,Shannon Edward Estill,Pleasanton,CA,Male,58,White,Yes,Yes,gun like,Attack,No,-121.85,37.663
 2594,2017-05-21,Jimmie Montel Sanders,Appleton,WI,Male,33,Black,No,No,gun,Attack,No,-88.414,44.262
@@ -2418,7 +2418,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2686,2017-06-20,Jacob Faulkner,St. Clair Township,OH,Male,32,White,Yes,No,gun,Attack,NA,-84.517,39.449
 2687,2017-06-20,Robb Stewart,Lehigh,KS,Male,50,White,Yes,No,gun,Other,No,-97.303,38.377
 2683,2017-06-20,Pedro Ramirez,Las Vegas,NV,Male,28,Hispanic,No,Yes,sharp,Other,No,-115.271,36.159
-2688,2017-06-21,Brandon D. Lukenbill,Nevada,MO,Male,33,White,No,No,undetermined,Other,Yes,-122.559,47.566
+2688,2017-06-21,Brandon D. Lukenbill,Nevada,MO,Male,33,White,No,No,unknown,Other,Yes,-122.559,47.566
 2690,2017-06-21,Daniel Francisco Valenzuela,Millerton,OK,Male,37,Hispanic,No,No,sharp,Other,No,-95.015,33.989
 2691,2017-06-22,Armando Garcia-Muro,Palmdale,CA,Male,17,Hispanic,No,No,unarmed,Other,No,-118.112,34.582
 2693,2017-06-23,Santino Trevino,Hollywood Hills,CA,Male,20,Hispanic,No,No,gun,Attack,No,-118.346,34.105
@@ -2464,10 +2464,10 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2747,2017-07-05,Jamie Huskey,Sallisaw,OK,Male,45,White,No,No,gun,Attack,No,-94.804,35.449
 2748,2017-07-05,Jonathan Coronel,Vista,CA,Male,24,Hispanic,No,No,unarmed,Other,Yes,-117.253,33.2
 2749,2017-07-05,Carroll Tuttle,Madison,ME,Male,51,White,No,No,gun,Attack,NA,-69.787,44.791
-2744,2017-07-06,Jesus Cervantes,Plant City,FL,Male,35,Hispanic,No,No,undetermined,Other,Yes,-82.105,28.008
+2744,2017-07-06,Jesus Cervantes,Plant City,FL,Male,35,Hispanic,No,No,unknown,Other,Yes,-82.105,28.008
 2745,2017-07-06,Dejuan Guillory,Mamou,LA,Male,27,Black,No,No,unarmed,Other,No,-92.407,30.593
 2751,2017-07-07,Brian Easley,Marietta,GA,Male,33,Black,Yes,No,unarmed,Attack,No,-84.477,33.901
-2752,2017-07-07,Gabriel Sage Barnes,Huntsville,AL,Male,15,NA,No,No,undetermined,Other,Yes,-86.612,34.712
+2752,2017-07-07,Gabriel Sage Barnes,Huntsville,AL,Male,15,NA,No,No,unknown,Other,Yes,-86.612,34.712
 2765,2017-07-07,Kareem Ali Nadir Jones,Columbus,OH,Male,30,Black,No,Yes,gun,Other,No,NA,NA
 2757,2017-07-08,Michael Anthony Rude,Lacey,WA,Male,22,Asian,Yes,No,sharp,Other,No,NA,NA
 2758,2017-07-08,Cardell Vance III,Crescent City,FL,Male,23,Black,Yes,No,sharp,Other,No,-81.531,29.448
@@ -2484,7 +2484,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2769,2017-07-11,Antonio Garcia Jr.,Leavenworth,KS,Male,47,Black,No,No,sharp,Undetermined,No,-94.91,39.302
 2770,2017-07-11,Silas Andrew Smith,Golden Valley,AZ,Male,54,White,No,No,gun,Attack,Yes,-114.223,35.222
 2771,2017-07-12,Dorsey Glenn Taulbee Jr.,Oklahoma City,OK,Male,33,Native American,No,No,gun,Attack,No,-97.567,35.442
-2772,2017-07-12,James Gerald Davis,Lake View,SC,Male,40,White,Yes,No,undetermined,Other,No,-79.252,34.348
+2772,2017-07-12,James Gerald Davis,Lake View,SC,Male,40,White,Yes,No,unknown,Other,No,-79.252,34.348
 2773,2017-07-12,Keith Alan Eustace,Grover Beach,CA,Male,58,White,No,No,blunt,Other,No,-120.619,35.124
 2774,2017-07-13,Chancey Chamblee,Pima,AZ,Male,55,White,No,No,gun,Other,NA,-111.223,32.091
 2775,2017-07-13,Stephen Steele,Crystal Springs,FL,Male,47,White,Yes,No,sharp,Other,No,-82.182,28.195
@@ -2578,7 +2578,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2866,2017-08-15,Herbert Gilbert,Thomasville,GA,Male,37,Black,No,Yes,vehicle,Other,No,-83.979,30.826
 2872,2017-08-16,Kenneth Lewis,Los Angeles,CA,Male,34,Black,No,No,gun,Undetermined,Yes,-118.253,33.929
 2873,2017-08-16,James Midkiff,Livermore,CA,Male,54,White,Yes,No,gun,Attack,No,-121.79,37.698
-2882,2017-08-17,Peter Daniel Grima,Crenshaw County,AL,Male,65,White,No,No,undetermined,Undetermined,No,-86.181,31.759
+2882,2017-08-17,Peter Daniel Grima,Crenshaw County,AL,Male,65,White,No,No,unknown,Undetermined,No,-86.181,31.759
 2883,2017-08-17,Edgar Ramirez Carreto,Phoenix,AZ,Male,28,Hispanic,Yes,No,sharp,Other,No,-112.029,33.459
 2874,2017-08-18,Leroy Frank,Bloomfield,NJ,Male,60,NA,No,No,sharp,Other,No,-74.191,40.818
 2879,2017-08-18,Clarence Belsar III,Fairchance,PA,Male,26,White,No,No,gun,Attack,No,-79.757,39.821
@@ -2586,7 +2586,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2875,2017-08-19,Thomas Justin Walton,Homewood,AL,Male,32,White,No,No,taser,Attack,No,-86.824,33.449
 2876,2017-08-20,Jonathan Bolger,Yellville,AR,Male,44,White,No,No,gun,Other,No,-93.108,36.23
 2877,2017-08-20,Keshawn Wilson,Brick,NJ,Male,32,Black,No,No,gun,Attack,No,-74.098,40.067
-2878,2017-08-20,NA,Madera,CA,Male,NA,NA,No,No,undetermined,Other,Yes,-119.794,36.923
+2878,2017-08-20,NA,Madera,CA,Male,NA,NA,No,No,unknown,Other,Yes,-119.794,36.923
 2884,2017-08-21,Jeffrey Jacobs,Morganton,NC,Male,42,White,No,No,gun like,Attack,No,-81.842,35.665
 2885,2017-08-21,Dennia Flowers,Colorado City,CO,Male,66,White,No,No,gun,Attack,No,-104.802,37.956
 2886,2017-08-21,Tyler Whitmire,Franklin,WI,Male,22,White,Yes,No,sharp,Other,NA,-87.664,44.364
@@ -2609,7 +2609,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2903,2017-08-27,Jason Hoops,Kettering,OH,Male,33,White,No,No,gun,Other,No,-84.121,39.716
 2904,2017-08-27,Dwayne Martin,Sharpsburg,KY,Male,34,White,No,No,sharp,Attack,Yes,-83.865,38.248
 2905,2017-08-28,Kostatinos Sfaelos,New Milford,CT,Male,62,White,No,No,gun,Attack,Yes,-73.396,41.583
-2906,2017-08-28,William Matthew Holmes,Newton,KS,Male,24,Black,Yes,Yes,undetermined,Attack,Yes,-97.323,38.047
+2906,2017-08-28,William Matthew Holmes,Newton,KS,Male,24,Black,Yes,Yes,unknown,Attack,Yes,-97.323,38.047
 2907,2017-08-29,Ricky Ard,Evansville,IN,Male,55,Black,Yes,Yes,blunt,Other,No,-87.569,37.974
 2908,2017-08-29,Larry Moore Miller,Jacksonville,AL,Male,68,NA,No,No,gun,Attack,No,-85.762,33.775
 2909,2017-08-29,Joshua Mark Cloud,Lincoln Parish,LA,Male,22,White,No,No,gun,Attack,No,-92.786,32.534
@@ -2636,7 +2636,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2933,2017-09-06,Miguel Richards,New York,NY,Male,31,Black,Yes,Yes,sharp,Other,No,-73.834,40.888
 2944,2017-09-07,Eric Dwan Arnold,Sacramento,CA,Male,41,Black,No,No,gun,Attack,Yes,-121.47,38.528
 2942,2017-09-08,Billy Joe Elmore,Amarillo,TX,Male,45,White,No,No,gun,Attack,No,-101.882,35.222
-2943,2017-09-08,Michael Culhane,Monett,MO,Male,50,White,Yes,No,undetermined,Other,No,-93.928,36.929
+2943,2017-09-08,Michael Culhane,Monett,MO,Male,50,White,Yes,No,unknown,Other,No,-93.928,36.929
 2940,2017-09-09,Ervin Eugene Sweat Jr.,Arcata,CA,Male,26,Black,No,No,gun,Attack,No,-124.087,40.869
 2935,2017-09-10,Erick Perez,Youngtown,AZ,Male,22,Hispanic,No,No,gun,Attack,No,-112.302,33.6
 2936,2017-09-10,Joseph Charles Cook,Huntersville,NC,Male,76,White,No,No,gun,Attack,No,-80.861,35.407
@@ -2658,7 +2658,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2959,2017-09-18,Jesse VanSipe,Piedmont,AL,Male,33,White,Yes,No,gun,Other,No,-85.557,33.915
 2962,2017-09-19,Joshua Stubbs,Monroe,NC,Male,25,White,No,Yes,gun,Attack,Yes,-80.569,35.014
 2963,2017-09-19,Jimme Knight Smith,Independence,VA,Male,55,White,Yes,No,gun,Attack,No,-81.118,36.637
-2964,2017-09-19,Randall Ross,Bernice,LA,Male,53,White,No,No,undetermined,Undetermined,NA,-92.505,32.801
+2964,2017-09-19,Randall Ross,Bernice,LA,Male,53,White,No,No,unknown,Undetermined,NA,-92.505,32.801
 2966,2017-09-19,NA,La Porte,TX,Male,NA,NA,Yes,No,gun,Attack,No,-95.073,29.67
 2967,2017-09-19,David Scott,Chula Vista,CA,Male,27,White,Yes,No,sharp,Attack,No,-117.045,32.616
 2965,2017-09-20,Magdiel Sanchez,Oklahoma City,OK,Male,35,Hispanic,No,No,blunt,Other,No,-97.506,35.408
@@ -2666,11 +2666,11 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 2969,2017-09-20,Haraesheo Rice,Huntsville,AL,Male,31,Black,Yes,No,gun,Attack,No,-86.615,34.803
 2970,2017-09-21,Mack Brinkley,Boswell,OK,Male,70,White,No,No,gun,Attack,Yes,-95.875,34.03
 2972,2017-09-21,Matthew Wells,Tacoma,WA,Male,40,White,Yes,No,sharp,Other,No,-122.402,47.186
-2973,2017-09-21,Austin Dunsmore,Denver,CO,Male,25,Other,No,No,undetermined,Other,Yes,-105.109,39.569
+2973,2017-09-21,Austin Dunsmore,Denver,CO,Male,25,Other,No,No,unknown,Other,Yes,-105.109,39.569
 2974,2017-09-21,Jose Felix Reyes,Rockwall,TX,Male,38,Hispanic,No,No,NA,Attack,Yes,-96.463,32.927
 2971,2017-09-22,Alexander Ochoa,Oceanside,CA,Male,26,Hispanic,No,No,gun,Attack,No,-117.298,33.179
 2977,2017-09-22,Dillan Tabares,Huntington Beach,CA,Male,27,Other,Yes,No,gun,Attack,No,-118.024,33.73
-2979,2017-09-22,NA,Denver,CO,Male,NA,White,No,No,undetermined,Other,No,-104.911,39.857
+2979,2017-09-22,NA,Denver,CO,Male,NA,White,No,No,unknown,Other,No,-104.911,39.857
 2980,2017-09-22,Scott Farnsworth,Mesa,AZ,Male,28,White,Yes,No,gun,Attack,No,-111.85,33.393
 2981,2017-09-22,Bryan Wright,Hattiesburg,MS,Male,40,White,No,No,gun,Attack,No,NA,NA
 2982,2017-09-22,Scott Michael Chamberlain,Brooksville,FL,Male,44,White,Yes,No,NA,Attack,Yes,-82.416,28.517
@@ -2726,7 +2726,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3031,2017-10-12,Sean D. Brady,Flagstaff,AZ,Male,29,White,Yes,Yes,gun,Attack,No,-111.614,35.2
 3036,2017-10-13,Paul Dolen,Wayne County,KY,Male,57,White,No,No,gun,Attack,No,-84.809,36.781
 3037,2017-10-13,J.C. Hawkins,Charlottesville,VA,Male,42,Black,No,No,gun,Attack,Yes,-78.455,38.024
-3035,2017-10-14,Michael David Lopez,Torrance,CA,Male,44,Hispanic,No,No,undetermined,Other,Yes,-118.338,33.823
+3035,2017-10-14,Michael David Lopez,Torrance,CA,Male,44,Hispanic,No,No,unknown,Other,Yes,-118.338,33.823
 3038,2017-10-14,Eddie Sanders,Olivehurst,CA,Male,25,NA,No,No,gun,Other,No,-121.536,39.077
 3034,2017-10-16,Eric Garrison,Baltimore,MD,Male,20,Black,No,Yes,gun,Other,Yes,-76.558,39.357
 3039,2017-10-16,James Michael Chappell,Simpsonville,SC,Male,32,White,No,No,gun,Attack,No,-82.245,34.753
@@ -2750,7 +2750,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3061,2017-10-22,Dexter David Anthony Baxter,Crandon,WI,Male,30,Native American,No,No,unarmed,Attack,No,NA,NA
 3062,2017-10-23,Matthew David Palaita,Lodi,CA,Male,35,Hispanic,No,No,gun,Attack,No,-121.276,38.146
 3064,2017-10-23,Ashleigh Bertucci,Shelbyville,KY,Female,31,White,Yes,Yes,gun,Other,No,-85.219,38.191
-3069,2017-10-23,George Gipp,Standing Rock Reservation,ND,Male,35,Native American,No,No,undetermined,Other,Yes,-100.682,46.171
+3069,2017-10-23,George Gipp,Standing Rock Reservation,ND,Male,35,Native American,No,No,unknown,Other,Yes,-100.682,46.171
 3066,2017-10-24,Sean Bohinski,Plymouth Township,PA,Male,37,White,No,No,unarmed,Attack,No,-76.019,41.221
 3065,2017-10-24,David Campos,Houston,TX,Male,34,Hispanic,No,No,sharp,Other,No,-95.565,29.704
 3068,2017-10-25,Timothy Earl Jackson,St. Petersburg,FL,Male,33,Black,No,No,gun,Attack,No,-82.699,27.75
@@ -2768,7 +2768,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3205,2017-10-29,Kalin Jackson,King of Prussia,PA,Male,23,Black,No,No,NA,Other,No,-75.386,40.089
 3079,2017-10-30,Robert James Lightfeather,Federal Way,WA,Male,33,Native American,No,No,gun,Attack,No,-122.313,47.319
 3081,2017-10-31,Jesus Birelas-Contreras,Sunnyvale,CA,Male,25,Hispanic,No,No,sharp,Attack,No,-122.017,37.397
-3082,2017-10-31,Luvelle Kennon,Riverside,CA,Male,27,Black,No,No,undetermined,Other,No,-117.343,33.938
+3082,2017-10-31,Luvelle Kennon,Riverside,CA,Male,27,Black,No,No,unknown,Other,No,-117.343,33.938
 3085,2017-10-31,Paul Landis Gorden,Livingston,TN,Male,39,White,No,No,gun,Attack,No,-85.341,36.411
 3086,2017-10-31,Vincent Hall,Arlington,TX,Male,22,Black,No,No,gun,Attack,No,-97.176,32.661
 3087,2017-10-31,Heather Denean Bubrig,Las Cruces,NM,Female,37,White,Yes,No,sharp,Other,No,-106.845,32.285
@@ -2851,7 +2851,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3168,2017-11-28,Robert Claude Smith,Eaton County,MI,Male,64,White,No,No,NA,Attack,Yes,NA,NA
 3169,2017-11-28,Lucas Stone,Reno,NV,Male,30,White,No,No,gun,Attack,No,-119.813,39.522
 3170,2017-11-28,James C. Danforth,Hillyard,WA,Male,59,White,No,No,gun,Attack,Yes,-117.368,47.708
-3171,2017-11-29,NA,Three Points,AZ,Male,NA,NA,No,No,undetermined,Attack,NA,NA,NA
+3171,2017-11-29,NA,Three Points,AZ,Male,NA,NA,No,No,unknown,Attack,NA,NA,NA
 3174,2017-11-29,Aquoness Cathery,Chicago,IL,Male,24,Black,No,Yes,gun,Other,NA,-87.616,41.784
 3172,2017-11-30,Rufus Cedric Baker,Hendersonville,NC,Male,32,Black,No,No,gun,Other,Yes,-82.438,35.349
 3175,2017-11-30,Juan Andres Barillas,North Hollywood,CA,Male,37,Hispanic,No,No,gun,Other,Yes,-118.407,34.198
@@ -2879,7 +2879,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3195,2017-12-10,Frank Lopez,Artesia,CA,Male,48,NA,No,No,sharp,Attack,No,-118.072,33.861
 3198,2017-12-11,NA,Seattle,WA,Male,NA,NA,No,Yes,gun,Attack,Yes,-122.253,47.68
 3199,2017-12-11,Stacy Micheletti,Great Falls,MT,Male,51,White,No,No,unknown,Other,NA,-111.221,47.517
-3201,2017-12-12,Marcia Metzger Aiken,Rincon,GA,Female,50,White,Yes,No,undetermined,Other,No,-81.237,32.241
+3201,2017-12-12,Marcia Metzger Aiken,Rincon,GA,Female,50,White,Yes,No,unknown,Other,No,-81.237,32.241
 3200,2017-12-13,Jeremy Patscheck,Northglenn,CO,Male,NA,NA,No,No,vehicle,Attack,NA,-104.968,39.888
 3211,2017-12-13,NA,Hamilton,AL,Male,NA,NA,No,No,unknown,Other,No,-88.086,34.183
 3213,2017-12-14,Zoe Dowdell,New Britain,CT,Male,20,Black,No,No,NA,Other,Yes,-72.761,41.673
@@ -2905,14 +2905,14 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3237,2017-12-22,Jeffrey John Golnick,Gilbert,MN,Male,40,White,No,No,gun,Attack,Yes,-92.465,47.49
 3238,2017-12-22,Lawrence McClellon,Pocatello,ID,Male,62,NA,No,No,gun,Other,No,-112.433,42.883
 3234,2017-12-23,Jesse Murillo,Los Angeles,CA,Male,32,NA,No,No,blunt,Other,Yes,-118.589,34.217
-3235,2017-12-23,Jesse Champney,Canaan,NH,Male,26,NA,No,No,undetermined,Other,No,-72.051,43.647
+3235,2017-12-23,Jesse Champney,Canaan,NH,Male,26,NA,No,No,unknown,Other,No,-72.051,43.647
 3240,2017-12-24,Evilio Gomez,Progreso,TX,Male,46,Hispanic,No,No,sharp,Other,No,-97.949,26.112
 3265,2017-12-24,Cody Dalton Eyre,Fairbanks,AK,Male,20,White,Yes,Yes,gun,Attack,No,-147.716,64.838
 3266,2017-12-24,Charlie Joseph Murillo,Phoenix,AZ,Male,25,NA,No,No,sharp,Other,No,-112.048,33.476
 3231,2017-12-25,Jacob Craig,Tulsa,OK,Male,NA,NA,No,No,gun,Attack,No,-95.967,36.148
 3232,2017-12-25,Adrian Escobar,Yakima,WA,Male,28,NA,No,No,gun,Attack,No,-120.51,46.574
 3262,2017-12-25,Nathaniel Fritz Macalevy,Boring,OR,Male,44,NA,No,No,gun,Attack,Yes,-122.341,45.429
-3241,2017-12-26,Jose Garcia,Yakima,WA,Male,31,NA,Yes,No,undetermined,Undetermined,No,-120.507,46.603
+3241,2017-12-26,Jose Garcia,Yakima,WA,Male,31,NA,Yes,No,unknown,Undetermined,No,-120.507,46.603
 3242,2017-12-26,Robert Miller,Tulare,CA,Male,40,NA,No,No,gun,Attack,Yes,-119.327,36.2
 3243,2017-12-26,James Alan Berrones,Roswell,NM,Male,46,NA,No,No,gun,Attack,NA,-104.441,33.453
 3244,2017-12-26,Jesse Scarsbrook,Lawrence,IN,Male,28,Black,No,No,gun,Attack,Yes,-86.014,39.843
@@ -2926,9 +2926,9 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3248,2017-12-28,Isaiah Christian Green,Dover Township,PA,Male,20,NA,No,No,gun,Other,No,-76.844,39.985
 3252,2017-12-28,Christopher Baird,Birmingham,AL,Male,37,NA,No,No,gun,Attack,No,-86.8,33.521
 3256,2017-12-28,Corey Bailey,Elkhart,IN,Male,30,Black,No,No,gun,Attack,Yes,-85.979,41.67
-3258,2017-12-29,Jarvis Lykes,Columbus,GA,Male,35,NA,No,No,undetermined,Other,Yes,-84.958,32.444
+3258,2017-12-29,Jarvis Lykes,Columbus,GA,Male,35,NA,No,No,unknown,Other,Yes,-84.958,32.444
 3255,2017-12-30,Marco Antonio Carlos,Redwood City,CA,Male,31,Hispanic,No,No,gun,Attack,No,-122.226,37.487
-3257,2017-12-30,Heath Wayne Hodges,Crowell,TX,Male,36,White,No,No,undetermined,Undetermined,NA,NA,NA
+3257,2017-12-30,Heath Wayne Hodges,Crowell,TX,Male,36,White,No,No,unknown,Undetermined,NA,NA,NA
 3260,2017-12-30,Oscar Sandoval,Los Angeles,CA,Male,39,NA,No,No,gun,Other,No,-118.567,34.196
 3254,2017-12-31,Matthew Riehl,Highlands Ranch,CO,Male,37,NA,Yes,Yes,gun,Attack,No,-104.961,39.566
 3261,2017-12-31,Ernie Macias,Delano,CA,Male,32,NA,No,No,NA,Other,Yes,-119.241,35.787
@@ -3000,7 +3000,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3333,2018-01-22,Joshua Dale Prough,Battle Creek,MI,Male,36,White,Yes,No,gun,Other,No,-85.19,42.308
 3334,2018-01-22,Aaron Olivarez Candanoza,Irving,TX,Male,28,Hispanic,No,No,NA,Other,Yes,-96.989,32.851
 3335,2018-01-22,Jonathan Duane Atchley,Sallisaw,OK,Male,37,White,No,No,unarmed,Other,No,-94.789,35.463
-3336,2018-01-22,Edward C. Gandy,Millville,NJ,Male,47,White,Yes,No,claim,Other,NA,-75.039,39.405
+3336,2018-01-22,Edward C. Gandy,Millville,NJ,Male,47,White,Yes,No,unknown,Other,NA,-75.039,39.405
 3337,2018-01-22,Joe Delira-Alires,Pueblo,CO,Male,35,Hispanic,No,Yes,gun,Attack,NA,-104.866,39.694
 3339,2018-01-22,Joseph E. Knight,Tulsa,OK,Male,40,White,No,No,gun,Other,Yes,-96.01,36.176
 3341,2018-01-22,Scott Senior,Crescent City,CA,Male,38,NA,No,No,unknown,Attack,NA,-124.201,41.778
@@ -3076,7 +3076,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3417,2018-02-15,Fordell Hill,Montezuma Creek,UT,Male,27,Native American,No,No,gun,Attack,Yes,-108.901,37.323
 3418,2018-02-15,Wesley Taylor,Henderson,NC,Male,58,White,No,No,gun,Attack,No,-78.401,36.309
 3420,2018-02-16,Tim Berger,Cocoa Beach,FL,Male,59,White,Yes,No,gun,Other,NA,-80.612,28.352
-3421,2018-02-16,Odrey Paul Reed,Sissonville,WV,Male,39,White,Yes,No,undetermined,Undetermined,NA,-81.657,38.53
+3421,2018-02-16,Odrey Paul Reed,Sissonville,WV,Male,39,White,Yes,No,unknown,Undetermined,NA,-81.657,38.53
 3422,2018-02-17,Lamar Green,Inwood,WV,Male,28,Black,No,No,gun,Attack,No,-78.038,39.366
 3423,2018-02-17,Ryan Batchelder,Hernando,FL,Male,28,White,No,No,NA,Other,No,NA,NA
 3424,2018-02-17,Nathaniel Montoya,Las Cruces,NM,Male,23,Hispanic,No,No,NA,Other,Yes,-106.764,32.309
@@ -3139,7 +3139,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3483,2018-03-08,Jamil Harvey,Spotsylvania,VA,Male,29,Black,No,No,gun,Attack,NA,-111.676,40.057
 3493,2018-03-08,NA,Pottstown,PA,Male,NA,NA,Yes,No,gun like,Other,No,-75.654,40.246
 3494,2018-03-08,Dwight Heckman,Pilot Station,AK,Male,27,Native American,No,No,gun,Attack,Yes,NA,NA
-4254,2018-03-08,NA,Jurupa Valley,CA,Male,32,Hispanic,No,No,undetermined,Undetermined,NA,-117.5,34
+4254,2018-03-08,NA,Jurupa Valley,CA,Male,32,Hispanic,No,No,unknown,Undetermined,NA,-117.5,34
 3485,2018-03-09,Alkeeta Allena Walker,Tarpon Springs,FL,Female,32,White,No,No,sharp,Other,No,-82.765,28.15
 3492,2018-03-09,David Gardea,Phoenix,AZ,Male,27,Hispanic,No,No,gun,Attack,Yes,-112.164,33.487
 4253,2018-03-09,Hieu Than,Arlington,TX,Male,38,Asian,No,No,sharp,Attack,No,-97.14,32.652
@@ -3164,7 +3164,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3508,2018-03-16,Mark Clinton Harrell,Jonesborough,TN,Male,26,White,Yes,No,sharp,Other,Yes,-82.46,36.302
 3510,2018-03-16,William Langfitt,Elk Plain,WA,Male,28,White,Yes,No,sharp,Other,No,-122.375,47.028
 3512,2018-03-16,Bobby Lovin,Burnsville,NC,Male,62,White,No,No,sharp,Other,NA,-82.354,35.933
-4257,2018-03-16,NA,Harris County,TX,Male,34,NA,No,No,undetermined,Attack,No,-95.522,30.033
+4257,2018-03-16,NA,Harris County,TX,Male,34,NA,No,No,unknown,Attack,No,-95.522,30.033
 3504,2018-03-17,Osbaldo Jimenez Ramirez,Valley View,CA,Male,50,Hispanic,No,No,gun,Other,Yes,-116.973,33.22
 3502,2018-03-18,NA,Lancaster,TX,Male,NA,NA,No,No,NA,Attack,Yes,-96.768,32.606
 3506,2018-03-18,Stephon Clark,Sacramento,CA,Male,23,Black,No,Yes,unarmed,Other,Yes,-121.475,38.487
@@ -3189,7 +3189,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3527,2018-03-23,Steven Cortez,Childress,TX,Male,20,Hispanic,No,No,gun,Attack,Yes,NA,NA
 3536,2018-03-23,Linus F. Phillip,Largo,FL,Male,30,Black,No,No,NA,Attack,No,-82.788,27.929
 3541,2018-03-23,Kevin Hall,Genesee Township,MI,Male,40,White,No,No,unknown,Other,Yes,-83.636,43.051
-3542,2018-03-23,Robert Vega,Douglas,AZ,Male,48,Hispanic,No,No,explosive,Other,No,-109.548,31.351
+3542,2018-03-23,Robert Vega,Douglas,AZ,Male,48,Hispanic,No,No,explosive/chemical,Other,No,-109.548,31.351
 3569,2018-03-23,NA,Scottsdale,AZ,Male,NA,NA,No,No,unknown,Other,No,-111.884,33.537
 3540,2018-03-23,Kevin Robles,Phoenix,AZ,Male,23,White,No,No,sharp,Attack,No,-112.221,33.495
 3537,2018-03-24,Nikolai Yakunin,Nikolaevsk,AK,Male,42,White,No,No,unarmed,Attack,No,-151.617,59.809
@@ -3494,7 +3494,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3971,2018-07-05,Tracy A. Richards,Eustis,FL,Male,55,White,Yes,No,gun,Other,No,-81.686,28.853
 3972,2018-07-05,John James Corrigan,Calaveras County,CA,Male,38,White,Yes,No,gun like,Attack,No,-120.613,38.19
 3828,2018-07-06,Charles Webb,Overland Park,KS,Male,43,Black,No,No,gun,Attack,No,-94.696,38.986
-3973,2018-07-06,Eric Hash,Copper Center,AK,Male,38,Asian,No,Yes,explosive,Other,NA,-145.331,61.98
+3973,2018-07-06,Eric Hash,Copper Center,AK,Male,38,Asian,No,Yes,explosive/chemical,Other,NA,-145.331,61.98
 3830,2018-07-07,Kelly Kenneth Sutton,Amity,OR,Male,27,White,No,No,unarmed,Attack,Yes,-123.202,45.122
 3832,2018-07-07,Harold Kraai,Jacksonville,FL,Male,52,White,Yes,No,sharp,Attack,No,-81.627,30.443
 3835,2018-07-07,NA,Adams County,CO,Male,NA,NA,No,No,unknown,Attack,NA,-104.987,39.824
@@ -3560,7 +3560,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4031,2018-07-27,Richard Mendoza,Los Angeles,CA,Male,32,Hispanic,No,Yes,gun,Attack,No,-118.462,34.21
 3896,2018-07-28,Lamar C. Richardson,Toledo,OH,Male,25,Black,No,Yes,gun,Other,Yes,-83.542,41.683
 3897,2018-07-28,Joseph Santos,South Whitehall Township,PA,Male,44,Hispanic,No,No,unarmed,Undetermined,No,-75.53,40.576
-3902,2018-07-28,Michael Neal,Pineville,LA,Male,32,White,No,No,undetermined,Undetermined,Yes,-92.414,31.34
+3902,2018-07-28,Michael Neal,Pineville,LA,Male,32,White,No,No,unknown,Undetermined,Yes,-92.414,31.34
 3904,2018-07-28,Arthur Kenzie Garner,Aberdeen,NC,Male,33,White,No,No,gun,Attack,No,-79.478,35.134
 3900,2018-07-29,NA,Adams County,CO,Male,NA,NA,No,No,vehicle,Attack,Yes,-105.02,39.814
 3899,2018-07-30,Richard Gary Black,Aurora,CO,Male,NA,White,No,No,gun,Other,No,-104.824,39.747
@@ -3646,7 +3646,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4009,2018-09-03,Aaron Demonta Fleming,Covington,GA,Male,21,Black,No,No,gun,Attack,Yes,-83.833,33.613
 4015,2018-09-04,Timmy Henley,Westminster,CO,Male,27,White,No,No,sharp,Attack,No,-105.03,39.872
 4013,2018-09-05,James Leatherwood,Hollywood,FL,Male,23,Black,No,No,unarmed,Other,No,-80.201,25.998
-4014,2018-09-05,Mitchell Owen Buel,Morris,AL,Male,33,White,No,No,undetermined,Other,Yes,-86.807,33.749
+4014,2018-09-05,Mitchell Owen Buel,Morris,AL,Male,33,White,No,No,unknown,Other,Yes,-86.807,33.749
 4018,2018-09-05,Christopher Sage,Jonesville,NC,Male,45,White,No,No,gun,Attack,No,-80.832,36.212
 4017,2018-09-06,Darell Richards,Sacramento,CA,Male,19,Black,No,No,gun like,Attack,Yes,-121.492,38.562
 4023,2018-09-07,DaShawn Cole,Pawtucket,RI,Male,28,Black,No,No,gun,Attack,NA,-71.354,41.878
@@ -3690,7 +3690,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4069,2018-09-27,Datwan Keyo Lewis,Palatka,FL,Male,41,Black,No,No,gun,Other,No,-81.67,29.648
 4064,2018-09-27,Michael Perez,Honolulu,HI,Male,37,Hispanic,No,No,sharp,Other,No,-157.878,21.324
 4067,2018-09-28,Joseph Dawson,Johns Island,SC,Male,24,White,No,No,gun,Attack,No,-80.122,32.742
-4059,2018-09-29,Justin Snelson,Okmulgee,OK,Male,54,Native American,No,No,undetermined,Other,Yes,-95.983,35.633
+4059,2018-09-29,Justin Snelson,Okmulgee,OK,Male,54,Native American,No,No,unknown,Other,Yes,-95.983,35.633
 4060,2018-09-29,Thomas Howard Luedtke,Nampa,ID,Male,58,White,Yes,No,sharp,Attack,NA,-116.575,43.585
 4062,2018-09-29,Walter Welch,Epping,NH,Male,40,White,No,No,gun,Other,No,-71.08,43.028
 4058,2018-09-30,Patrick K. Kimmons,Portland,OR,Male,27,Black,No,No,gun,Attack,NA,-122.674,45.52
@@ -3749,12 +3749,12 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4126,2018-10-20,Robert Smith,Spanaway,WA,Male,50,White,No,No,gun,Other,No,-122.438,47.111
 4132,2018-10-20,Kimberly Norris,Darlington County,SC,Female,34,White,No,Yes,gun,Attack,No,-80.221,34.365
 4118,2018-10-21,Cedric Pritchard,Washington,NC,Male,NA,Black,No,Yes,gun,Other,No,-77.056,35.556
-4119,2018-10-21,NA,Quincy,FL,Male,NA,NA,No,No,undetermined,Undetermined,Yes,-84.591,30.588
+4119,2018-10-21,NA,Quincy,FL,Male,NA,NA,No,No,unknown,Undetermined,Yes,-84.591,30.588
 4121,2018-10-22,Jason Whittle,Riverton,UT,Male,26,White,Yes,No,sharp,Attack,No,-111.931,40.537
 4123,2018-10-22,William David Williamson,Newport,TN,Male,61,White,No,No,unknown,Attack,No,-83.182,36.073
 4120,2018-10-22,Tafahree Maynard,Snellville,GA,Male,18,Black,No,No,sharp,Other,No,NA,NA
 4127,2018-10-23,Shaunday Mullins,Tulsa,OK,Male,37,Native American,No,No,gun,Attack,No,-95.923,36.148
-4131,2018-10-23,Robert Mitchell,Davenport,IA,Male,27,White,No,Yes,undetermined,Other,Yes,-90.572,41.587
+4131,2018-10-23,Robert Mitchell,Davenport,IA,Male,27,White,No,Yes,unknown,Other,Yes,-90.572,41.587
 4133,2018-10-23,Nickolas Michael Peters,Alderwood Manor,WA,Male,24,White,No,No,unarmed,Attack,Yes,-122.239,47.824
 4162,2018-10-23,Salvador Morales,Pittsburg,CA,Male,37,Hispanic,No,Yes,gun,Attack,Yes,-121.888,38.029
 4142,2018-10-24,NA,Detroit,MI,Male,45,NA,No,Yes,gun,Other,No,-83.19,42.351
@@ -3825,7 +3825,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4197,2018-11-21,Robert William Reid,Lincoln Township,MI,Male,42,White,Yes,No,gun,Attack,No,-84.889,43.951
 4212,2018-11-21,Eugene Benjamin Weathers,Talladega,AL,Male,48,Black,No,No,gun,Attack,No,NA,NA
 4214,2018-11-21,Martin Lopez,Bell Gardens,CA,Male,24,Hispanic,No,No,sharp,Attack,No,-118.16,33.974
-4238,2018-11-21,NA,Pasadena,TX,Male,NA,NA,No,No,undetermined,Attack,Yes,NA,NA
+4238,2018-11-21,NA,Pasadena,TX,Male,NA,NA,No,No,unknown,Attack,Yes,NA,NA
 4199,2018-11-22,Emantic Fitzgerald Bradford,Hoover,AL,Male,21,Black,No,No,gun,Other,No,-86.811,33.377
 4201,2018-11-22,Cameron McCarthy,Palmer,AK,Male,20,White,No,No,sharp,Other,Yes,NA,NA
 4205,2018-11-22,Patrick Michael Langhoff,Gunnison County,CO,Male,59,White,No,No,gun,Attack,No,NA,NA
@@ -3892,7 +3892,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4312,2018-12-18,Danny Washington,Franklin Township,PA,Male,27,Black,No,No,unarmed,Attack,Yes,-75.653,40.838
 4314,2018-12-18,Keith A. Hawley,Union City,PA,Male,27,White,No,No,gun,Attack,NA,-79.847,41.89
 4310,2018-12-19,NA,Fort Worth,TX,Male,NA,NA,Yes,No,gun,Attack,No,-97.276,32.713
-4313,2018-12-19,NA,Phoenix,AZ,Male,NA,NA,No,No,undetermined,Attack,No,-112.004,33.473
+4313,2018-12-19,NA,Phoenix,AZ,Male,NA,NA,No,No,unknown,Attack,No,-112.004,33.473
 4319,2018-12-20,NA,Lake Elsinore,CA,Male,NA,NA,No,No,gun,Attack,Yes,-117.333,33.685
 4320,2018-12-20,Damon Barstad,Toledo,OH,Male,23,White,No,No,taser,Attack,No,-83.534,41.657
 4330,2018-12-21,Jose Lemus,Azusa,CA,Male,57,Hispanic,No,No,gun,Attack,No,-117.934,34.12
@@ -3915,7 +3915,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4411,2018-12-30,Paul Arbitelle,Danbury,CT,Male,45,White,No,No,sharp,Other,No,-73.444,41.386
 4332,2018-12-31,Iosia Faletogo,Seattle,WA,Male,36,Asian,No,Yes,gun,Attack,Yes,-122.345,47.699
 4335,2018-12-31,Matthew Hurley,Fort Dodge,IA,Male,45,White,No,No,gun,Attack,Yes,-94.168,42.497
-4337,2018-12-31,Jesus Ramos,Longmont,CO,Male,34,Hispanic,Yes,No,undetermined,Other,Yes,-105.107,40.199
+4337,2018-12-31,Jesus Ramos,Longmont,CO,Male,34,Hispanic,Yes,No,unknown,Other,Yes,-105.107,40.199
 4340,2018-12-31,NA,Van Nuys,CA,Male,18,NA,No,Yes,sharp,Other,No,-118.429,34.194
 4334,2019-01-01,Dylan Michael Smith,Davidson County,NC,Male,26,White,No,No,gun,Attack,Yes,-80.145,35.515
 4504,2019-01-01,Brandon Lovell Webster,Shallotte,NC,Male,28,Black,No,No,vehicle,Other,Yes,-78.368,33.979
@@ -3987,7 +3987,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4395,2019-01-22,Jimmy Atchison,Atlanta,GA,Male,21,Black,No,No,unarmed,Undetermined,Yes,-84.491,33.752
 4405,2019-01-23,Preston Oszust,Flagstaff,AZ,Male,20,White,No,No,unarmed,Undetermined,Yes,-111.681,35.188
 4407,2019-01-23,Dwight Steward,Spokane,WA,Male,46,Black,No,No,sharp,Other,NA,-117.426,47.691
-4408,2019-01-23,NA,Naschitti,NM,Male,NA,Native American,No,No,undetermined,Undetermined,NA,-108.682,36.065
+4408,2019-01-23,NA,Naschitti,NM,Male,NA,Native American,No,No,unknown,Undetermined,NA,-108.682,36.065
 4414,2019-01-23,Marcus Gishal,Flagstaff,AZ,Male,20,Hispanic,No,No,gun,Attack,Yes,-111.679,35.192
 4406,2019-01-23,Kevin Grant Vawter,South Haven,IN,Male,46,White,Yes,Yes,sharp,Attack,No,-87.143,41.536
 4409,2019-01-24,Katlyn Alix,St. Louis,MO,Female,24,White,No,No,unarmed,Other,No,-90.25,38.564
@@ -4027,7 +4027,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4446,2019-02-07,Danny Rodriguez,Seattle,WA,Male,34,Hispanic,No,Yes,sharp,Attack,No,-122.343,47.705
 4448,2019-02-07,Michael Robert Novak,Madera,CA,Male,58,White,Yes,Yes,sharp,Attack,No,-120.078,36.975
 4449,2019-02-07,Morgan Shane West,Snyder,TX,Male,38,White,No,No,unarmed,Undetermined,No,-100.938,32.706
-4450,2019-02-07,Nolan Hurtzig,Banning,CA,Male,29,White,No,No,undetermined,Undetermined,NA,-116.866,33.938
+4450,2019-02-07,Nolan Hurtzig,Banning,CA,Male,29,White,No,No,unknown,Undetermined,NA,-116.866,33.938
 4452,2019-02-07,Jason Matthew Hill,Memphis,TN,Male,40,White,No,No,gun,Attack,No,-89.866,35.166
 4484,2019-02-07,Charles L. Cook,Barberton,OH,Male,49,White,No,No,gun,Attack,No,-81.604,40.977
 4451,2019-02-08,Aaron Allen Przekop,Bakersfield,CA,Male,25,White,No,No,unarmed,Other,No,-119.257,35.292
@@ -4071,7 +4071,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4487,2019-02-23,Daniel David Messmer,Victorville,CA,Male,24,White,Yes,No,gun,Attack,No,-117.273,34.471
 4488,2019-02-23,Angel Burke,Clarksville,TN,Male,29,White,No,No,gun,Other,Yes,-87.431,36.592
 4501,2019-02-23,Jackie Scott Pendergrass,Blountville,TN,Male,44,White,No,No,gun,Attack,No,-82.355,36.576
-4480,2019-02-24,Tommy Kirby,Flint,MI,Male,41,White,No,No,undetermined,Undetermined,Yes,-83.684,43.009
+4480,2019-02-24,Tommy Kirby,Flint,MI,Male,41,White,No,No,unknown,Undetermined,Yes,-83.684,43.009
 4494,2019-02-25,Bryan A. Ryder,Springfield,MO,Male,38,White,Yes,No,sharp,Other,NA,-93.314,37.165
 4548,2019-02-25,David Litton,Denver,CO,Male,40,White,No,No,gun,Other,No,-104.996,39.736
 4492,2019-02-26,Sasha Ann Pishko,McIntosh County,GA,Female,20,White,No,No,vehicle,Attack,Yes,-81.447,31.471
@@ -4088,7 +4088,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4525,2019-03-02,Ricky Lee Prichard,Sebewaing,MI,Male,49,NA,Yes,No,gun,Attack,No,-83.441,43.734
 4538,2019-03-02,Larry Todd Hoover,Mount Holly,NC,Male,33,White,Yes,No,sharp,Other,No,-81.019,35.336
 4541,2019-03-02,Tyler J. Meier,Fairchild,WI,Male,46,White,No,No,unarmed,Attack,No,-91.047,44.625
-4542,2019-03-02,Clair Jewell,Carter County,KY,Female,35,White,No,No,undetermined,Other,Yes,-82.894,38.344
+4542,2019-03-02,Clair Jewell,Carter County,KY,Female,35,White,No,No,unknown,Other,Yes,-82.894,38.344
 4543,2019-03-02,NA,Waco,TX,Male,NA,NA,No,No,sharp,Attack,No,-97.128,31.537
 4551,2019-03-03,Robert D. Richardson,Glenoma,WA,Male,40,NA,No,No,gun like,Attack,No,-122.1,46.541
 4526,2019-03-04,Luke Anthony Swann,Des Moines,IA,Male,36,Black,No,No,gun,Attack,Yes,-93.602,41.565
@@ -4099,7 +4099,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4530,2019-03-05,Steven Louis Goins,DeKalb County,GA,Male,22,NA,No,No,gun,Attack,Yes,-84.254,33.738
 4535,2019-03-05,Jared D. Kelly,Springfield,MO,Male,36,NA,No,No,gun,Other,NA,-93.295,37.169
 4567,2019-03-05,Stephanie Areanda Quiroz,Bakersfield,CA,Female,21,Hispanic,No,No,unarmed,Other,Yes,-118.95,35.354
-4679,2019-03-05,Joshua Worth,Greenville,MS,Male,31,White,Yes,No,undetermined,Undetermined,NA,-91.141,33.3
+4679,2019-03-05,Joshua Worth,Greenville,MS,Male,31,White,Yes,No,unknown,Undetermined,NA,-91.141,33.3
 4529,2019-03-05,Danny Brogdon,Muskogee,OK,Male,56,White,No,No,sharp,Other,No,-95.386,35.767
 4537,2019-03-05,Antonio Joseph Valentine,Jacksonville,FL,Male,32,Black,No,No,gun,Other,No,-81.579,30.313
 4678,2019-03-06,Donqaule Maurice Gray,Morgantown,WV,Male,25,Black,No,No,gun,Attack,Yes,-79.951,39.638
@@ -4173,7 +4173,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4609,2019-04-01,Lianna Renee London,LaFollette,TN,Female,28,White,No,No,gun,Attack,No,-84.117,36.388
 4620,2019-04-01,Veltavious Griggs,Union City,GA,Male,19,Black,No,No,gun,Attack,NA,-84.565,33.598
 4656,2019-04-01,Bishar Hassan,Anchorage,AK,Male,31,Black,Yes,No,gun like,Other,Yes,-149.883,61.206
-4680,2019-04-01,NA,Fairfield,TX,Male,29,NA,No,No,undetermined,Other,No,-96.165,31.725
+4680,2019-04-01,NA,Fairfield,TX,Male,29,NA,No,No,unknown,Other,No,-96.165,31.725
 4615,2019-04-02,Donnell James Lang,Redding,CA,Male,48,White,Yes,No,unarmed,Attack,No,-122.335,40.595
 4613,2019-04-03,Barry A. Rucker,Brownstown,IN,Male,53,White,No,No,gun,Other,No,-86.043,38.879
 4614,2019-04-03,Alfonso Cervantes,San Diego,CA,Male,50,Hispanic,Yes,Yes,gun,Attack,No,-117.047,32.551
@@ -4225,7 +4225,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4649,2019-04-22,David Flores Ramos,Los Angeles,CA,Male,32,Hispanic,No,Yes,gun,Attack,NA,NA,NA
 4654,2019-04-22,James Freeman,Watauga,TX,Male,46,White,No,No,gun,Attack,No,-97.247,32.864
 5413,2019-04-22,Richard Allen Moench,Shelby,MT,Male,50,White,No,No,gun,Attack,No,NA,NA
-4667,2019-04-24,Emory Moore,Owingsville,KY,Male,29,White,No,No,undetermined,Attack,Yes,-83.807,38.089
+4667,2019-04-24,Emory Moore,Owingsville,KY,Male,29,White,No,No,unknown,Attack,Yes,-83.807,38.089
 4892,2019-04-24,Jonathan Patzel,Colorado Springs,CO,Male,29,White,No,No,sharp,Attack,No,-104.77,38.796
 4681,2019-04-25,Stanley Edward Thompson,Apex,NC,Male,51,White,No,No,gun,Attack,NA,-78.878,35.735
 5414,2019-04-25,Blayne Erwin Morris,Lemoore,CA,Male,23,NA,No,No,gun,Attack,Yes,-119.783,36.301
@@ -4280,7 +4280,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4730,2019-05-17,Luis Lomante,Davie,FL,Male,39,Hispanic,No,No,sharp,Other,No,-80.244,26.065
 4732,2019-05-17,"Donald Davis, Jr.",New Orleans,LA,Male,40,Black,No,Yes,gun,Attack,NA,-89.999,30.024
 5007,2019-05-17,Daniel Warren,Pasadena,CA,Male,36,Black,No,Yes,gun,Attack,No,-118.155,34.172
-4728,2019-05-18,Dion Grey Hat,Tonalea,AZ,Male,27,Native American,No,No,undetermined,Undetermined,NA,-110.963,36.322
+4728,2019-05-18,Dion Grey Hat,Tonalea,AZ,Male,27,Native American,No,No,unknown,Undetermined,NA,-110.963,36.322
 4731,2019-05-18,Andrew Giovanni Meza,Garden Grove,CA,Male,20,Hispanic,Yes,No,sharp,Attack,No,-117.922,33.794
 4725,2019-05-19,Robert Rabago,Phoenix,AZ,Male,17,Hispanic,No,No,gun,Attack,Yes,-112.048,33.461
 4727,2019-05-19,Esteban Martinez,Huron,CA,Male,59,Hispanic,No,No,unknown,Attack,No,-120.103,36.2
@@ -4357,7 +4357,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5449,2019-06-12,Juan Manuel Moreno,Farmers Branch,TX,Male,35,Hispanic,No,No,unarmed,Other,Yes,-96.926,32.896
 4782,2019-06-13,Marquis Weems,Rockville,MD,Male,17,Black,No,No,vehicle,Attack,Yes,-77.107,39.053
 4784,2019-06-13,Tramon Savage,Jacksonville,AR,Male,22,Black,No,No,vehicle,Attack,Yes,-92.127,34.865
-4783,2019-06-14,NA,Delano,CA,Male,NA,NA,No,No,undetermined,Undetermined,Yes,-119.266,35.79
+4783,2019-06-14,NA,Delano,CA,Male,NA,NA,No,No,unknown,Undetermined,Yes,-119.266,35.79
 4791,2019-06-15,Michael Sheehan,Belmont,NH,Male,45,White,Yes,No,gun,Other,No,-71.486,43.428
 4792,2019-06-15,Mantry Norris,Renton,WA,Male,20,Black,Yes,No,sharp,Attack,NA,-122.207,47.481
 4793,2019-06-15,Ty'Rese West,Racine,WI,Male,18,Black,No,No,unknown,Other,NA,-87.794,42.7
@@ -4388,7 +4388,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4813,2019-06-26,Michael Norquest,Timberville,VA,Male,50,White,No,No,sharp,Attack,No,-78.772,38.625
 4816,2019-06-26,Elijah Collins III,Sugarcreek,OH,Male,32,Black,No,Yes,sharp,Attack,No,-81.641,40.505
 4814,2019-06-27,Marvin Green,Springfield,FL,Male,50,Black,No,No,gun,Attack,No,-85.611,30.153
-4817,2019-06-27,Benjamin Ray Smith,Orangeburg,SC,Male,54,Black,No,No,undetermined,Undetermined,NA,-80.856,33.492
+4817,2019-06-27,Benjamin Ray Smith,Orangeburg,SC,Male,54,Black,No,No,unknown,Undetermined,NA,-80.856,33.492
 4818,2019-06-27,Stephen D. Sloan,Wolfe County,KY,Male,35,White,No,No,gun,Other,No,-83.395,37.805
 4819,2019-06-27,Matthew Christian Smith,Omaha,NE,Male,33,White,Yes,No,gun,Attack,No,-95.956,41.179
 4820,2019-06-27,Paul David Rea,Los Angeles,CA,Male,18,Hispanic,No,No,unarmed,Other,No,-118.144,34.03
@@ -4427,7 +4427,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4851,2019-07-07,Johnny W. Dellinger,Timberville,VA,Male,41,White,No,No,gun,Other,No,-78.79,38.672
 5459,2019-07-07,Johnny M. Vigil,Tularosa,NM,Male,43,NA,No,No,gun,Attack,No,-106.007,33.08
 4866,2019-07-08,Shawn Toney,Brooklyn,OH,Male,23,White,Yes,No,gun,Attack,No,-81.753,41.439
-4858,2019-07-09,Anthony James Gonzales,Bakersfield,CA,Male,36,Hispanic,No,No,undetermined,Undetermined,No,-118.981,35.4
+4858,2019-07-09,Anthony James Gonzales,Bakersfield,CA,Male,36,Hispanic,No,No,unknown,Undetermined,No,-118.981,35.4
 4860,2019-07-09,Sean Rambert,Greenville,NC,Male,23,Black,No,No,gun,Attack,No,-77.431,35.584
 4862,2019-07-09,Grayson Schuessler,Citrus Heights,CA,Male,26,White,No,No,gun,Attack,NA,-121.266,38.678
 4859,2019-07-09,Jason Harris,Rancho Mirage,CA,Male,36,NA,Yes,Yes,sharp,Attack,No,-116.411,33.816
@@ -4538,10 +4538,10 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4970,2019-08-19,NA,Fullerton,CA,Male,NA,NA,No,Yes,vehicle,Attack,Yes,-117.968,33.876
 4976,2019-08-21,Amari Malone,Fort Worth,TX,Male,18,Black,No,Yes,gun,Attack,Yes,-97.229,32.766
 4978,2019-08-21,James Crowe,Nicholasville,KY,Male,27,White,No,No,unknown,Undetermined,No,-84.575,37.869
-4982,2019-08-21,NA,Stanton,CA,Male,50,Hispanic,No,No,undetermined,Undetermined,NA,-117.99,33.81
+4982,2019-08-21,NA,Stanton,CA,Male,50,Hispanic,No,No,unknown,Undetermined,NA,-117.99,33.81
 5470,2019-08-21,NA,North Aurora,IL,Male,54,NA,Yes,No,gun,Attack,No,-88.34,41.809
 4972,2019-08-22,Roger Schafer,Albuquerque,NM,Male,57,White,No,No,gun like,Attack,No,-106.529,35.079
-4973,2019-08-22,NA,Westminster,CA,Male,NA,NA,No,No,undetermined,Other,Yes,-117.955,33.745
+4973,2019-08-22,NA,Westminster,CA,Male,NA,NA,No,No,unknown,Other,Yes,-117.955,33.745
 4974,2019-08-22,Michael Tuck,Dayton,OH,Male,29,Black,No,No,taser,Attack,Yes,-84.239,39.752
 4975,2019-08-22,Riley Eugene Peay,Glennville,GA,Male,39,White,No,No,unarmed,Attack,No,-81.924,31.949
 5471,2019-08-22,Roberto Mata,Hobbs,NM,Male,46,Hispanic,No,No,gun,Attack,No,-103.128,32.704
@@ -4570,9 +4570,9 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 4995,2019-09-01,Robert Desjarlais,Sand Springs,OK,Male,49,White,No,Yes,vehicle,Attack,Yes,-96.155,36.076
 4996,2019-09-01,Sidney J. Holst,Caldwell,ID,Male,49,White,No,No,gun,Attack,No,-116.708,43.61
 5000,2019-09-02,NA,New York,NY,Male,NA,NA,No,No,gun,Attack,Yes,-73.919,40.675
-5005,2019-09-02,Steven Cole Gill,Missoula,MT,Male,35,White,Yes,No,explosive,Attack,No,-113.991,46.877
+5005,2019-09-02,Steven Cole Gill,Missoula,MT,Male,35,White,Yes,No,explosive/chemical,Attack,No,-113.991,46.877
 5023,2019-09-02,Tommy Luke Hranicky,Kerrville,TX,Male,17,White,No,No,sharp,Other,No,-99.134,30.053
-5458,2019-09-02,Robert Anderson,Silver Springs,NV,Male,43,NA,No,No,undetermined,Attack,No,-119.192,39.358
+5458,2019-09-02,Robert Anderson,Silver Springs,NV,Male,43,NA,No,No,unknown,Attack,No,-119.192,39.358
 5004,2019-09-03,Attillio Gilmartin,Bluff City,TN,Male,30,White,No,No,gun,Attack,Yes,-82.234,36.485
 5104,2019-09-03,Eduard Alexis Lopez-Ucles,Kaukauna,WI,Male,34,Hispanic,No,No,vehicle,Other,Yes,-88.268,44.291
 5477,2019-09-03,Terry Pierce,Van Wert,OH,Male,46,White,Yes,No,vehicle,Other,Yes,-84.601,40.961
@@ -4594,7 +4594,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5021,2019-09-11,Caleb Daniel Peterson,Burlington,IA,Male,20,White,No,No,gun,Attack,Yes,-91.114,40.802
 5026,2019-09-11,Tasjon Tyreek Osbourne,Columbus,OH,Male,18,Black,No,No,gun,Other,Yes,NA,NA
 5028,2019-09-12,NA,Houston,TX,Male,NA,Black,No,No,gun,Attack,Yes,-95.364,29.705
-5029,2019-09-12,Allen Cates,Independence,MO,Male,29,White,No,No,undetermined,Attack,NA,-94.462,39.078
+5029,2019-09-12,Allen Cates,Independence,MO,Male,29,White,No,No,unknown,Attack,NA,-94.462,39.078
 5030,2019-09-12,Alvaro Duran Venegas,Santa Clarita,CA,Male,35,Hispanic,Yes,No,blunt,Attack,No,-118.575,34.439
 5033,2019-09-13,Robert E. Domine,Loyal,WI,Male,77,White,No,No,gun,Attack,No,NA,NA
 5478,2019-09-13,NA,Bracketville,TX,Male,25,NA,No,No,gun,Attack,No,-100.409,29.328
@@ -4693,7 +4693,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5112,2019-10-18,David Sanders,St. Joseph County,MI,Male,46,NA,No,No,vehicle,Attack,No,-85.721,41.766
 5115,2019-10-18,Malachi Crane,Idaho Falls,ID,Male,29,White,Yes,No,gun,Attack,No,-111.988,43.477
 5118,2019-10-18,Charles Tsakiris,Farmingdale,NJ,Male,38,White,No,No,sharp,Attack,No,-74.171,40.196
-5217,2019-10-19,McLemore Ronald,Leesburg,FL,Male,51,White,Yes,No,blunt,Other,No,NA,NA
+5217,2019-10-19,McLemore Ronald,Leesburg,FL,Male,51,White,Yes,No,sharp,Other,No,NA,NA
 5218,2019-10-19,Ricky Leonard Harris,Easley,SC,Male,61,NA,No,No,gun,Attack,No,-82.556,34.986
 5219,2019-10-19,Terry Countryman,Palestine,TX,Male,34,White,No,No,gun,Attack,NA,-95.761,31.902
 5116,2019-10-20,Steven Day,St. Louis,MO,Male,30,Black,No,No,gun,Attack,Yes,-90.193,38.646
@@ -4738,7 +4738,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5159,2019-11-01,Luis Morales-Camacho,Orlando,FL,Male,41,Hispanic,No,No,gun,Attack,No,-81.238,28.554
 5173,2019-11-01,Luis Fino Nabarrette,Odessa,TX,Male,38,Hispanic,No,No,gun,Attack,Yes,-102.372,31.856
 5191,2019-11-01,Benjamin Diaz,Alamogordo,NM,Male,22,Hispanic,No,No,sharp,Attack,No,-105.968,32.873
-5157,2019-11-02,John Hale,Dexter,KY,Male,42,White,No,No,undetermined,Attack,NA,NA,NA
+5157,2019-11-02,John Hale,Dexter,KY,Male,42,White,No,No,unknown,Attack,NA,NA,NA
 5155,2019-11-02,Michael Kifer,Vero Beach,FL,Male,29,White,No,No,sharp,Attack,No,-80.422,27.585
 5153,2019-11-03,Curtis French,Parkland,WA,Male,56,White,Yes,Yes,sharp,Other,No,-122.438,47.152
 5154,2019-11-03,Michael Austin,Phoenix,AZ,Male,32,Black,No,No,gun,Attack,No,-112.021,33.4
@@ -4751,7 +4751,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5169,2019-11-05,Michael Lee Nguyen,Leon,WI,Male,32,Asian,No,No,gun,Other,No,-90.82,43.856
 5171,2019-11-05,Christopher Alan Noe,Willis,TX,Male,45,White,No,No,sharp,Other,Yes,-95.55,30.452
 5164,2019-11-06,Eddie Ray Maxwell,Tahlequah,OK,Male,37,Black,No,No,gun,Attack,No,-94.967,35.89
-5165,2019-11-06,Corben Hunter Jones,Henryetta,OK,Male,20,White,No,No,undetermined,Undetermined,NA,-95.981,35.507
+5165,2019-11-06,Corben Hunter Jones,Henryetta,OK,Male,20,White,No,No,unknown,Undetermined,NA,-95.981,35.507
 5166,2019-11-06,Raul Casas Campo,San Antonio,TX,Male,34,Hispanic,No,No,gun,Other,NA,-98.634,29.361
 5170,2019-11-06,Treva Smutherman,Fayetteville,NC,Male,31,Black,No,No,gun,Attack,No,-78.934,35.032
 5176,2019-11-07,Guy Thomas Barnard,Wadsworth,OH,Male,26,White,Yes,No,gun like,Attack,NA,-81.729,41.027
@@ -4808,7 +4808,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5237,2019-11-29,NA,Lewes,DE,Male,46,NA,Yes,No,gun,Attack,No,-75.133,38.78
 5239,2019-11-29,Kenneth Layton,Lakeland,FL,Male,60,White,Yes,No,gun,Attack,No,-81.979,28.129
 5241,2019-11-29,Keith Alan Bruce,Watkins,CO,Male,40,White,No,No,gun,Attack,Yes,-104.508,39.756
-5242,2019-11-29,NA,Eatonville,WA,Male,NA,White,No,No,undetermined,Other,Yes,-122.359,46.908
+5242,2019-11-29,NA,Eatonville,WA,Male,NA,White,No,No,unknown,Other,Yes,-122.359,46.908
 5234,2019-11-30,Eliborio Rodriguez,Eugene,OR,Male,40,Hispanic,No,No,unarmed,Attack,No,-123.091,44.091
 5228,2019-12-01,Anthony Rosso,Secaucus,NJ,Male,68,White,No,No,gun,Attack,NA,-74.075,40.787
 5229,2019-12-01,Jimmie Phillips,Morrow,GA,Male,68,Black,No,No,gun,Attack,No,-84.296,33.582
@@ -4861,7 +4861,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5293,2019-12-15,Mario Alberto Torres,Brownsville,TX,Male,27,Hispanic,No,No,gun,Attack,No,-97.538,25.935
 5291,2019-12-16,Dustin Spencer,Kalihi,HI,Male,34,Other,No,No,gun,Attack,Yes,-157.882,21.335
 5292,2019-12-16,Jorge Serrano,Los Angeles,CA,Male,25,Hispanic,No,No,gun,Attack,Yes,-118.192,34.032
-5296,2019-12-16,Bernie Rascon,San Bernardino,CA,Male,28,Hispanic,No,No,undetermined,Undetermined,Yes,-117.334,34.162
+5296,2019-12-16,Bernie Rascon,San Bernardino,CA,Male,28,Hispanic,No,No,unknown,Undetermined,Yes,-117.334,34.162
 5288,2019-12-17,Kyle Horton,Wilmington,NC,Male,NA,White,No,No,gun,Attack,No,-77.848,34.282
 5289,2019-12-17,Clyde Jacob Sullivan,Fort Walton Beach,FL,Male,27,White,No,No,gun,Attack,Yes,-86.621,30.464
 5395,2019-12-17,Ricky Lee Gardipee,Great Falls,MT,Male,41,White,No,No,gun,Attack,Yes,-111.263,47.497
@@ -4896,7 +4896,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5325,2019-12-26,Juan Rosa,Auburndale,FL,Male,35,Hispanic,Yes,No,gun,Attack,No,-81.78,28.066
 5322,2019-12-27,Christopher Camacho,Limerick,ME,Male,16,Hispanic,No,No,gun,Other,NA,-70.791,43.694
 5323,2019-12-27,John Lowell Dollen,Linthicum,MD,Male,NA,White,Yes,No,gun,Attack,No,-76.677,39.216
-5324,2019-12-27,Frederick Jeremy Atkin,South Ogden,UT,Male,42,White,No,No,undetermined,Undetermined,Yes,-111.979,41.192
+5324,2019-12-27,Frederick Jeremy Atkin,South Ogden,UT,Male,42,White,No,No,unknown,Undetermined,Yes,-111.979,41.192
 5320,2019-12-27,Henry Kistler Berry,Newport News,VA,Male,43,White,No,No,taser,Attack,No,-76.47,37.08
 5315,2019-12-28,Albert Benjamin Simon,Houston,TX,Male,52,White,No,No,gun,Other,Yes,-95.391,29.718
 5316,2019-12-28,A.B. Carr,Elizabethton,TN,Male,31,White,No,No,unknown,Attack,No,-82.214,36.347
@@ -4978,7 +4978,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5387,2020-01-21,Sok Chin Son,Lacey,WA,Male,60,Asian,No,No,sharp,Attack,No,-122.768,47.038
 5432,2020-01-22,Jon Phillip Bryant,Arvada,CO,Male,40,White,No,No,sharp,Other,No,-105.07,39.798
 5508,2020-01-22,Armando Moreno Garcia,Mesa,AZ,Male,37,Hispanic,No,No,gun,Attack,NA,-111.849,33.393
-5570,2020-01-22,Adam Ray Hernandez,Moore,OK,Male,34,White,No,No,undetermined,Other,Yes,-97.502,35.363
+5570,2020-01-22,Adam Ray Hernandez,Moore,OK,Male,34,White,No,No,unknown,Other,Yes,-97.502,35.363
 5429,2020-01-23,Deandre Lee Seaborough-Patterson,Savannah,GA,Male,22,Black,No,No,gun,Other,Yes,-81.089,32.057
 5430,2020-01-23,James Lewis Mathis,Paris,TX,Male,30,White,No,No,sharp,Other,NA,-95.554,33.657
 5431,2020-01-23,Gage Scott Southard,Wasilla,AK,Male,26,White,No,No,gun,Attack,Yes,NA,NA
@@ -5034,7 +5034,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5525,2020-02-12,Hans Alejandro Huitz,Virginia Beach,VA,Male,51,Native American,No,No,gun,Attack,No,-75.99,36.776
 5526,2020-02-12,Michael Marullo,Baltimore,MD,Male,33,White,No,No,gun,Attack,No,-76.549,39.322
 5528,2020-02-13,Dakota Lee Chlarson,Dickinson,ND,Male,25,Native American,No,No,sharp,Attack,No,-102.786,46.882
-5538,2020-02-13,Jeremey Fox,Bossier City,LA,Male,42,White,No,Yes,undetermined,Other,No,NA,NA
+5538,2020-02-13,Jeremey Fox,Bossier City,LA,Male,42,White,No,Yes,unknown,Other,No,NA,NA
 5546,2020-02-13,Brian Francis Filion,Salt Lake City,UT,Male,41,White,No,No,gun,Other,Yes,-111.88,40.763
 5549,2020-02-13,Aaron Marcos Valdez,Amarillo,TX,Male,19,Hispanic,No,No,gun,Attack,No,-101.829,35.227
 5550,2020-02-13,Abel Lopez-Lopez,Sparks,NV,Male,37,Hispanic,No,No,gun,Other,No,-119.716,39.538
@@ -5069,7 +5069,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5592,2020-02-25,Dylan Olmeda,Georgetown,TX,Male,16,White,No,No,gun,Attack,No,-97.68,30.663
 5602,2020-02-25,Joseph Hinton,Brea,CA,Male,23,White,No,No,gun like,Attack,NA,-117.848,33.924
 5603,2020-02-25,Terry Hasty,Dalzell,SC,Male,56,White,No,No,gun,Attack,No,-80.421,34
-5588,2020-02-26,David William Irving,Kansas City,MO,Male,35,NA,No,No,undetermined,Undetermined,NA,-94.587,39.057
+5588,2020-02-26,David William Irving,Kansas City,MO,Male,35,NA,No,No,unknown,Undetermined,NA,-94.587,39.057
 5593,2020-02-26,Justin Lee Stackhouse,Bradenton,FL,Male,30,Black,No,No,vehicle,Attack,Yes,-82.616,27.462
 5595,2020-02-26,Ramiro Carrasco,Greeley,CO,Male,30,Hispanic,No,No,gun,Other,No,-104.703,40.433
 5596,2020-02-26,James Thomson,Tahlequah,OK,Male,30,White,No,No,gun,Attack,Yes,-94.938,35.924
@@ -5136,7 +5136,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5637,2020-03-16,Juanito Ovalle,San Antonio,TX,Male,58,Hispanic,No,No,sharp,Other,No,-98.504,29.414
 5638,2020-03-16,NA,Miami,FL,Male,NA,NA,Yes,No,gun,Attack,NA,-80.426,25.51
 5639,2020-03-16,Dakota Wayne Yancey,Mecklenburg,VA,Male,18,White,No,No,gun,Attack,NA,-78.479,36.738
-5655,2020-03-16,Marvin O'Reilly,Tucson,AZ,Male,55,NA,No,No,undetermined,Undetermined,Yes,NA,NA
+5655,2020-03-16,Marvin O'Reilly,Tucson,AZ,Male,55,NA,No,No,unknown,Undetermined,Yes,NA,NA
 5709,2020-03-16,Charity Thorne,Myerstown,PA,Female,42,White,No,No,vehicle,Attack,Yes,-76.329,40.359
 5711,2020-03-17,William Simpkins,Atlanta,GA,Male,39,Black,Yes,No,gun,Attack,Yes,-84.376,33.789
 5651,2020-03-18,Harold Spencer,Iota,LA,Male,61,Black,No,No,gun,Other,NA,-92.496,30.331
@@ -5268,7 +5268,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5773,2020-05-03,Armando Salvatierra,San Jose,CA,Male,26,Hispanic,No,Yes,sharp,Attack,No,-121.902,37.336
 5774,2020-05-03,Chad Adams,Boerne,TX,Male,43,White,No,No,gun,Attack,No,-98.74,29.853
 5871,2020-05-03,Phillip Michael Carney,Overland Park,KS,Male,38,White,No,No,gun,Attack,Yes,-94.683,38.906
-5876,2020-05-03,Tyler Wayne Kracht,Sterling,CO,Male,28,NA,No,No,undetermined,Other,Yes,-103.207,40.625
+5876,2020-05-03,Tyler Wayne Kracht,Sterling,CO,Male,28,NA,No,No,unknown,Other,Yes,-103.207,40.625
 5813,2020-05-04,Mark Anthony Jones,Monterey Park,CA,Male,36,Hispanic,No,No,sharp,Other,No,-118.13,34.033
 5814,2020-05-04,Demontre Bruner,Muskogee,OK,Male,21,Black,No,No,gun,Attack,Yes,-95.387,35.748
 5807,2020-05-05,Qavon Webb,Webster Groves,MO,Male,23,Black,No,No,gun,Attack,No,-90.353,38.583
@@ -5363,7 +5363,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5879,2020-05-29,Jarvis Sullivan,Yulee,FL,Male,44,Black,No,No,vehicle,Attack,Yes,-81.604,30.634
 6591,2020-05-29,Robert Melton Colvin,Lancaster,CA,Male,39,White,No,No,gun like,Attack,No,-118.162,34.675
 5863,2020-05-30,Derrick Thompson,Fountain,FL,Male,46,Black,No,No,gun,Attack,No,-85.348,30.515
-5852,2020-05-31,Israel Berry,Portland,OR,Male,49,White,No,No,undetermined,Undetermined,NA,-122.536,45.499
+5852,2020-05-31,Israel Berry,Portland,OR,Male,49,White,No,No,unknown,Undetermined,NA,-122.536,45.499
 5878,2020-05-31,Thomas Sutherlin,Watertown,WI,Male,32,White,No,No,gun,Attack,No,-88.731,43.178
 5842,2020-06-01,David McAtee,Louisville,KY,Male,53,Black,No,Yes,gun,Attack,NA,NA,NA
 5866,2020-06-01,Jorge Gomez,Las Vegas,NV,Male,25,Hispanic,No,No,gun,Attack,No,-115.142,36.165
@@ -5374,7 +5374,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5898,2020-06-03,Mary Lawrence,Poteau,OK,Female,39,White,No,No,sharp,Other,No,-94.618,35.049
 5902,2020-06-03,Gregory W. Hallback,Aiken,SC,Male,44,White,No,No,gun,Attack,No,NA,NA
 5904,2020-06-03,Eric A. Galvan,Corpus Christi,TX,Male,25,Hispanic,No,No,gun,Attack,No,-97.451,27.752
-5905,2020-06-03,Scott Anderson Hutton,Alexander,AR,Male,36,White,No,No,undetermined,Undetermined,No,-92.47,34.612
+5905,2020-06-03,Scott Anderson Hutton,Alexander,AR,Male,36,White,No,No,unknown,Undetermined,No,-92.47,34.612
 5903,2020-06-05,Benjamin Ballard,Mustang,OK,Male,42,White,No,No,gun,Attack,No,-97.725,35.406
 5934,2020-06-05,James Pharr,Socorro,TX,Male,60,White,Yes,No,gun,Attack,No,-106.257,31.652
 5899,2020-06-06,Kamal Flowers,New Rochelle,NY,Male,24,Black,No,No,gun,Attack,Yes,-73.773,40.926
@@ -5391,7 +5391,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5937,2020-06-10,Phillip Dibenedetto,Winter Haven,FL,Male,36,White,Yes,No,gun,Attack,No,NA,NA
 5913,2020-06-11,Gregorio Cruz Vanloo,DeKalb County,TN,Male,28,White,No,No,gun,Other,NA,NA,NA
 5914,2020-06-11,Mason James Lira,Paso Robles,CA,Male,26,White,Yes,No,gun,Attack,Yes,NA,NA
-5915,2020-06-11,Michael Thomas,Lancaster,CA,Male,62,Black,No,No,undetermined,Undetermined,No,NA,NA
+5915,2020-06-11,Michael Thomas,Lancaster,CA,Male,62,Black,No,No,unknown,Undetermined,No,NA,NA
 5916,2020-06-12,Rayshard Brooks,Atlanta,GA,Male,27,Black,No,Yes,taser,Attack,Yes,-84.4,33.722
 5925,2020-06-12,Caine Van Pelt,Crown Point,IN,Male,23,Black,No,No,gun,Attack,Yes,-87.322,41.417
 5918,2020-06-13,Hannah R. Fizer,Sedalia,MO,Female,25,White,No,No,unarmed,Other,No,-93.27,38.71
@@ -5446,7 +5446,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5976,2020-07-02,Ky Johnson,Kansas City,MO,Male,31,Black,Yes,No,gun,Attack,Yes,-94.521,39.069
 5959,2020-07-02,Kevan Ruffin,Sheboygan,WI,Male,32,Black,Yes,Yes,sharp,Other,No,-87.725,43.744
 5975,2020-07-03,Doug Diamond,Welches,OR,Male,58,White,Yes,No,gun,Attack,No,-121.998,45.359
-5969,2020-07-04,James Porter Garcia,Phoenix,AZ,Male,28,Hispanic,No,Yes,undetermined,Undetermined,No,-112.208,33.495
+5969,2020-07-04,James Porter Garcia,Phoenix,AZ,Male,28,Hispanic,No,Yes,unknown,Undetermined,No,-112.208,33.495
 5974,2020-07-04,Axal Perez,Jacksonville,FL,Male,17,Hispanic,Yes,Yes,sharp,Other,No,-81.815,30.255
 5968,2020-07-05,Matthew Dixon,Chino,CA,Male,34,White,No,No,gun,Attack,Yes,-117.731,34.023
 5971,2020-07-05,Taylor Christian Warner,Muncie,IN,Male,30,White,Yes,Yes,gun like,Attack,NA,-85.386,40.193
@@ -5561,7 +5561,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6095,2020-08-17,Marco Antonio Sigala,Weslaco,TX,Male,27,Hispanic,Yes,No,gun,Attack,Yes,-97.111,31.585
 6096,2020-08-17,Everardo Gonzalez Santana,Bakersfield,CA,Male,65,Hispanic,No,Yes,sharp,Other,Yes,-119.009,35.354
 6097,2020-08-17,Santos Anthony Villegas,San Bernardino,CA,Male,36,Hispanic,No,No,gun,Attack,Yes,-117.299,34.12
-6131,2020-08-17,Jimmy Ferrer,Barstow,CA,Male,35,White,No,No,chemical,Attack,NA,-116.995,34.888
+6131,2020-08-17,Jimmy Ferrer,Barstow,CA,Male,35,White,No,No,explosive/chemical,Attack,NA,-116.995,34.888
 6093,2020-08-18,Adrian Jason Roberts,Cumberland County,NC,Male,37,Black,Yes,No,sharp,Other,NA,-78.895,34.964
 6098,2020-08-18,Trevor Edwards,Pollocksville,NC,Male,37,White,No,No,gun,Attack,No,-77.211,34.968
 6132,2020-08-18,Keith Allen Fileger,Avon Park,FL,Male,34,White,No,No,gun,Attack,Yes,-81.556,27.636
@@ -5575,7 +5575,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6110,2020-08-21,Scott Huffman,Nipomo,CA,Male,42,White,Yes,No,gun,Attack,No,-120.485,35.037
 6105,2020-08-21,Trayford Pellerin,Lafayette,LA,Male,31,Black,Yes,No,sharp,Other,Yes,-92.001,30.204
 6107,2020-08-22,Christopher Walker,Rancho Cordova,CA,Male,29,Black,Yes,No,gun,Attack,Yes,-121.318,38.577
-6111,2020-08-22,Brandon R. Laducer,Belcourt,ND,Male,35,Native American,No,No,undetermined,Undetermined,NA,-99.745,48.839
+6111,2020-08-22,Brandon R. Laducer,Belcourt,ND,Male,35,Native American,No,No,unknown,Undetermined,NA,-99.745,48.839
 6108,2020-08-23,Gearil Leonard Williams,Kingsland,GA,Male,47,Black,No,No,sharp,Attack,No,-81.643,30.79
 6109,2020-08-24,David Sanchez,Albuquerque,NM,Male,NA,Hispanic,No,No,gun,Attack,NA,-106.57,35.184
 6124,2020-08-24,Corey Lee Cutler,Lincoln County,NC,Male,31,White,No,No,gun,Attack,No,-81.208,35.29
@@ -5654,7 +5654,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6197,2020-09-27,James Lucachevitz,Dearborn,MI,Male,43,White,No,No,sharp,Attack,NA,-83.176,42.322
 6203,2020-09-28,Willie Shropshire,Avondale,LA,Male,57,Black,No,No,gun,Attack,No,-90.215,29.913
 6201,2020-09-29,Kirby Joseph Michael Hengel,St. Cloud,MN,Male,27,White,No,No,gun,Other,Yes,-94.185,45.553
-6202,2020-09-30,Demarco Riley,Decatur,GA,Male,27,Black,No,No,undetermined,Undetermined,No,-84.235,33.767
+6202,2020-09-30,Demarco Riley,Decatur,GA,Male,27,Black,No,No,unknown,Undetermined,No,-84.235,33.767
 6210,2020-09-30,Jarred Kemp,Manhattan,KS,Male,41,White,Yes,Yes,gun,Attack,No,-96.612,39.251
 6200,2020-10-01,NA,Whitby,WV,Male,NA,NA,No,No,gun,Attack,Yes,NA,NA
 6207,2020-10-02,James Edward Baker,Tallahassee,FL,Male,38,White,No,No,gun,Attack,No,-84.374,30.434
@@ -5746,7 +5746,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6268,2020-10-27,Isaac Lemoine Christensen,Herriman,UT,Male,38,White,No,Yes,gun,Other,NA,-112.017,40.509
 6269,2020-10-27,Clifton Gorman Spencer,Chattanooga,TN,Male,35,White,No,No,gun,Other,NA,-85.112,35.04
 6277,2020-10-27,Maurice Parker,Las Vegas,NV,Male,34,Black,No,Yes,gun,Other,No,-115.098,36.205
-6271,2020-10-28,Bennie Biby,Trigg County,KY,Male,44,White,No,No,undetermined,Undetermined,NA,-87.88,36.872
+6271,2020-10-28,Bennie Biby,Trigg County,KY,Male,44,White,No,No,unknown,Undetermined,NA,-87.88,36.872
 6273,2020-10-28,Charles Robert Arviso,Tucson,AZ,Male,35,Hispanic,No,Yes,gun,Attack,Yes,-110.998,32.135
 6315,2020-10-28,Justin Esqueda,Bakersfield,CA,Male,30,Hispanic,No,No,gun,Attack,Yes,-118.98,35.399
 6272,2020-10-29,Kevin Edward Peterson,Hazel Dell,WA,Male,21,Black,No,No,gun,Other,Yes,-122.663,45.672
@@ -5798,12 +5798,12 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6350,2020-11-11,Eric Lyn Clark,Winchester,VA,Male,52,White,Yes,Yes,gun,Attack,No,-78.188,39.159
 6300,2020-11-12,NA,Philadelphia,PA,Male,39,NA,No,Yes,gun,Attack,NA,-75.121,39.991
 6302,2020-11-12,Henry Frankowski,Gulfport,MS,Male,NA,White,Yes,No,gun,Attack,No,-89.093,30.38
-6311,2020-11-13,Sincere Pierce,Cocoa,FL,Male,18,Black,No,No,undetermined,Other,No,-80.765,28.374
-6312,2020-11-13,Angelo Crooms,Cocoa,FL,Male,16,Black,No,No,undetermined,Other,Yes,NA,NA
+6311,2020-11-13,Sincere Pierce,Cocoa,FL,Male,18,Black,No,No,unknown,Other,No,-80.765,28.374
+6312,2020-11-13,Angelo Crooms,Cocoa,FL,Male,16,Black,No,No,unknown,Other,Yes,NA,NA
 6318,2020-11-13,Arthur Keith,Cleveland,OH,Male,19,Black,No,No,gun,Attack,NA,-81.647,41.489
 6347,2020-11-13,Tracey Leon McKinney,Gulfport,MS,Male,41,Black,No,No,gun,Attack,No,-89.056,30.4
 6348,2020-11-13,Cody Amman,Gillette,WY,Male,31,White,No,No,gun,Attack,Yes,-105.488,44.277
-6349,2020-11-13,Charles Craig Meeks,Stillwater County,MT,Male,38,White,No,No,undetermined,Other,Yes,-109.392,45.701
+6349,2020-11-13,Charles Craig Meeks,Stillwater County,MT,Male,38,White,No,No,unknown,Other,Yes,-109.392,45.701
 6310,2020-11-14,Jake Settle,Pensacola,FL,Male,40,White,No,No,vehicle,Other,Yes,-87.235,30.442
 6317,2020-11-14,Angelo Castigliola,Corpus Christi,TX,Male,66,White,No,No,gun,Attack,NA,-97.419,27.725
 6324,2020-11-14,Augustine Bernardo Morales,Sacramento,CA,Male,38,Hispanic,No,Yes,gun,Attack,NA,-121.424,38.62
@@ -5838,7 +5838,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6336,2020-11-24,Rondell Goppy,Queens,NY,Male,41,Black,No,No,gun,Attack,NA,-73.767,40.664
 6662,2020-11-25,Joshua LaPlace,San Antonio,TX,Male,30,White,No,No,gun,Attack,NA,-98.377,29.55
 6341,2020-11-26,Ellis Acy Frye,Culpeper,VA,Male,62,Black,No,No,gun,Other,No,-78.019,38.52
-6342,2020-11-26,Michael Anthony Pena,Lubbock,TX,Male,31,Hispanic,No,No,undetermined,Undetermined,NA,-102.03,33.543
+6342,2020-11-26,Michael Anthony Pena,Lubbock,TX,Male,31,Hispanic,No,No,unknown,Undetermined,NA,-102.03,33.543
 6338,2020-11-27,Duane Rich,Marinette County,WI,Male,74,White,No,No,gun,Other,Yes,-88.065,45.358
 6340,2020-11-27,NA,Wilsonville,OR,Male,NA,NA,Yes,No,gun,Other,NA,-122.834,45.278
 6663,2020-11-27,Nicolas Segura,San Bernardino,CA,Male,27,Hispanic,No,No,sharp,Attack,No,-117.29,34.108
@@ -5895,7 +5895,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6432,2020-12-16,Adam Robertson,Orlando,FL,Male,34,White,No,No,gun,Attack,No,-81.317,28.575
 6440,2020-12-17,Joshua Hoffpauir,Sevierville,TN,Male,33,White,No,No,gun,Other,Yes,-83.522,35.867
 6442,2020-12-17,Nicholas Ellingson,Auburn,WA,Male,37,NA,No,No,gun,Attack,Yes,-122.205,47.305
-6443,2020-12-17,Johnny Bolton,Smyrna,GA,Male,49,NA,No,No,undetermined,Undetermined,NA,-84.545,33.866
+6443,2020-12-17,Johnny Bolton,Smyrna,GA,Male,49,NA,No,No,unknown,Undetermined,NA,-84.545,33.866
 6449,2020-12-17,Andrew Mansilla,Daytona Beach,FL,Male,25,Hispanic,Yes,Yes,sharp,Attack,No,-81.071,29.196
 6446,2020-12-18,Leonal Salinas,Nampa,ID,Male,34,Hispanic,No,No,sharp,Attack,No,-116.557,43.582
 6447,2020-12-18,Jacob McClure,Jefferson,ME,Male,41,White,No,No,gun,Other,NA,-69.5,44.252
@@ -5936,7 +5936,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6671,2020-12-30,David Jacob Rigsby,Waverly,TN,Male,39,White,No,No,gun,Attack,NA,-87.799,36.08
 6475,2020-12-31,David Randall Shepherd,Beaumont,TX,Male,39,NA,Yes,No,gun,Attack,No,-94.172,30.068
 6477,2020-12-31,Jeffrey Marvin,Starke County,IN,Male,63,NA,No,No,vehicle,Attack,Yes,-86.469,41.411
-6480,2021-01-01,Carl Dorsey,Newark,NJ,Male,39,Black,No,No,undetermined,Undetermined,NA,-74.202,40.739
+6480,2021-01-01,Carl Dorsey,Newark,NJ,Male,39,Black,No,No,unknown,Undetermined,NA,-74.202,40.739
 6483,2021-01-01,Isaac Matheny,Valley Falls,OR,Male,37,Black,No,No,gun like,Other,NA,-120.282,42.484
 7643,2021-01-01,Jeffrey L. Marvin,Valparaiso,IN,Male,63,NA,No,No,vehicle,Attack,Yes,-87.065,41.46
 6542,2021-01-02,Anthony Bernal Cano,Chandler,AZ,Male,17,Hispanic,No,Yes,gun,Other,NA,-111.836,33.311
@@ -5956,7 +5956,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6513,2021-01-06,Benicio Vasquez,Hartford,CT,Male,34,Hispanic,No,No,gun,Attack,NA,-72.685,41.783
 6505,2021-01-07,John R. Neitling,Chesaning,MI,Male,40,White,No,No,gun,Attack,No,-84.113,43.183
 6503,2021-01-08,Kwamena Ocran,Gaithersburg,MD,Male,24,Black,No,No,gun,Other,Yes,-77.198,39.14
-6504,2021-01-08,Charles Edward Williams,Sparta,TN,Male,47,NA,No,No,undetermined,Other,Yes,-85.356,35.968
+6504,2021-01-08,Charles Edward Williams,Sparta,TN,Male,47,NA,No,No,unknown,Other,Yes,-85.356,35.968
 6491,2021-01-08,Brian Andren,Robbinsdale,MN,Male,47,White,No,Yes,sharp,Other,Yes,-93.339,45.021
 6488,2021-01-09,Betty Francois,Victorville,CA,Female,91,White,No,No,gun,Attack,No,-117.293,34.536
 6489,2021-01-09,Matthew Oxendine,Pembroke,NC,Male,46,White,No,No,gun like,Attack,No,-79.158,34.705
@@ -5968,7 +5968,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6496,2021-01-10,Allen Mirzayan,Altadena,CA,Male,48,White,No,No,sharp,Attack,No,-118.16,34.187
 6682,2021-01-10,Mark Bivins,Munster,IN,Male,28,Black,No,No,gun,Attack,NA,-87.509,41.552
 6486,2021-01-11,Joseph W. Howell,North Topeka,KS,Male,49,NA,Yes,No,gun,Attack,Yes,-95.664,39.098
-6487,2021-01-11,NA,Edinburg,TX,Male,NA,NA,No,No,undetermined,Attack,No,-98.189,26.323
+6487,2021-01-11,NA,Edinburg,TX,Male,NA,NA,No,No,unknown,Attack,No,-98.189,26.323
 6494,2021-01-11,Daryl Dye,Warrenville,SC,Male,45,White,No,No,sharp,Other,No,-81.814,33.519
 6501,2021-01-11,Junius Thomas,Liberty Township,OH,Male,31,White,No,No,gun,Attack,No,-84.388,39.38
 6499,2021-01-12,Ty Spencer Walvatne-Donahey,Lakewood,CO,Male,32,White,No,No,gun,Attack,Yes,-105.101,39.741
@@ -5977,14 +5977,14 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6497,2021-01-13,Lymond Moses,Wilmington,DE,Male,30,Black,No,Yes,vehicle,Other,Yes,NA,NA
 6498,2021-01-13,Joshua Van Machado,Visalia,CA,Male,43,White,No,No,gun,Attack,No,-119.288,36.313
 6515,2021-01-14,Jeffrey D. Kite,Chesterfield,VA,Male,36,White,No,No,gun,Attack,No,-77.405,37.287
-6523,2021-01-14,Justin Pegues,Cherokee County,TX,Male,26,White,No,No,undetermined,Undetermined,NA,-95.025,31.769
+6523,2021-01-14,Justin Pegues,Cherokee County,TX,Male,26,White,No,No,unknown,Undetermined,NA,-95.025,31.769
 6520,2021-01-15,Jean Paul Stanley,El Paso,TX,Male,27,NA,Yes,No,gun,Other,NA,-106.582,31.876
 6521,2021-01-15,Reginald Johnson,Biloxi,MS,Male,48,Black,No,No,sharp,Other,No,-88.887,30.401
 6522,2021-01-15,Kershawn Geyger,Carmichael,CA,Male,24,Black,No,No,gun,Attack,No,-121.324,38.648
 6525,2021-01-16,NA,Prescott Valley,AZ,Male,65,NA,Yes,No,gun,Attack,NA,-112.307,34.668
 6524,2021-01-17,Daniel Young,Marion,IN,Male,25,White,No,No,vehicle,Attack,No,-85.634,40.532
 6527,2021-01-17,Zonterious Johnson,Lawton,OK,Male,24,Black,No,No,gun,Attack,Yes,-98.404,34.597
-6683,2021-01-17,Daniel Canales,Goodyear,AZ,Male,NA,Hispanic,No,No,undetermined,Undetermined,NA,-112.428,33.356
+6683,2021-01-17,Daniel Canales,Goodyear,AZ,Male,NA,Hispanic,No,No,unknown,Undetermined,NA,-112.428,33.356
 6528,2021-01-18,Robert Stephen Calderon,Sacramento,CA,Male,46,NA,No,No,gun,Attack,Yes,-121.42,38.589
 6529,2021-01-18,Christopher Harris,Toledo,OH,Male,27,Black,Yes,No,gun,Attack,Yes,-83.55,41.664
 6531,2021-01-18,Kevin Darion Wells,St. Clair County,AL,Male,56,White,No,No,gun,Attack,No,-86.331,33.475
@@ -6003,7 +6003,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6548,2021-01-25,Juan Eric Ostbye,Graham,WA,Male,50,White,No,No,sharp,Other,NA,-122.298,47.081
 6545,2021-01-26,Mark Meza,Vacaville,CA,Male,61,White,No,No,vehicle,Attack,Yes,-121.986,38.347
 6546,2021-01-26,NA,Homeland,CA,Male,NA,NA,No,No,gun,Attack,NA,-117.47,33.926
-6547,2021-01-26,Harmony Wolfgram,Adams County,CO,Female,NA,White,No,No,undetermined,Undetermined,NA,-104.583,39.752
+6547,2021-01-26,Harmony Wolfgram,Adams County,CO,Female,NA,White,No,No,unknown,Undetermined,NA,-104.583,39.752
 6552,2021-01-26,Felix Santos,San Antonio,TX,Male,48,Hispanic,No,No,gun,Attack,Yes,-98.65,29.4
 6549,2021-01-26,Edward Bittner,Mobile,AL,Male,37,White,No,Yes,sharp,Other,Yes,-88.038,30.69
 6551,2021-01-27,Erick Mejia,San Antonio,TX,Male,26,Hispanic,No,Yes,gun,Other,Yes,-98.534,29.351
@@ -6053,7 +6053,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6595,2021-02-10,Jordan Walton,Austin,TX,Male,21,Black,No,Yes,gun,Attack,No,-97.681,30.305
 6597,2021-02-10,Cortez Lee Bogan,East Cleveland,OH,Male,27,Black,No,No,gun,Other,No,-81.587,41.53
 6593,2021-02-11,Gregory Chandler Metz,Clemson,SC,Male,25,White,No,No,gun,Other,NA,-82.837,34.682
-6594,2021-02-11,Jonathan Turner,Gulfport,MS,Male,39,NA,No,No,undetermined,Undetermined,NA,-89.087,30.446
+6594,2021-02-11,Jonathan Turner,Gulfport,MS,Male,39,NA,No,No,unknown,Undetermined,NA,-89.087,30.446
 6608,2021-02-11,Edwin Adan Velasquez,Houston,TX,Male,20,Hispanic,No,No,gun,Attack,No,-95.408,29.925
 6609,2021-02-11,Clifford E. Wilbur,Williamsport,PA,Male,38,White,No,No,gun,Other,NA,-77.085,41.236
 6610,2021-02-11,Jacob Aaron Thomas,Hot Spring,AR,Male,29,White,No,No,gun,Attack,Yes,-93.099,34.454
@@ -6065,9 +6065,9 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7523,2021-02-13,De'Aire Gray,Indianapolis,IN,Male,NA,NA,Yes,Yes,gun like,Attack,Yes,NA,NA
 6616,2021-02-14,Adam Bruce Connors,El Paso,TX,Male,32,NA,Yes,No,gun,Other,NA,-106.286,31.792
 6687,2021-02-14,Bruce Diehl,Bingham County,ID,Male,51,White,No,No,gun,Attack,No,-112.327,43.312
-7521,2021-02-14,"Antonio ""Tai"" Trujillo",Taos Pueblo,NM,Male,NA,NA,No,No,undetermined,Undetermined,No,-105.544,36.439
-6613,2021-02-15,Troy Alton Allen,Rexburg,ID,Male,50,White,No,No,undetermined,Other,NA,-111.793,43.817
-6614,2021-02-15,Francisco Eduardo Flores,El Monte,CA,Male,30,Hispanic,No,No,undetermined,Attack,Yes,-118.011,34.064
+7521,2021-02-14,"Antonio ""Tai"" Trujillo",Taos Pueblo,NM,Male,NA,NA,No,No,unknown,Undetermined,No,-105.544,36.439
+6613,2021-02-15,Troy Alton Allen,Rexburg,ID,Male,50,White,No,No,unknown,Other,NA,-111.793,43.817
+6614,2021-02-15,Francisco Eduardo Flores,El Monte,CA,Male,30,Hispanic,No,No,unknown,Attack,Yes,-118.011,34.064
 6615,2021-02-15,Royce Robertson,Indian Wells,CA,Male,33,White,No,Yes,gun,Other,Yes,-116.292,33.712
 6618,2021-02-16,Derek J. Hayden,Seattle,WA,Male,44,White,Yes,Yes,sharp,Other,Yes,-122.34,47.605
 6619,2021-02-16,Juan Carlos Pena-Noda,Miami,FL,Male,51,Hispanic,No,No,gun,Other,No,-80.2,25.849
@@ -6083,7 +6083,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6622,2021-02-20,Randall Lockaby,Villa Hills,KY,Male,57,White,No,No,gun,Attack,No,-84.575,39.047
 6626,2021-02-20,Hailey R. Stainbrook,Lincoln,NE,Female,30,White,No,Yes,gun,Attack,Yes,-96.643,40.893
 6635,2021-02-20,Christian W. Alexander,Lincoln,NE,Male,26,White,No,Yes,gun,Attack,Yes,-96.643,40.893
-6637,2021-02-20,Arnell States,Cedar Rapids,IA,Male,39,Black,No,No,undetermined,Other,Yes,-91.724,41.963
+6637,2021-02-20,Arnell States,Cedar Rapids,IA,Male,39,Black,No,No,unknown,Other,Yes,-91.724,41.963
 6623,2021-02-20,Claude Trivino,Albuquerque,NM,Male,40,Hispanic,Yes,Yes,sharp,Attack,Yes,-106.586,35.081
 6625,2021-02-21,NA,Braham,MN,Male,NA,NA,No,No,gun,Attack,NA,NA,NA
 6628,2021-02-21,Dominic Lucas Koch,Anoka,MN,Male,27,Native American,No,Yes,gun,Attack,NA,-93.193,45.707
@@ -6101,15 +6101,15 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6640,2021-02-25,Juan Carter Hernandez,New Wilmington,PA,Male,33,Hispanic,No,No,unknown,Attack,No,-80.336,41.114
 6649,2021-02-25,David Joseph Wayne Conwell,Duluth,MN,Male,37,White,No,Yes,gun,Attack,NA,-92.131,46.768
 6639,2021-02-26,Maggie A. Dickerson,Liberty,IN,Female,29,White,No,No,sharp,Other,No,NA,NA
-6643,2021-02-26,Frederick Earl Height,Walker County,AL,Male,26,White,Yes,No,undetermined,Undetermined,NA,-87.302,33.856
+6643,2021-02-26,Frederick Earl Height,Walker County,AL,Male,26,White,Yes,No,unknown,Undetermined,NA,-87.302,33.856
 6648,2021-02-26,Isaiah Strong,Kalispell,MT,Male,41,White,No,No,blunt,Attack,Yes,-114.288,48.165
 6650,2021-02-26,Dakota G. Richards,Stanley,VA,Male,29,NA,No,No,gun,Attack,Yes,-78.482,38.575
 6651,2021-02-26,Thomas Mack,San Antonio,TX,Male,39,NA,No,No,gun,Attack,Yes,-98.452,29.429
-6644,2021-02-27,Roger Dale Gibson,Dora,AL,Male,27,NA,No,No,undetermined,Undetermined,NA,-87.09,33.729
+6644,2021-02-27,Roger Dale Gibson,Dora,AL,Male,27,NA,No,No,unknown,Undetermined,NA,-87.09,33.729
 6645,2021-02-27,Shannon Savela,Wadena County,MN,Male,36,White,No,No,gun,Attack,No,-94.937,46.616
 6646,2021-02-27,David Savela,Wadena County,MN,Male,43,White,No,No,gun,Attack,NA,-94.937,46.616
 6647,2021-02-27,Rudy Duvivier,Clay County,FL,Male,32,Black,No,No,gun,Attack,NA,-81.751,30.162
-7571,2021-02-27,Jerry Roseberry,Morgan County,KY,Male,48,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7571,2021-02-27,Jerry Roseberry,Morgan County,KY,Male,48,NA,No,No,unknown,Undetermined,NA,NA,NA
 6653,2021-02-28,Farrah Rauch,Muskogee,OK,Female,17,White,No,Yes,gun,Attack,NA,-95.394,35.77
 6652,2021-02-28,Fred Bowman Trundle,Catoosa County,GA,Male,54,NA,No,No,gun,Attack,Yes,-85.14,34.843
 6654,2021-03-01,Adam Cunningham,Ozark,AR,Male,46,White,No,No,blunt,Other,NA,-93.938,35.486
@@ -6125,7 +6125,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6673,2021-03-07,Howayne Gayle,Lakeland,FL,Male,35,Black,No,No,gun,Attack,No,-81.942,28.113
 6692,2021-03-07,Joel R. Weldon,Sparkman,AR,Male,43,White,No,No,gun,Attack,Yes,-92.848,33.917
 6691,2021-03-08,David William Kahler,Burbank,CA,Male,30,White,No,No,gun,Attack,NA,-118.338,34.196
-6688,2021-03-09,David Robert Ruozi,Reedsport,OR,Male,30,White,No,No,undetermined,Attack,No,-124.111,43.699
+6688,2021-03-09,David Robert Ruozi,Reedsport,OR,Male,30,White,No,No,unknown,Attack,No,-124.111,43.699
 6689,2021-03-09,Jim Wright,Minneola,KS,Male,67,White,No,No,gun,Other,Yes,-100.015,37.441
 6693,2021-03-09,NA,Riverside,CA,Male,19,NA,No,No,gun,Other,Yes,-117.344,33.976
 6690,2021-03-10,Tyshon Jones,Rochester,NY,Male,29,Black,Yes,Yes,sharp,Other,Yes,-77.617,43.157
@@ -6138,19 +6138,19 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6698,2021-03-12,Raymond Whitfield Tarbox,Valdosta,GA,Male,43,White,No,No,sharp,Other,No,-83.336,30.849
 6703,2021-03-12,Benjamin P. Cotton,Harrison Township,OH,Male,24,White,No,No,sharp,Other,No,-84.191,39.808
 6695,2021-03-13,Dustin Roy Black,Austin,AR,Male,24,White,No,No,gun,Attack,No,-91.988,34.981
-6700,2021-03-13,NA,Monahans,TX,Male,NA,NA,No,No,undetermined,Undetermined,NA,NA,NA
+6700,2021-03-13,NA,Monahans,TX,Male,NA,NA,No,No,unknown,Undetermined,NA,NA,NA
 6701,2021-03-13,Douglas William Stroble,Wasilla,AK,Male,25,White,No,No,gun,Attack,No,NA,NA
 6697,2021-03-14,Kelly Shannon Bowen,Reidsville,GA,Male,51,White,No,No,gun,Attack,NA,-82.11,32.1
 6699,2021-03-14,Christopher Ruffin,Palm Bay,FL,Male,28,Black,No,No,gun,Attack,Yes,-80.613,28.009
-6707,2021-03-14,Ryan White Mountain-Soft,McLaughlin,SD,Male,30,Native American,No,No,undetermined,Undetermined,NA,-100.81,45.814
+6707,2021-03-14,Ryan White Mountain-Soft,McLaughlin,SD,Male,30,Native American,No,No,unknown,Undetermined,NA,-100.81,45.814
 6711,2021-03-14,David Ordaz,Los Angeles,CA,Male,34,Hispanic,Yes,No,sharp,Other,No,-118.187,34.036
-6724,2021-03-14,Angel B. Degollado,Laredo,TX,Male,21,Hispanic,Yes,No,undetermined,Undetermined,NA,NA,NA
+6724,2021-03-14,Angel B. Degollado,Laredo,TX,Male,21,Hispanic,Yes,No,unknown,Undetermined,NA,NA,NA
 6704,2021-03-15,Stephen James Hughes,Muhlenberg Township,PA,Male,62,White,No,No,sharp,Other,No,-75.928,40.412
 6712,2021-03-16,Jorge Armando Cerda,Los Angeles,CA,Male,37,Hispanic,Yes,No,gun,Attack,No,-118.256,34.024
 6718,2021-03-16,Caleb Smith,Hayward,CA,Male,22,NA,No,Yes,vehicle,Attack,Yes,-122.065,37.607
 6710,2021-03-17,Shawn Myers,Wylie,TX,Male,36,White,No,No,gun,Other,No,-96.548,33.007
 6716,2021-03-17,NA,Pensacola,FL,Male,NA,NA,No,No,gun,Other,No,-87.143,30.333
-6708,2021-03-17,David Suarez,Devils Lake,ND,Male,44,Native American,No,No,undetermined,Other,NA,-99.126,47.975
+6708,2021-03-17,David Suarez,Devils Lake,ND,Male,44,Native American,No,No,unknown,Other,NA,-99.126,47.975
 6850,2021-03-17,Matthew Hurlock,Cypress,TX,Male,35,White,No,Yes,sharp,Other,NA,-95.65,29.965
 6714,2021-03-18,Daryl L. Jordan,Miami,FL,Male,50,Black,Yes,No,gun,Attack,NA,-80.352,25.607
 6715,2021-03-18,Leonard John Popa,Pasadena,MD,Male,79,White,Yes,No,gun,Attack,No,-76.442,39.138
@@ -6168,7 +6168,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6720,2021-03-23,Irvin Silas Myers,Anderson,IN,Male,60,White,Yes,No,gun,Attack,No,-85.68,40.087
 6721,2021-03-23,David Hill,Jacksonville,MO,Male,44,NA,No,No,sharp,Other,Yes,NA,NA
 7584,2021-03-23,Christopher Eric Cook,Stillwater County,MT,Male,41,NA,No,No,gun,Attack,Yes,NA,NA
-7585,2021-03-23,Frankie Jennings,Charlotte,NC,Male,32,Black,No,No,undetermined,Undetermined,No,NA,NA
+7585,2021-03-23,Frankie Jennings,Charlotte,NC,Male,32,Black,No,No,unknown,Undetermined,No,NA,NA
 6722,2021-03-24,Joshua Gloria,Fremont,CA,Male,34,NA,No,Yes,gun,Other,Yes,-122.051,37.552
 6725,2021-03-24,Tony Smith,Forest Park,IL,Male,35,NA,No,No,gun,Other,No,-87.808,41.88
 7586,2021-03-24,Aaron Pierre Thomas,Canton,OH,Male,33,Black,No,No,gun,Attack,No,NA,NA
@@ -6181,16 +6181,16 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7603,2021-03-25,Alvin Burrage,Calumet City,IL,Male,26,NA,No,No,gun,Other,No,NA,NA
 7604,2021-03-25,Malcolm D. Johnson,Kansas City,MO,Male,31,NA,No,No,gun,Attack,No,NA,NA
 6726,2021-03-26,Daniel Nolan,St. Charles County,MO,Male,32,White,Yes,No,gun,Attack,No,-90.519,38.76
-6733,2021-03-26,Donovon W. Lynch,Virginia Beach,VA,Male,25,Black,No,No,undetermined,Undetermined,NA,-75.977,36.847
+6733,2021-03-26,Donovon W. Lynch,Virginia Beach,VA,Male,25,Black,No,No,unknown,Undetermined,NA,-75.977,36.847
 6735,2021-03-26,Steven Michael Kielian,Weld County,CO,Male,32,White,No,No,gun,Attack,Yes,-104.564,40.493
 6737,2021-03-26,Eric Leach,Quincy,MA,Male,36,White,No,No,gun,Other,Yes,-71.005,42.243
 7639,2021-03-26,John Pena Montez,San Antonio,TX,Male,57,NA,No,Yes,sharp,Other,No,NA,NA
 7641,2021-03-27,Russell Lindemeyer,Hudson,FL,Male,49,White,No,No,sharp,Attack,No,NA,NA
 6732,2021-03-28,Krys Brandon Ruiz,Lompoc,CA,Male,26,Hispanic,No,Yes,sharp,Other,No,-120.458,34.639
 6728,2021-03-29,Matthew Blaylock,Los Angeles,CA,Male,38,Black,No,No,gun,Other,Yes,-118.264,34.051
-6729,2021-03-29,Adam Toledo,Chicago,IL,Male,13,Hispanic,No,Yes,undetermined,Other,Yes,-87.708,41.85
+6729,2021-03-29,Adam Toledo,Chicago,IL,Male,13,Hispanic,No,Yes,unknown,Other,Yes,-87.708,41.85
 6731,2021-03-29,Robert Lee Canchola,Corpus Christi,TX,Male,33,White,No,Yes,gun,Attack,Yes,-97.407,27.711
-7642,2021-03-29,Terry Darnell Jackson,Mason County,KY,Male,48,NA,No,No,undetermined,Attack,Yes,NA,NA
+7642,2021-03-29,Terry Darnell Jackson,Mason County,KY,Male,48,NA,No,No,unknown,Attack,Yes,NA,NA
 6739,2021-03-30,Shelby Jean Berkheimer,Lithia Springs,GA,Female,41,White,No,No,gun,Attack,No,-84.621,33.787
 6752,2021-03-30,Michael Leon Hughes,Jacksonville,FL,Male,32,Black,No,Yes,taser,Attack,No,-81.743,30.197
 6758,2021-03-30,Jonathen B. Kohler,Bristol,VA,Male,31,White,No,No,vehicle,Attack,No,-82.211,36.596
@@ -6204,19 +6204,19 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6748,2021-04-01,James Iler,Brighton,IL,Male,47,White,Yes,No,sharp,Attack,No,-90.142,39.04
 6749,2021-04-01,DeShawn Tatum,Rock Island,IL,Male,25,Black,No,No,gun,Other,NA,-90.582,41.48
 6751,2021-04-01,Stephen Patrick Moseley,Fremont,CA,Male,36,Black,No,Yes,gun,Attack,Yes,-121.94,37.482
-6742,2021-04-02,NA,Corona,CA,Male,NA,NA,No,No,undetermined,Undetermined,NA,-117.588,33.877
+6742,2021-04-02,NA,Corona,CA,Male,NA,NA,No,No,unknown,Undetermined,NA,-117.588,33.877
 6744,2021-04-02,NA,Hurdle Mills,NC,Male,NA,NA,No,No,gun,Attack,No,-79.013,36.291
 6746,2021-04-02,Natzeryt Viertel,Salem,OR,Male,22,White,Yes,No,gun,Other,No,-123.046,44.902
 6750,2021-04-02,NA,Long Beach,CA,Female,NA,NA,Yes,Yes,gun,Attack,No,-118.202,33.808
 6753,2021-04-02,Noah Green,Washington,DC,Male,25,Black,Yes,No,sharp,Attack,No,-77.007,38.892
 6738,2021-04-03,Samuel Yeager,Douglas County,CO,Male,23,White,No,Yes,gun,Attack,NA,-104.87,39.452
-6741,2021-04-03,Juan Carlos Estrada,Moreno Valley,CA,Male,40,Hispanic,No,No,undetermined,Other,No,-117.215,33.888
+6741,2021-04-03,Juan Carlos Estrada,Moreno Valley,CA,Male,40,Hispanic,No,No,unknown,Other,No,-117.215,33.888
 6743,2021-04-03,Jose Arenas,Phoenix,AZ,Male,26,NA,No,No,gun,Attack,Yes,-112.221,33.495
 6745,2021-04-03,Jeffrey W. Appelt,Corvallis,OR,Male,32,White,No,Yes,sharp,Other,NA,-123.26,44.576
-6760,2021-04-03,Gabriel Casso,New York,NY,Male,21,Hispanic,No,No,undetermined,Undetermined,No,-73.914,40.83
+6760,2021-04-03,Gabriel Casso,New York,NY,Male,21,Hispanic,No,No,unknown,Undetermined,No,-73.914,40.83
 6838,2021-04-04,Desmon Montez Ray,Birmingham,AL,Male,28,Black,No,Yes,gun,Attack,NA,-86.841,33.515
 6763,2021-04-05,Iremamber Sykap,Honolulu,HI,Male,16,Asian,No,Yes,gun like,Other,Yes,-157.825,21.275
-6766,2021-04-05,Roy K. Jackel,Buena Vista,NJ,Male,41,NA,No,No,undetermined,Other,Yes,-74.931,39.496
+6766,2021-04-05,Roy K. Jackel,Buena Vista,NJ,Male,41,NA,No,No,unknown,Other,Yes,-74.931,39.496
 6759,2021-04-05,Silas Lambert,Anadarko,OK,Male,25,NA,No,Yes,gun,Attack,NA,-98.246,35.081
 6762,2021-04-06,Tyler R. Green,Oneonta,NY,Male,23,NA,No,No,sharp,Other,NA,-75.077,42.445
 6764,2021-04-06,Stephanie Voikin,Miami,FL,Female,40,White,No,No,gun,Attack,No,-80.196,25.762
@@ -6227,14 +6227,14 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6772,2021-04-09,Gabriel Munoz,Whitewater,CA,Male,40,NA,No,No,blunt,Other,No,-116.642,33.924
 6774,2021-04-09,Douglas C. Barton,Bethel Township,OH,Male,50,NA,No,No,gun,Attack,No,-83.946,39.979
 6777,2021-04-09,DeShund Tanner,Georgetown,KY,Male,31,Black,No,No,gun,Other,Yes,-84.534,38.224
-6836,2021-04-09,Paige Pierce Schmidt,Hotchkiss,CO,Female,26,White,No,No,undetermined,Undetermined,NA,-107.72,38.799
+6836,2021-04-09,Paige Pierce Schmidt,Hotchkiss,CO,Female,26,White,No,No,unknown,Undetermined,NA,-107.72,38.799
 7638,2021-04-09,David W. Determan,Lena,IL,Male,52,NA,No,No,gun,Attack,No,-89.822,42.379
 6769,2021-04-10,NA,San Fernando,CA,Male,48,NA,No,No,gun,Attack,No,-118.438,34.289
 6770,2021-04-10,Joshua Mitchell,Metairie,LA,Male,30,NA,No,No,gun,Attack,NA,-90.21,30.003
 6771,2021-04-10,Faustin Guetigo,Rockford,IL,Male,27,NA,No,Yes,blunt,Other,No,-88.999,42.244
 6775,2021-04-10,NA,San Marcos,TX,Male,NA,NA,No,No,sharp,Attack,No,-97.933,29.874
 6835,2021-04-10,Joshua Michael Johnson,Salt Lake City,UT,Male,31,NA,No,No,gun,Attack,No,NA,NA
-6767,2021-04-11,Daunte Wright,Brooklyn Center,MN,Male,20,Black,No,Yes,undetermined,Other,NA,-93.341,45.07
+6767,2021-04-11,Daunte Wright,Brooklyn Center,MN,Male,20,Black,No,Yes,unknown,Other,NA,-93.341,45.07
 7637,2021-04-11,Crystal Jean Alcozer,Del Rio,TX,Female,34,NA,No,No,unknown,Other,NA,NA,NA
 6768,2021-04-12,Pier Alexander Shelton,Bremen,GA,Male,28,Black,No,No,gun,Attack,Yes,-84.992,33.628
 6781,2021-04-12,Anthony J. Thompson,Knoxville,TN,Male,17,Black,No,Yes,gun,Other,Yes,-83.887,35.99
@@ -6252,12 +6252,12 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6826,2021-04-15,Victor Ivan Barron,Roswell,NM,Male,22,NA,No,No,gun,Other,NA,NA,NA
 6827,2021-04-15,Roderick Marcell Inge,Tuscaloosa,AL,Male,29,NA,No,Yes,gun,Attack,NA,-87.539,33.166
 6828,2021-04-15,Innes Lee,Cleveland,OH,Male,25,Black,No,Yes,gun,Attack,Yes,NA,NA
-6787,2021-04-16,Sammie Joe Barbosa,San Antonio,TX,Male,33,NA,No,Yes,undetermined,Undetermined,No,-98.624,29.407
+6787,2021-04-16,Sammie Joe Barbosa,San Antonio,TX,Male,33,NA,No,Yes,unknown,Undetermined,No,-98.624,29.407
 6788,2021-04-16,Alex Anthony Garcia,San Antonio,TX,Male,25,Hispanic,No,Yes,gun,Attack,NA,-98.624,29.407
 6789,2021-04-16,Robert Douglas Delgado,Portland,OR,Male,46,NA,No,No,gun like,Other,NA,-122.572,45.487
 6825,2021-04-16,Juan James Cordova,Ventana Ranch,NM,Male,51,NA,No,No,gun,Attack,No,NA,NA
 6821,2021-04-17,Smoky Lynn Crockett,Fort Lupton,CO,Male,60,NA,No,No,gun,Other,No,-104.762,40.109
-6823,2021-04-17,Bradley Michael Rose,Kingman,AZ,Male,29,NA,No,No,undetermined,Other,Yes,-114.039,35.267
+6823,2021-04-17,Bradley Michael Rose,Kingman,AZ,Male,29,NA,No,No,unknown,Other,Yes,-114.039,35.267
 6824,2021-04-17,Matthew Harry,Hayward,CA,Male,26,NA,No,Yes,gun,Attack,No,-122.06,37.668
 6782,2021-04-17,Larry Jenkins,Winter Haven,FL,Male,52,Black,No,No,gun,Other,No,-81.68,28.009
 6783,2021-04-18,Bradley Michael Olsen,Burnsville,MN,Male,30,White,No,Yes,gun,Attack,Yes,-93.266,44.737
@@ -6272,7 +6272,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6807,2021-04-20,Terry Wayne Bishop,San Antonio,TX,Male,28,White,No,No,gun,Other,NA,-98.499,29.471
 7635,2021-04-20,NA,Lakewood,CO,Male,NA,NA,No,No,gun,Attack,Yes,NA,NA
 6793,2021-04-21,Steven John Olson,Escondido,CA,Male,59,NA,Yes,Yes,blunt,Other,No,-117.078,33.106
-6794,2021-04-21,Andrew Brown,Elizabeth City,NC,Male,42,Black,No,Yes,undetermined,Undetermined,Yes,-76.226,36.29
+6794,2021-04-21,Andrew Brown,Elizabeth City,NC,Male,42,Black,No,Yes,unknown,Undetermined,Yes,-76.226,36.29
 6795,2021-04-21,Phet Gouvonvong,Worcester,MA,Male,31,NA,No,No,gun,Other,No,-71.77,42.25
 6812,2021-04-22,Richard Quintana,Colorado Springs,CO,Male,37,NA,Yes,No,gun,Attack,No,-104.845,38.897
 6800,2021-04-23,Edward Robbesom,Casa Grande,AZ,Male,52,NA,No,No,gun,Other,No,-111.759,32.887
@@ -6288,7 +6288,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6809,2021-04-29,Joe Robideau,Lincoln County,MO,Male,21,NA,No,No,gun,Attack,Yes,-90.982,39.067
 6817,2021-04-30,Hanad A. Abdiaziz,Kansas City,MO,Male,25,NA,No,No,gun,Attack,No,-94.576,39.104
 6820,2021-04-30,Terrance Maurice Parker,Washington,DC,Male,36,Black,No,Yes,gun,Other,NA,-77.017,38.878
-6815,2021-05-01,Dalton Buckholz,Canon City,CO,Male,28,NA,No,No,undetermined,Undetermined,NA,-105.234,38.443
+6815,2021-05-01,Dalton Buckholz,Canon City,CO,Male,28,NA,No,No,unknown,Undetermined,NA,-105.234,38.443
 6819,2021-05-01,Alexander T. Tuzinski,South Haven,IN,Male,30,NA,No,No,gun,Other,NA,-87.143,41.538
 6847,2021-05-01,Bruce K. Pofahl,Green Bay,WI,Male,62,White,No,No,gun,Attack,No,-88.121,44.497
 6816,2021-05-01,Jacob Griffin,Nashville,TN,Male,23,NA,Yes,Yes,gun,Attack,NA,-86.691,35.998
@@ -6313,27 +6313,27 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6859,2021-05-11,Lance Lowe,Stockton,CA,Male,30,Black,No,No,gun,Attack,No,-121.296,37.993
 6853,2021-05-12,Demilo Hodge,Emeryville,CA,Male,45,NA,No,No,gun,Attack,Yes,-122.296,37.838
 7626,2021-05-13,Adrian Murillo,Alvarado,TX,Male,19,NA,No,No,gun,Attack,Yes,NA,NA
-7627,2021-05-13,Samuel Roberto Pleasant,Killeen,TX,Male,40,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7627,2021-05-13,Samuel Roberto Pleasant,Killeen,TX,Male,40,NA,No,No,unknown,Undetermined,NA,NA,NA
 6851,2021-05-14,Aaron Schneider,Fremont,NE,Male,33,White,Yes,No,gun,Attack,NA,-96.476,41.429
 6852,2021-05-14,Mark Gaskill,Rochester,NY,Male,28,White,No,Yes,gun,Other,Yes,-77.64,43.161
 6854,2021-05-14,Ty Quinton Stilwell,Rapid Valley,SD,Male,24,Native American,Yes,No,gun,Attack,NA,-103.091,44.07
 6855,2021-05-14,NA,Denver,CO,Male,NA,NA,No,No,gun,Other,Yes,-105.04,39.718
 7623,2021-05-14,Jeffrey J. Bruce,Grottoes,VA,Male,NA,White,No,No,sharp,Other,Yes,NA,NA
 7624,2021-05-14,Monolito Ford,Indianapolis,IN,Male,48,Black,Yes,Yes,gun,Attack,No,NA,NA
-7625,2021-05-14,Silvestre Vargas Estrada,Campo,CA,Male,26,NA,No,No,undetermined,Undetermined,Yes,NA,NA
+7625,2021-05-14,Silvestre Vargas Estrada,Campo,CA,Male,26,NA,No,No,unknown,Undetermined,Yes,NA,NA
 6848,2021-05-16,Brian Timothy Dunne,Birmingham,AL,Male,39,White,No,No,gun,Attack,NA,-86.8,33.5
 6849,2021-05-16,Timothy Fleming,Baltimore,MD,Male,49,Black,No,Yes,sharp,Other,NA,-76.593,39.311
 6858,2021-05-16,Deven Telford,Omaha,NE,Male,34,White,Yes,Yes,gun,Attack,No,-95.975,41.22
 7622,2021-05-16,Lantz Stephenson,Grandview,MO,Male,17,NA,Yes,No,gun like,Attack,NA,NA,NA
 6862,2021-05-17,Xavier Kilby,Dickinson,ND,Male,35,NA,No,No,gun,Attack,NA,-102.779,46.906
-6863,2021-05-17,Garrett Sheppard,Peoria,AZ,Male,32,White,No,Yes,undetermined,Attack,NA,-112.27,33.553
+6863,2021-05-17,Garrett Sheppard,Peoria,AZ,Male,32,White,No,Yes,unknown,Attack,NA,-112.27,33.553
 7621,2021-05-17,NA,Monterey Park,CA,Male,NA,NA,No,No,sharp,Attack,No,NA,NA
 6864,2021-05-18,Gary Moncrief,Montgomery,AL,Male,32,Black,No,No,gun,Attack,NA,-86.141,32.369
 6865,2021-05-18,NA,Rogue River,OR,Male,32,White,No,No,gun,Other,Yes,-123.187,42.535
-6892,2021-05-18,Xander Mann,Modesto,CA,Male,16,NA,No,Yes,undetermined,Other,Yes,-120.93,37.624
+6892,2021-05-18,Xander Mann,Modesto,CA,Male,16,NA,No,Yes,unknown,Other,Yes,-120.93,37.624
 6902,2021-05-18,Caleb Jereme Grisenti,Englewood,CO,Male,22,White,No,Yes,vehicle,Attack,Yes,-104.97,39.655
 7620,2021-05-18,Timothy James Hogland,Blount County,AL,Male,32,NA,No,No,gun,Attack,Yes,NA,NA
-6860,2021-05-18,Tyrone Penny,Decatur,GA,Male,21,Black,No,No,undetermined,Undetermined,NA,-84.297,33.77
+6860,2021-05-18,Tyrone Penny,Decatur,GA,Male,21,Black,No,No,unknown,Undetermined,NA,-84.297,33.77
 6861,2021-05-19,Robert Nazmi Rouhman,Eaton County,MI,Male,19,NA,No,No,vehicle,Other,Yes,-84.854,42.548
 6871,2021-05-19,Darion M. Lafayette,Champaign,IL,Male,24,Black,No,No,gun,Attack,No,NA,NA
 6870,2021-05-19,Raul Rosas-Zarose,Denver,CO,Male,52,NA,No,No,sharp,Other,No,-105.025,39.673
@@ -6352,7 +6352,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6886,2021-05-23,Manuel Beltran Moreno,Kings County,CA,Male,30,Hispanic,No,No,gun,Attack,Yes,-120.124,35.987
 6877,2021-05-23,Timothy J. Snyder,Red Bud,IL,Male,27,White,No,No,gun,Attack,NA,-90.008,38.212
 6888,2021-05-23,Edward James Shadder,Williams Township,PA,Male,55,White,Yes,No,unarmed,Attack,No,-75.252,40.646
-6883,2021-05-24,Glen Ray Cockrum,Nogales,AZ,Male,39,NA,No,No,undetermined,Other,Yes,-110.933,31.36
+6883,2021-05-24,Glen Ray Cockrum,Nogales,AZ,Male,39,NA,No,No,unknown,Other,Yes,-110.933,31.36
 6885,2021-05-24,Vedo Hall,Washington,DC,Male,26,Black,No,Yes,gun,Attack,Yes,-76.986,38.846
 6887,2021-05-24,Haven A. Bailey,Villa Park,IL,Male,25,White,Yes,No,gun like,Other,No,-87.974,41.887
 6884,2021-05-25,Darren Dejuan Chandler,Lenexa,KS,Male,34,Black,No,No,gun,Attack,NA,-94.706,38.983
@@ -6375,23 +6375,23 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6893,2021-06-01,Jonathan Craig Thompson,Independence,KY,Male,NA,NA,No,No,gun,Attack,No,-84.514,38.951
 6898,2021-06-01,Robert Lee-Roy Stanley Pearce,Berwick,LA,Male,37,White,No,No,gun like,Other,Yes,-91.221,29.692
 6904,2021-06-01,Donald Myers,Ray City,GA,Male,48,White,No,No,sharp,Other,No,-83.197,31.066
-6914,2021-06-01,Christopher Dyess,Sumrall,MS,Male,43,White,No,No,undetermined,Undetermined,NA,-89.555,31.423
+6914,2021-06-01,Christopher Dyess,Sumrall,MS,Male,43,White,No,No,unknown,Undetermined,NA,-89.555,31.423
 6906,2021-06-02,Eugene Milo Matthews,Arvada,CO,Male,24,Hispanic,No,No,gun,Attack,Yes,-105.102,39.845
-6936,2021-06-02,Clayton Barbee,Cartwright,OK,Male,27,White,Yes,No,undetermined,Undetermined,No,-96.572,33.895
+6936,2021-06-02,Clayton Barbee,Cartwright,OK,Male,27,White,Yes,No,unknown,Undetermined,No,-96.572,33.895
 6903,2021-06-02,Timothy Andrew Kemp,Hot Springs,AR,Male,34,White,No,No,gun,Attack,NA,-93.195,34.502
 6923,2021-06-03,Winston Boogie Smith,Minneapolis,MN,Male,32,Black,No,No,gun,Other,NA,-93.296,44.948
 7612,2021-06-03,Kolton Mitchell Chavez,San Antonio,TX,Male,18,NA,No,No,sharp,Other,No,NA,NA
 6910,2021-06-04,Raymond Edwards,Tucson,AZ,Male,45,NA,No,Yes,sharp,Other,No,-110.815,32.216
 6911,2021-06-04,NA,Whittier,CA,Male,NA,NA,No,No,gun,Other,NA,-118.045,33.973
 6915,2021-06-04,Timothy Flowers,Rochester,NY,Male,29,Black,No,No,gun,Attack,NA,-77.608,43.181
-6924,2021-06-04,Jerry Wayne Henley,Overton County,TN,Male,42,White,No,No,undetermined,Undetermined,NA,-85.424,36.344
+6924,2021-06-04,Jerry Wayne Henley,Overton County,TN,Male,42,White,No,No,unknown,Undetermined,NA,-85.424,36.344
 7610,2021-06-04,Andrew Homen,Braintree,MA,Male,34,NA,No,No,gun,Attack,Yes,NA,NA
 7611,2021-06-04,Colton Wagner,Denver,CO,Male,31,NA,No,No,gun,Attack,No,NA,NA
 6908,2021-06-05,NA,Tulsa,OK,Male,28,Hispanic,No,No,gun,Attack,No,-95.993,36.154
 6909,2021-06-05,Maung Tway,Green Forest,AR,Male,34,Asian,No,No,sharp,Other,NA,-93.439,36.333
 6913,2021-06-05,Stephen Neil Weigand,Spalding County,GA,Male,29,White,No,No,gun,Attack,Yes,-84.29,33.319
 7609,2021-06-06,NA,Tulsa,OK,Male,NA,NA,No,No,gun,Attack,No,NA,NA
-6907,2021-06-07,Jeremiah Lee Wright,Happy Valley,OR,Male,44,White,No,No,undetermined,Other,NA,-122.538,45.433
+6907,2021-06-07,Jeremiah Lee Wright,Happy Valley,OR,Male,44,White,No,No,unknown,Other,NA,-122.538,45.433
 6918,2021-06-07,Daniel Jacob Ojeda,Scottsbluff,NE,Male,47,White,Yes,No,gun,Attack,NA,-103.69,41.863
 6920,2021-06-07,Clay Shannon Willingham,Jefferson City,MO,Male,32,White,Yes,No,gun,Other,No,-92.255,38.589
 6921,2021-06-07,Antonio Diaz,Round Rock,TX,Male,39,NA,No,Yes,gun,Other,NA,-97.687,30.48
@@ -6407,7 +6407,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6927,2021-06-10,Rezek Yaqub Yahya,Salt Lake City,UT,Male,39,NA,No,Yes,sharp,Attack,No,-111.901,40.762
 7605,2021-06-10,Josiah L. Byard,Wilcox,AZ,Male,21,NA,No,No,gun,Attack,Yes,NA,NA
 6933,2021-06-11,William Michael Kradlak,Delaware Township,PA,Male,70,White,No,No,gun,Attack,NA,-76.879,41.105
-6931,2021-06-12,Christopher VanKleeck,Wallkill,NY,Male,31,White,Yes,Yes,undetermined,Undetermined,NA,-74.388,41.443
+6931,2021-06-12,Christopher VanKleeck,Wallkill,NY,Male,31,White,Yes,Yes,unknown,Undetermined,NA,-74.388,41.443
 6930,2021-06-13,Luis Rey Ruiz,Acworth,GA,Male,20,Hispanic,No,No,gun,Attack,Yes,-84.721,34.054
 6943,2021-06-13,Ryan Santos,Hilo,HI,Male,34,NA,No,Yes,gun,Attack,No,-155.093,19.742
 6945,2021-06-13,Duane Manzanares,Denver,CO,Male,30,Hispanic,No,No,gun,Other,No,-104.885,39.74
@@ -6422,10 +6422,10 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6958,2021-06-15,Perry E. Boyd,Wolcott,IN,Male,56,White,No,No,gun,Attack,Yes,-87.045,40.757
 6934,2021-06-16,Ansy Dolce,Holly Springs,GA,Male,29,Black,No,No,vehicle,Attack,No,NA,NA
 6935,2021-06-16,Kendall Allen Jamerson,Amherst County,VA,Male,35,White,No,No,gun,Attack,NA,-79.246,37.774
-6937,2021-06-16,Billy Barker,Bessemer City,NC,Male,44,White,No,No,undetermined,Other,Yes,-81.279,35.294
+6937,2021-06-16,Billy Barker,Bessemer City,NC,Male,44,White,No,No,unknown,Other,Yes,-81.279,35.294
 6938,2021-06-16,John Earle Barnes,Alford,FL,Male,NA,White,Yes,No,gun like,Attack,No,-85.398,30.658
 6955,2021-06-16,David Aaron King,Harrison,AR,Male,40,White,No,No,sharp,Other,No,-93.109,36.252
-6957,2021-06-16,NA,Leonia,NJ,Male,NA,NA,No,No,undetermined,Undetermined,NA,-73.986,40.874
+6957,2021-06-16,NA,Leonia,NJ,Male,NA,NA,No,No,unknown,Undetermined,NA,-73.986,40.874
 7599,2021-06-16,Zachery Isaiah Minissale,Eureka County,NV,Male,34,NA,No,No,gun,Attack,Yes,NA,NA
 6954,2021-06-17,Daniel Ray,Covington,KY,Male,35,NA,Yes,No,gun,Attack,No,-84.502,39.054
 6951,2021-06-18,Daniel Buckingham,Hilo,HI,Male,31,NA,No,Yes,sharp,Attack,No,-155.071,19.699
@@ -6436,7 +6436,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6948,2021-06-20,Dario Dominguez,Kansas City,KS,Male,25,Hispanic,No,Yes,gun,Attack,NA,-94.65,39.129
 6978,2021-06-20,Mickey Ray Rice,Graham County,NC,Male,31,White,No,No,gun like,Other,Yes,-83.768,35.271
 6972,2021-06-21,John Hurley,Arvada,CO,Male,40,White,No,No,gun,Attack,No,-105.08,39.801
-6973,2021-06-21,Hunter Brittain,Lonoke,AR,Male,17,White,No,Yes,undetermined,Undetermined,NA,-91.9,34.784
+6973,2021-06-21,Hunter Brittain,Lonoke,AR,Male,17,White,No,Yes,unknown,Undetermined,NA,-91.9,34.784
 7598,2021-06-21,Virgil-Lee Taylor,Heath Township,MI,Male,31,NA,Yes,No,unarmed,Other,NA,NA,NA
 6988,2021-06-22,Alexander Matthew Collins,Covington,GA,Male,27,NA,No,No,gun,Attack,NA,-83.915,33.478
 6998,2021-06-22,Willie Salazar,Murray,UT,Male,33,NA,No,No,gun,Attack,NA,-111.871,40.654
@@ -6447,12 +6447,12 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 6993,2021-06-23,Francisco Javier Lino-Gutierrez,Santa Fe,NM,Male,29,NA,No,No,gun,Attack,Yes,-105.938,35.686
 6996,2021-06-23,Nathan Roybal,Santa Fe,NM,Male,32,Hispanic,No,No,gun,Attack,NA,-105.993,35.659
 6997,2021-06-23,Earl Fitzgerald Hunter,Greenville,SC,Male,40,Black,No,No,gun,Other,NA,-82.458,34.916
-6999,2021-06-23,NA,Norwalk,CA,Male,NA,Black,No,No,undetermined,Other,Yes,-118.077,33.888
+6999,2021-06-23,NA,Norwalk,CA,Male,NA,Black,No,No,unknown,Other,Yes,-118.077,33.888
 6994,2021-06-23,Robert Alan Blackburn,Walnut,MS,Male,39,White,Yes,No,sharp,Other,Yes,-88.715,34.935
-6966,2021-06-24,Gary Deering,Stockton Lake,MO,Male,NA,NA,Yes,No,undetermined,Undetermined,No,NA,NA
-6971,2021-06-24,Michael Ray Townsend,Portland,OR,Male,40,White,Yes,No,undetermined,Undetermined,No,-122.661,45.53
+6966,2021-06-24,Gary Deering,Stockton Lake,MO,Male,NA,NA,Yes,No,unknown,Undetermined,No,NA,NA
+6971,2021-06-24,Michael Ray Townsend,Portland,OR,Male,40,White,Yes,No,unknown,Undetermined,No,-122.661,45.53
 6983,2021-06-24,Yonatan Aguilera,Cumming,GA,Male,40,Hispanic,No,No,gun,Other,No,-84.129,34.225
-6984,2021-06-24,NA,Iron River,MI,Male,45,NA,No,No,undetermined,Undetermined,NA,-88.642,46.093
+6984,2021-06-24,NA,Iron River,MI,Male,45,NA,No,No,unknown,Undetermined,NA,-88.642,46.093
 6985,2021-06-24,Chad Necessary,Washington,NC,Male,48,White,No,No,unknown,Other,NA,-77.142,35.579
 6986,2021-06-24,Ted Frank Tippy,Monroe,GA,Male,52,White,No,No,gun,Attack,No,-83.749,33.85
 6987,2021-06-24,Steven Jesse Dylan Thompson,Barrow County,GA,Male,29,NA,No,No,gun,Attack,Yes,-83.835,33.995
@@ -6467,16 +6467,16 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7595,2021-06-25,Albert Wayne Finnie,College Station,TX,Male,22,NA,No,No,gun,Other,Yes,NA,NA
 6981,2021-06-26,Don Crowson,Texarkana,AR,Male,37,NA,No,Yes,unknown,Other,No,-94.036,33.433
 7593,2021-06-26,Nathan Allan,Winthrop,MA,Male,28,NA,No,No,gun,Attack,Yes,NA,NA
-6964,2021-06-27,Stephen Winder,Graham,TX,Male,39,White,Yes,No,undetermined,Undetermined,No,-98.59,33.107
+6964,2021-06-27,Stephen Winder,Graham,TX,Male,39,White,Yes,No,unknown,Undetermined,No,-98.59,33.107
 6980,2021-06-27,Nicole Dechant,Plainville,KS,Female,29,White,No,No,gun,Other,NA,-99.298,39.229
-7003,2021-06-27,Oscar Najera,Roswell,NM,Male,25,NA,No,No,undetermined,Other,Yes,-104.561,33.39
+7003,2021-06-27,Oscar Najera,Roswell,NM,Male,25,NA,No,No,unknown,Other,Yes,-104.561,33.39
 6963,2021-06-28,Tristan Trevino,Corpus Christi,TX,Male,24,NA,No,No,gun,Other,No,-97.41,27.711
 6969,2021-06-28,Robert Alire,Commerce City,CO,Male,NA,Hispanic,Yes,No,sharp,Attack,No,-104.931,39.822
 6970,2021-06-28,NA,Azusa,CA,Male,NA,NA,No,No,sharp,Other,No,-117.918,34.141
 6977,2021-06-28,Soobleej Kaub Hawj Hawj,Siskiyou County,CA,Male,35,Asian,No,Yes,gun,Attack,Yes,-122.192,41.635
 7592,2021-06-28,Christopher Garcia,Arleta,CA,Male,26,NA,No,Yes,gun,Other,Yes,NA,NA
 6962,2021-06-29,Philip Sanders,Flour Bluff,TX,Male,32,White,No,No,gun,Attack,Yes,-97.295,27.679
-6975,2021-06-29,Larry Hunt,Bayard,NE,Male,58,White,No,No,undetermined,Undetermined,NA,-103.322,41.752
+6975,2021-06-29,Larry Hunt,Bayard,NE,Male,58,White,No,No,unknown,Undetermined,NA,-103.322,41.752
 6974,2021-06-30,John Hayden Inabinet,Calhoun County,SC,Male,51,White,Yes,No,gun,Attack,NA,-80.86,33.634
 6976,2021-06-30,Joseph Lee Humbles,Atlanta,GA,Male,29,Black,No,No,gun,Attack,No,-84.385,33.774
 7002,2021-06-30,Jeremy Nelson,Florence,KY,Male,33,NA,No,No,gun,Attack,No,-84.624,38.945
@@ -6487,15 +6487,15 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7386,2021-07-02,Thomas Charlie Billings,Traphill,NC,Male,37,NA,No,No,gun like,Attack,No,NA,NA
 7005,2021-07-04,John Reuben Turbe,Tampa,FL,Male,40,Black,No,Yes,gun,Attack,Yes,-82.401,27.978
 7013,2021-07-04,Craig Locklear,Salemburg,NC,Male,49,Native American,No,No,gun,Attack,NA,-78.487,35.009
-7020,2021-07-04,Ricardo Torres,Olivia,MN,Male,32,NA,No,No,undetermined,Undetermined,NA,-94.988,44.777
-7022,2021-07-04,Gulia Dale,Newton,NJ,Male,NA,Black,Yes,Yes,undetermined,Undetermined,NA,-74.753,41.042
+7020,2021-07-04,Ricardo Torres,Olivia,MN,Male,32,NA,No,No,unknown,Undetermined,NA,-94.988,44.777
+7022,2021-07-04,Gulia Dale,Newton,NJ,Male,NA,Black,Yes,Yes,unknown,Undetermined,NA,-74.753,41.042
 7024,2021-07-04,Matthew J. Morse,Ravenna Township,OH,Male,36,White,No,No,gun,Other,NA,-81.273,41.19
 7387,2021-07-05,Eduardo Mendez Amezquita,San Antonio,TX,Male,28,NA,No,Yes,gun,Attack,NA,NA,NA
 7018,2021-07-06,Joseph D. McGrath,Carterville,IL,Male,52,White,No,No,gun,Attack,No,-89.078,37.756
 7019,2021-07-06,Steven Adam Calderon,Paso Robles,CA,Male,32,NA,No,No,gun,Attack,NA,-120.659,35.603
 7021,2021-07-06,Jose Benitez-Vasquez,Houston,TX,Male,NA,NA,No,Yes,gun,Attack,NA,-95.293,29.685
 7023,2021-07-06,Shelby Ray Hardin,Danville,KY,Male,33,White,No,No,sharp,Attack,NA,-84.767,37.618
-7007,2021-07-07,NA,Tesuque,NM,NA,NA,NA,No,No,undetermined,Undetermined,NA,-105.922,35.744
+7007,2021-07-07,NA,Tesuque,NM,NA,NA,NA,No,No,unknown,Undetermined,NA,-105.922,35.744
 7017,2021-07-07,Jerry Allan Gunter,Medford,OR,Male,34,White,No,Yes,sharp,Other,No,-122.855,42.372
 7388,2021-07-07,Edward Daniel Santana,Santa Fe,NM,Male,45,NA,No,Yes,blunt,Attack,No,NA,NA
 7010,2021-07-08,NA,New York,NY,Male,NA,NA,No,Yes,gun,Attack,Yes,-73.918,40.696
@@ -6536,7 +6536,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7035,2021-07-22,Carlos Rodriguez,Philadelphia,PA,Male,40,NA,No,No,gun,Attack,No,-75.129,39.995
 7056,2021-07-23,Jesus Salvador Valeta,San Diego,CA,Male,22,Hispanic,No,No,gun,Other,NA,-117.079,32.758
 7028,2021-07-24,Forrest T. Moore,Boise,ID,Male,31,White,No,Yes,gun like,Attack,No,-116.215,43.634
-7029,2021-07-25,Gabriel Parker,Atlanta,GA,Male,38,Black,No,No,undetermined,Undetermined,No,-84.475,33.797
+7029,2021-07-25,Gabriel Parker,Atlanta,GA,Male,38,Black,No,No,unknown,Undetermined,No,-84.475,33.797
 7059,2021-07-25,NA,Crowley,LA,Male,NA,NA,No,No,gun,Attack,NA,-92.391,30.213
 7398,2021-07-25,Jose Manuel Ramirez,Wasco,CA,Male,41,NA,No,Yes,gun,Attack,No,-119.345,35.601
 7057,2021-07-26,Jacob Bender,Gobles,MI,Male,39,White,No,No,sharp,Attack,No,-85.879,42.363
@@ -6565,7 +6565,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7080,2021-08-05,Chad M. Fiscus,Putnamville,IN,Male,35,NA,No,No,gun,Attack,No,-86.865,39.574
 7100,2021-08-05,Aler Escobar,Webb City,MO,Male,36,NA,No,No,taser,Attack,NA,-94.456,37.127
 7310,2021-08-05,Roger Lynch,Franklin,NY,Male,59,NA,No,No,gun,Attack,Yes,-75.086,42.392
-7075,2021-08-06,Nathan Larry Parsons,Cullman County,AL,Male,49,NA,No,No,undetermined,Undetermined,NA,-86.863,34.119
+7075,2021-08-06,Nathan Larry Parsons,Cullman County,AL,Male,49,NA,No,No,unknown,Undetermined,NA,-86.863,34.119
 7076,2021-08-06,Matthew Tuan Tran,La Habra,CA,Male,22,NA,No,No,gun,Other,No,-117.946,33.932
 7081,2021-08-07,Che Noe Zuniga,Bakersfield,CA,Male,21,NA,No,Yes,unarmed,Undetermined,Yes,-119.057,35.303
 7309,2021-08-07,Hayden McIlvain,Coeur d’Alene,ID,Male,NA,NA,No,No,gun,Attack,No,NA,NA
@@ -6585,7 +6585,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7090,2021-08-11,NA,Adams County,CO,Male,NA,NA,No,No,gun,Other,Yes,-105.006,39.824
 7101,2021-08-12,William Sellers,Orlando,FL,Male,73,NA,Yes,Yes,gun,Other,No,-81.345,28.431
 7583,2021-08-12,Dexter Attaway,Crosby,TX,Male,35,White,No,No,gun,Attack,Yes,NA,NA
-7098,2021-08-13,NA,Bakersfield,CA,Male,NA,NA,Yes,Yes,undetermined,Undetermined,No,-119.035,35.353
+7098,2021-08-13,NA,Bakersfield,CA,Male,NA,NA,Yes,Yes,unknown,Undetermined,No,-119.035,35.353
 7313,2021-08-13,Steven Primm,San Antonio,TX,Male,39,NA,No,Yes,gun,Attack,NA,-98.397,29.4
 7094,2021-08-14,Stephanie Gerardi,Saugus,MA,Female,38,NA,Yes,No,sharp,Other,No,-71.02,42.496
 7096,2021-08-14,Kyle Anthony Goidosik,Galesburg,MI,Male,35,White,No,No,gun,Attack,NA,-85.336,42.231
@@ -6598,7 +6598,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7103,2021-08-16,Broderick Shelton,Milwaukee,WI,Male,42,NA,Yes,No,gun,Attack,No,-87.947,43.064
 7105,2021-08-16,Antonio Jackson,Memphis,TN,Male,27,Black,No,No,vehicle,Attack,NA,-89.939,35.082
 7274,2021-08-16,Alexander Domina,Loveland,CO,Male,19,White,Yes,No,sharp,Other,No,-105.075,40.398
-7104,2021-08-17,Destinee Thompson,Arvada,CO,Female,27,NA,No,No,undetermined,Undetermined,NA,-105.11,39.828
+7104,2021-08-17,Destinee Thompson,Arvada,CO,Female,27,NA,No,No,unknown,Undetermined,NA,-105.11,39.828
 7102,2021-08-18,Ronald Zavaglia,Pflugerville,TX,Male,72,NA,No,Yes,gun,Attack,NA,-97.64,30.466
 7115,2021-08-18,Kevin Eugene Norris,Beckley,WV,Male,50,NA,No,No,gun like,Other,NA,-81.177,37.793
 7117,2021-08-18,Terrence Bey,Philadelphia,PA,Male,29,Black,No,No,gun,Attack,NA,-75.104,40.031
@@ -6610,7 +6610,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7120,2021-08-19,NA,El Cajon,CA,Male,NA,NA,No,No,gun,Attack,NA,-116.941,32.795
 7107,2021-08-20,George Michael Mireles,Amarillo,TX,Male,34,NA,No,No,gun,Attack,NA,-101.82,35.198
 7113,2021-08-20,Brandon Lee Schlichting,Chanute,KS,Male,28,NA,No,No,gun,Attack,NA,-95.449,37.678
-7112,2021-08-21,Daryl Jay Carr,Allenhurst,GA,Male,45,NA,No,No,undetermined,Other,No,-81.609,31.785
+7112,2021-08-21,Daryl Jay Carr,Allenhurst,GA,Male,45,NA,No,No,unknown,Other,No,-81.609,31.785
 7114,2021-08-21,Shannon Trevor McKinley,Florence,MS,Male,28,NA,No,No,gun,Attack,Yes,-90.005,32.155
 7110,2021-08-22,Juan Luis Olvera-Preciado,Guadalupe,CA,Male,59,NA,No,No,unarmed,Other,No,-120.571,34.958
 7111,2021-08-22,Tyran Lamb,Milwaukee,WI,Male,31,Black,No,Yes,gun,Attack,Yes,-87.936,43.007
@@ -6621,7 +6621,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7129,2021-08-24,Tory Brown,College Park,GA,Male,22,NA,No,No,unarmed,Undetermined,NA,-84.459,33.616
 7318,2021-08-24,Jamar Jayson Taylor,Chicago,IL,Male,33,NA,No,No,gun,Attack,Yes,-87.64,41.879
 7122,2021-08-25,Antwan Gilmore,Washington,DC,Male,27,NA,No,Yes,gun,Other,No,-77.005,38.909
-7123,2021-08-25,Jonathan Daniel Mansilla,Rutland,VT,Male,33,NA,No,No,undetermined,Other,NA,-72.97,43.596
+7123,2021-08-25,Jonathan Daniel Mansilla,Rutland,VT,Male,33,NA,No,No,unknown,Other,NA,-72.97,43.596
 7125,2021-08-25,Rodney Barton,Grantsville,UT,Male,42,NA,No,No,sharp,Attack,Yes,-112.426,40.6
 7127,2021-08-25,Kenneth Vessell,Redondo Beach,CA,Male,36,NA,No,No,gun,Attack,Yes,-118.391,33.839
 7128,2021-08-25,Kevin Victor Johnson,Fremont,CA,Male,25,NA,No,Yes,gun,Attack,NA,-121.959,37.512
@@ -6638,12 +6638,12 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7322,2021-08-27,Fanta Bility,Sharon Hill,PA,Female,8,NA,No,No,unarmed,Other,No,-75.269,39.908
 7323,2021-08-27,Ingmar Von Strandberg,Tonopah,NV,Male,30,NA,No,Yes,gun like,Attack,Yes,-117.231,38.069
 7324,2021-08-28,NA,Arkoma,OK,Male,NA,NA,No,No,vehicle,Attack,Yes,-94.393,35.35
-7130,2021-08-29,NA,Falls Township,PA,Male,NA,NA,No,No,undetermined,Undetermined,NA,-74.817,40.201
+7130,2021-08-29,NA,Falls Township,PA,Male,NA,NA,No,No,unknown,Undetermined,NA,-74.817,40.201
 7131,2021-08-29,Johnny Lee Perry,Missoula,MT,Male,31,NA,No,No,sharp,Other,NA,-114.337,47.016
 7132,2021-08-29,Gray Bell,Atlanta,GA,Male,40,NA,No,No,gun,Other,Yes,-84.399,33.782
 7325,2021-08-29,Albert Perez,Victorville,CA,Male,32,NA,No,No,gun,Other,NA,-117.303,34.524
 7582,2021-08-29,Imran Ali Rasheed,Plano,TX,Male,32,NA,No,No,gun,Attack,No,NA,NA
-7140,2021-08-30,Martin Luther Bowman,Pearlington,MS,Male,80,NA,No,No,undetermined,Undetermined,NA,-89.591,30.241
+7140,2021-08-30,Martin Luther Bowman,Pearlington,MS,Male,80,NA,No,No,unknown,Undetermined,NA,-89.591,30.241
 7144,2021-08-30,Brittni Muldrew,Coconut Creek,FL,Female,36,White,No,No,vehicle,Other,NA,-80.183,26.317
 7146,2021-08-30,Ronald Reiner,Normal,IL,Male,66,NA,No,Yes,gun,Attack,NA,-88.983,40.542
 7147,2021-08-30,Etianna Planellas,Miami Shores,FL,Female,48,White,Yes,No,gun like,Other,No,-80.195,25.862
@@ -6657,7 +6657,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7300,2021-09-01,Anne Schilly,Metairie,LA,Female,65,White,Yes,No,vehicle,Attack,Yes,-90.219,30.005
 7301,2021-09-02,Christopher Derby,Jefferson County,CO,Male,33,NA,No,No,gun,Attack,NA,-105.053,39.816
 7148,2021-09-03,Estevan Ramirez,Fort Worth,TX,Male,18,NA,No,No,gun,Attack,Yes,-97.435,32.735
-7153,2021-09-03,Cedric Baxter,Buena Park,CA,Male,60,NA,No,No,undetermined,Other,Yes,-118.015,33.859
+7153,2021-09-03,Cedric Baxter,Buena Park,CA,Male,60,NA,No,No,unknown,Other,Yes,-118.015,33.859
 7154,2021-09-03,David Marshall,Oak Creek,WI,Male,31,NA,Yes,No,gun,Other,NA,-87.95,42.924
 7156,2021-09-03,Mark Danley,Weston,WV,Male,53,NA,No,No,gun,Attack,Yes,-80.389,39.038
 7159,2021-09-03,Lisa Bernadette Garcia,Denver,CO,Female,52,NA,No,No,gun,Attack,Yes,-104.9,39.67
@@ -6704,7 +6704,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7174,2021-09-18,Adrian Cameron,Nashville,TN,Male,47,Black,No,No,gun,Attack,No,-86.631,36.153
 7175,2021-09-18,Unsfored Lewis Thurmond,Smyrna,GA,Male,27,NA,Yes,No,gun,Attack,NA,-84.471,33.892
 7176,2021-09-18,Jason Husted,West Ashley,SC,Male,47,NA,No,Yes,gun,Attack,NA,-80.05,32.835
-7298,2021-09-18,NA,Ghent,KY,Male,NA,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7298,2021-09-18,NA,Ghent,KY,Male,NA,NA,No,No,unknown,Undetermined,NA,NA,NA
 7193,2021-09-19,Turell Brown,Chicago,IL,Male,28,NA,No,No,sharp,Other,NA,-87.634,41.776
 7169,2021-09-20,Deon Ledet,Houston,TX,Male,30,Black,No,Yes,gun,Attack,No,-95.313,29.935
 7170,2021-09-20,Phillip Lopez,Signal Hill,CA,Male,42,NA,No,No,sharp,Attack,Yes,-118.171,33.804
@@ -6712,7 +6712,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7168,2021-09-21,Jose Antonio Oyuela-Palma,Henderson,NV,Male,49,NA,Yes,No,gun,Attack,NA,-115.108,36.159
 7297,2021-09-21,Brandi R. Baida,Auburn,NY,Female,30,NA,No,No,gun,Attack,No,-76.591,42.934
 7191,2021-09-22,Irlin Paz,Chamblee,GA,Male,40,NA,No,No,sharp,Attack,No,-84.291,33.893
-7183,2021-09-23,Keith Cole,Looxahoma,MS,Male,NA,Black,No,Yes,undetermined,Other,Yes,-89.839,34.612
+7183,2021-09-23,Keith Cole,Looxahoma,MS,Male,NA,Black,No,Yes,unknown,Other,Yes,-89.839,34.612
 7188,2021-09-23,NA,McKinney,TX,Male,40,NA,Yes,No,gun,Attack,No,-96.676,33.161
 7294,2021-09-23,Barry Ross,Los Angeles,CA,Male,34,NA,No,No,gun,Attack,Yes,-118.154,34.806
 7296,2021-09-23,Barry P. Heckard,Newberry,FL,Male,39,White,No,No,gun,Attack,Yes,-82.607,29.639
@@ -6726,19 +6726,19 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7275,2021-09-27,Manuela Rodriguez,Long Beach,CA,Female,18,NA,No,No,unarmed,Other,Yes,NA,NA
 7293,2021-09-27,Nathan Thomas Honeycutt,Happy Valley,OR,Male,26,NA,No,No,gun,Other,Yes,-122.514,45.454
 7215,2021-09-28,Patrick Chin,Hillsborough,NJ,Male,43,NA,No,No,sharp,Other,NA,-74.614,40.479
-7250,2021-09-28,Brandon Lopez,Santa Ana,CA,Male,34,NA,Yes,No,undetermined,Other,Yes,-117.885,33.748
-7564,2021-09-28,Leonel Chavez,El Sereno,CA,Male,24,NA,No,No,undetermined,Other,No,NA,NA
-7225,2021-09-29,Daniel Ledford,Middlesboro,KY,Male,41,NA,No,No,undetermined,Undetermined,NA,-83.714,36.607
+7250,2021-09-28,Brandon Lopez,Santa Ana,CA,Male,34,NA,Yes,No,unknown,Other,Yes,-117.885,33.748
+7564,2021-09-28,Leonel Chavez,El Sereno,CA,Male,24,NA,No,No,unknown,Other,No,NA,NA
+7225,2021-09-29,Daniel Ledford,Middlesboro,KY,Male,41,NA,No,No,unknown,Undetermined,NA,-83.714,36.607
 7291,2021-09-29,Stephen Phil Franco,Tempe,AZ,Male,37,NA,No,No,gun,Other,No,-111.937,33.378
 7248,2021-09-29,Kyle Anthony Veyon,Columbus,OH,Male,26,NA,No,Yes,sharp,Other,No,-82.897,39.921
 7242,2021-09-30,Chaz Nathan McGowen,Niles Charter Township,MI,Male,28,NA,No,No,sharp,Other,No,-86.245,41.791
-7268,2021-09-30,Nicholas Norris,Bexar County,TX,Male,32,NA,Yes,No,undetermined,Attack,Yes,-98.716,29.435
+7268,2021-09-30,Nicholas Norris,Bexar County,TX,Male,32,NA,Yes,No,unknown,Attack,Yes,-98.716,29.435
 7267,2021-10-01,James Michael Farris,Hamilton County,TN,Male,27,NA,No,No,gun,Attack,NA,-85.164,35.236
 7269,2021-10-01,Buster Lee Carpenter,Rogersville,TN,Male,32,NA,No,No,vehicle,Attack,Yes,-82.981,36.425
 7563,2021-10-02,Wade Adams,Westwego,LA,Male,58,White,Yes,No,gun,Other,Yes,NA,NA
 7243,2021-10-03,Jess Jackson,Wichita,KS,Male,41,NA,Yes,No,gun,Attack,No,-97.284,37.697
 7244,2021-10-03,David Jacques,Colorado Springs,CO,Male,NA,NA,No,No,gun,Attack,Yes,-104.766,38.816
-7249,2021-10-03,NA,Las Vegas,NV,Male,NA,NA,No,No,undetermined,Undetermined,NA,-115.018,36.198
+7249,2021-10-03,NA,Las Vegas,NV,Male,NA,NA,No,No,unknown,Undetermined,NA,-115.018,36.198
 7260,2021-10-03,Christopher Mosco,Los Angeles,CA,Male,32,NA,Yes,No,gun,Attack,NA,-118.57,34.372
 7228,2021-10-04,Demetrius Deshawn Roberts,Las Vegas,NV,Male,21,NA,No,No,gun,Attack,Yes,-115.199,36.137
 7241,2021-10-04,Paul J. Weeden,Walton,NY,Male,66,NA,Yes,No,unknown,Attack,NA,-75.125,42.17
@@ -6758,14 +6758,14 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7227,2021-10-07,Johan Quintero,Wentzville,MO,Male,22,NA,No,No,gun,Other,No,-90.821,38.806
 7555,2021-10-07,Lloyd Grant McClung,Cleveland,OH,Male,71,NA,Yes,No,gun,Attack,No,NA,NA
 7222,2021-10-08,Derrick Clinton,Indian Land,SC,Male,27,NA,No,No,gun,Attack,No,-80.851,35.005
-7230,2021-10-08,Lance R. Stelzer,Goetz,WI,Male,30,NA,No,No,undetermined,Undetermined,No,-91.193,44.975
+7230,2021-10-08,Lance R. Stelzer,Goetz,WI,Male,30,NA,No,No,unknown,Undetermined,No,-91.193,44.975
 7550,2021-10-08,Scott W. Hottinger,Salcha,AK,Male,35,NA,No,No,gun,Attack,NA,NA,NA
 7551,2021-10-08,Rudy Anderson,Los Angeles,CA,Male,45,NA,No,Yes,gun,Attack,No,NA,NA
 7552,2021-10-08,Ramone Dwight,Evans County,GA,Male,29,NA,No,No,gun,Attack,NA,NA,NA
 7554,2021-10-08,Isaac Louis Soria,Rancho Cucamonga,CA,Male,28,NA,No,No,gun,Other,No,NA,NA
 7553,2021-10-08,Brian Umana,National City,CA,Male,28,NA,No,Yes,sharp,Attack,No,NA,NA
 7219,2021-10-09,Travis Daniel Carlon,Lompoc,CA,Male,32,NA,No,No,gun,Attack,No,-120.466,34.637
-7226,2021-10-09,Timothy Houston,Middlesboro,KY,Male,35,NA,No,No,undetermined,Undetermined,NA,-83.714,36.607
+7226,2021-10-09,Timothy Houston,Middlesboro,KY,Male,35,NA,No,No,unknown,Undetermined,NA,-83.714,36.607
 7231,2021-10-09,Calvin Robinson,Madison County,MS,Male,52,NA,No,No,gun,Attack,Yes,-90.008,32.668
 7233,2021-10-09,Gustavo A. Esparza,Las Cruces,NM,Male,35,NA,No,No,gun,Attack,Yes,-106.794,32.317
 7220,2021-10-10,Michael Beck,Leland,NC,Male,57,NA,No,No,gun,Attack,No,-78.12,34.351
@@ -6803,7 +6803,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7234,2021-10-20,Allison Lakie,Syracuse,NY,Female,33,NA,No,No,sharp,Attack,No,-76.183,43.049
 7239,2021-10-20,Jesse Fischer,Arlington,TX,Male,40,NA,No,No,vehicle,Other,Yes,-97.094,32.703
 7540,2021-10-20,Jarvis Jarrett,Atlanta,GA,Male,32,NA,No,No,gun,Attack,No,NA,NA
-7253,2021-10-21,Michael Raymond Hilton,Campbell County,TN,Male,34,NA,No,No,undetermined,Other,Yes,-84.232,36.365
+7253,2021-10-21,Michael Raymond Hilton,Campbell County,TN,Male,34,NA,No,No,unknown,Other,Yes,-84.232,36.365
 7255,2021-10-22,Yordany Rodriguez Perez,Doral,FL,Male,25,White,No,No,gun,Attack,Yes,-80.345,25.797
 7538,2021-10-22,Christian Valdez,Rialto,CA,Male,23,NA,No,No,vehicle,Attack,Yes,NA,NA
 7539,2021-10-22,Gregory Goodall,Denton County,TX,Male,35,NA,No,No,sharp,Other,No,NA,NA
@@ -6817,7 +6817,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7254,2021-10-26,Ivan Foster,Louisville,KY,Male,NA,NA,No,Yes,gun,Attack,No,-85.699,38.268
 7535,2021-10-26,Scott S. Wright,Leroy Township,OH,Male,57,White,No,No,gun,Attack,No,NA,NA
 7265,2021-10-27,Robert Richart,Austin,TX,Male,56,NA,Yes,Yes,gun,Attack,No,-97.887,30.191
-7287,2021-10-27,Zachary Snow,Boise,ID,Male,26,NA,Yes,No,undetermined,Undetermined,NA,-116.205,43.612
+7287,2021-10-27,Zachary Snow,Boise,ID,Male,26,NA,Yes,No,unknown,Undetermined,NA,-116.205,43.612
 7261,2021-10-27,Koffi Dzima,Philadelphia,PA,Male,31,NA,No,Yes,blunt,Attack,NA,-75.24,39.992
 7262,2021-10-28,Dewey Wilfong,Chelsea,IA,Male,28,NA,No,No,gun,Other,NA,-92.395,41.925
 7263,2021-10-28,Elwood Dwyer,Sioux Falls,SD,Male,NA,NA,No,No,sharp,Attack,No,-96.758,43.544
@@ -6829,7 +6829,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7284,2021-10-31,NA,Los Angeles,CA,Male,NA,NA,No,No,sharp,Other,NA,-118.436,34.187
 7286,2021-11-01,Johnny McGee,Houma,LA,Male,36,NA,Yes,No,sharp,Attack,NA,-90.694,29.597
 7288,2021-11-02,Kody Marshall,Aransas Pass,TX,Male,15,NA,No,No,gun,Attack,No,-97.429,27.741
-7308,2021-11-03,Gary Wayne Bessler,Grant County,KY,Male,NA,NA,Yes,No,undetermined,Undetermined,NA,-84.615,38.6
+7308,2021-11-03,Gary Wayne Bessler,Grant County,KY,Male,NA,NA,Yes,No,unknown,Undetermined,NA,-84.615,38.6
 7326,2021-11-03,LeKenneth Q. Miller,Eau Claire,WI,Male,30,NA,No,No,sharp,Other,No,-91.516,44.832
 7327,2021-11-03,Johnny Michael Gilbert,Covington,GA,Male,43,NA,No,No,taser,Other,No,NA,NA
 7328,2021-11-03,Jose Enrique Cortez,Glendale,AZ,Male,26,NA,No,No,vehicle,Attack,NA,-112.193,33.535
@@ -6837,7 +6837,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7333,2021-11-05,Jessica Worsham,Jackson County,GA,Female,43,NA,No,No,gun,Attack,No,-83.708,34.11
 7336,2021-11-05,Derrell Lamar Raney,Charlotte,NC,Male,NA,NA,No,No,gun,Attack,NA,-80.718,35.205
 7533,2021-11-05,Barry Rigsby,Wisner,LA,Male,36,NA,No,No,gun,Attack,No,NA,NA
-7330,2021-11-06,NA,Henrico County,VA,Male,NA,NA,No,No,undetermined,Undetermined,NA,-76.861,37.495
+7330,2021-11-06,NA,Henrico County,VA,Male,NA,NA,No,No,unknown,Undetermined,NA,-76.861,37.495
 7335,2021-11-06,Brian Michael Price,Chesapeake,VA,Male,45,White,No,No,blunt,Attack,NA,-78.691,36.653
 7337,2021-11-06,Jabbar Muhammad,Joliet,IL,Male,21,NA,No,No,sharp,Attack,No,-88.074,41.494
 7338,2021-11-06,Mark D. Walker,Long Branch,NJ,Male,34,NA,No,No,gun,Attack,No,-73.991,40.3
@@ -6856,12 +6856,12 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7366,2021-11-12,NA,Commerce,CA,Female,NA,NA,No,Yes,sharp,Attack,No,NA,NA
 7531,2021-11-12,NA,Phoenix,AZ,Male,NA,NA,No,No,gun,Attack,Yes,NA,NA
 7365,2021-11-13,Marcus Mann,Jackson,TN,Male,42,NA,No,No,unarmed,Attack,NA,NA,NA
-7530,2021-11-13,Isaac Bell,Biloxi,MS,Male,41,Black,No,No,undetermined,Attack,Yes,NA,NA
+7530,2021-11-13,Isaac Bell,Biloxi,MS,Male,41,Black,No,No,unknown,Attack,Yes,NA,NA
 7347,2021-11-14,Andrew Dzwonchyk,Union Township,PA,Male,40,NA,No,No,vehicle,Attack,Yes,NA,NA
 7364,2021-11-14,NA,Columbia,MO,Male,30,Black,No,No,gun,Attack,Yes,NA,NA
 7363,2021-11-15,NA,Pueblo,CO,Male,NA,NA,No,No,gun,Other,NA,NA,NA
 7529,2021-11-15,NA,Ocala,FL,Male,NA,NA,No,No,gun,Other,No,NA,NA
-7345,2021-11-16,Cody Rebischke,North Bend,WA,Male,33,NA,No,No,undetermined,Attack,NA,NA,NA
+7345,2021-11-16,Cody Rebischke,North Bend,WA,Male,33,NA,No,No,unknown,Attack,NA,NA,NA
 7346,2021-11-16,NA,Caldwell,ID,Male,92,NA,No,No,gun,Attack,No,NA,NA
 7358,2021-11-16,Brent Lee Boggess,Waterloo,IA,Male,42,NA,No,No,vehicle,Attack,No,NA,NA
 7359,2021-11-16,Henry Timberlake Duncan,Wilmington,NC,Male,43,NA,No,No,sharp,Attack,No,NA,NA
@@ -6872,20 +6872,20 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7349,2021-11-18,Chucky Nathaniel Bowden,Bessemer City,NC,Male,53,NA,No,No,gun,Other,NA,NA,NA
 7357,2021-11-19,Christopher Wade,Montcalm,WV,Male,45,NA,No,No,gun,Other,Yes,NA,NA
 7360,2021-11-19,Ajmal Amani,San Francisco,CA,Male,41,NA,Yes,Yes,sharp,Other,NA,NA,NA
-7527,2021-11-19,Joseph Thomas Lee Lopez,Greensboro,NC,Male,29,NA,No,Yes,undetermined,Undetermined,Yes,NA,NA
+7527,2021-11-19,Joseph Thomas Lee Lopez,Greensboro,NC,Male,29,NA,No,Yes,unknown,Undetermined,Yes,NA,NA
 7354,2021-11-20,NA,Oakland,CA,NA,NA,NA,No,No,gun,Attack,NA,NA,NA
-7350,2021-11-21,Kevin Arbogast,Centerville,IA,Male,45,NA,No,Yes,undetermined,Undetermined,NA,NA,NA
+7350,2021-11-21,Kevin Arbogast,Centerville,IA,Male,45,NA,No,Yes,unknown,Undetermined,NA,NA,NA
 7353,2021-11-21,Jabari Farafiai Asante-Chioke,Metairie,LA,Male,52,NA,No,No,gun,Other,Yes,NA,NA
 7348,2021-11-22,NA,Warwick,RI,Male,NA,NA,Yes,No,gun,Attack,No,NA,NA
 7351,2021-11-22,NA,West Covina,CA,Male,NA,NA,No,No,gun,Other,Yes,NA,NA
-7352,2021-11-22,Anthony Harden,Fall River,MA,Male,30,NA,No,No,undetermined,Attack,NA,NA,NA
+7352,2021-11-22,Anthony Harden,Fall River,MA,Male,30,NA,No,No,unknown,Attack,NA,NA,NA
 7355,2021-11-22,Lionel Womack,Kansas City,KS,Male,36,NA,No,Yes,gun,Attack,No,NA,NA
 7372,2021-11-22,Rodolpho Antonio Ruiz,Merced,CA,Male,27,NA,No,No,gun,Other,Yes,NA,NA
 7526,2021-11-23,Devin Edward Hall,Pasadena,CA,Male,24,Black,No,No,gun,Attack,Yes,NA,NA
 7375,2021-11-24,German Pedraza,Lincoln,NE,Male,27,NA,No,No,gun,Other,NA,NA,NA
 7376,2021-11-26,NA,Albuquerque,NM,Male,NA,NA,No,Yes,gun,Other,NA,NA,NA
 7377,2021-11-26,NA,Clines Corners,NM,Female,NA,NA,No,No,gun,Attack,Yes,NA,NA
-7382,2021-11-26,Shawn Alan Smith,Roanoke County,VA,Male,52,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7382,2021-11-26,Shawn Alan Smith,Roanoke County,VA,Male,52,NA,No,No,unknown,Undetermined,NA,NA,NA
 7525,2021-11-27,Anthony Oliver,Kalamazoo,MI,Male,54,NA,No,No,gun,Attack,NA,NA,NA
 7373,2021-11-28,Jeffrey W. Groulx,Seekonk,MA,Male,47,NA,No,No,gun,Attack,NA,NA,NA
 7374,2021-11-28,NA,Orem,UT,Male,41,NA,No,Yes,unknown,Attack,NA,NA,NA
@@ -6895,7 +6895,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7381,2021-11-28,Noah Douglas Kelly,Mounds View,MN,Male,21,NA,No,Yes,gun,Other,Yes,NA,NA
 7383,2021-11-28,NA,Lakeland,FL,Male,61,NA,No,No,gun,Other,No,NA,NA
 7384,2021-11-28,Adam McKnight,Winstom-Salem,NC,Male,33,NA,Yes,No,sharp,Other,No,NA,NA
-7522,2021-11-28,Bradley George Erickson,Forest Lake,MN,Male,47,NA,No,Yes,undetermined,Other,Yes,NA,NA
+7522,2021-11-28,Bradley George Erickson,Forest Lake,MN,Male,47,NA,No,Yes,unknown,Other,Yes,NA,NA
 7390,2021-11-29,Richard Lee Richards,Tucson,AZ,Male,61,NA,No,No,sharp,Other,NA,NA,NA
 7389,2021-11-30,Benjamin Petry,Rushville,IN,Male,34,White,No,No,gun,Attack,Yes,NA,NA
 7406,2021-11-30,NA,Laurel,MS,NA,NA,NA,No,No,gun,Attack,No,NA,NA
@@ -6904,19 +6904,19 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7405,2021-12-01,Edward Allen Gatling,Lithonia,GA,Male,38,NA,No,No,gun,Attack,NA,NA,NA
 7469,2021-12-01,Anei Gabriel Joker,Taylorsville,UT,Male,20,Black,No,Yes,gun,Attack,No,NA,NA
 7409,2021-12-02,Brian Howard,Buffalo Grove,IL,Male,25,NA,Yes,No,gun,Other,No,NA,NA
-7470,2021-12-02,Arlin Duane Bordeaux,Lame Deer,MT,Male,29,NA,No,No,undetermined,Undetermined,NA,NA,NA
-7471,2021-12-02,NA,Floyd County,KY,Male,NA,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7470,2021-12-02,Arlin Duane Bordeaux,Lame Deer,MT,Male,29,NA,No,No,unknown,Undetermined,NA,NA,NA
+7471,2021-12-02,NA,Floyd County,KY,Male,NA,NA,No,No,unknown,Undetermined,NA,NA,NA
 7430,2021-12-03,Alhaji Sow,Melbourne,FL,Male,18,NA,Yes,No,sharp,Attack,No,NA,NA
 7472,2021-12-03,Michael Graves,St. Louis,MO,Male,39,NA,No,No,gun,Attack,NA,NA,NA
 7473,2021-12-05,Miguel Eduardo Perez Gonzalez,Morrow,GA,Male,38,NA,No,No,gun,Attack,No,NA,NA
 7474,2021-12-05,NA,Westminster,CO,Male,NA,NA,No,No,gun,Attack,NA,NA,NA
-7475,2021-12-05,Quadry Sanders,Lawton,OK,Male,NA,NA,No,Yes,undetermined,Undetermined,NA,NA,NA
+7475,2021-12-05,Quadry Sanders,Lawton,OK,Male,NA,NA,No,Yes,unknown,Undetermined,NA,NA,NA
 7413,2021-12-06,Douglas B. Halphin,Blue Springs,MO,Male,48,NA,No,No,gun,Attack,Yes,NA,NA
 7476,2021-12-06,Brandon Keck,Portland,OR,Male,30,NA,No,No,gun,Attack,Yes,NA,NA
 7477,2021-12-06,Dale Query,Basin,WY,Male,38,NA,Yes,No,gun,Attack,No,NA,NA
 7478,2021-12-06,Douglas B. Halphin,Blue Springs,MO,Male,48,NA,No,No,gun,Attack,No,NA,NA
 7414,2021-12-07,Ronald Ehrich,Riverview,FL,Male,88,NA,No,Yes,gun,Other,NA,NA,NA
-7423,2021-12-07,NA,Elizabethtown,KY,Male,NA,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7423,2021-12-07,NA,Elizabethtown,KY,Male,NA,NA,No,No,unknown,Undetermined,NA,NA,NA
 7479,2021-12-07,Mario Armando Diaz,Albuquerque,NM,Male,41,NA,No,No,unarmed,Attack,Yes,NA,NA
 7410,2021-12-08,Michael Pantoja,Colorado Springs,CO,Male,NA,NA,No,No,sharp,Other,No,NA,NA
 7415,2021-12-08,Donta Stewart,Columbus,OH,Male,18,NA,No,No,gun,Attack,No,NA,NA
@@ -6932,12 +6932,12 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7482,2021-12-10,Mark Robert Peters,Simms,TX,Male,60,White,Yes,No,gun,Attack,No,NA,NA
 7483,2021-12-10,Michael Lee Dingman,Spokane,WA,Male,43,NA,No,No,gun,Attack,Yes,NA,NA
 7422,2021-12-11,Christopher Sterusky,Elizabethtown,KY,Male,29,NA,No,No,sharp,Attack,No,NA,NA
-7424,2021-12-11,Robert Lee Engle,Frankfort,KY,Male,64,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7424,2021-12-11,Robert Lee Engle,Frankfort,KY,Male,64,NA,No,No,unknown,Undetermined,NA,NA,NA
 7418,2021-12-12,Patrick Horton,Cleveland,OH,Male,39,NA,No,No,gun,Attack,No,NA,NA
 7427,2021-12-12,Jeremi Moore,Ferguson,MO,Male,35,NA,No,No,gun,Attack,NA,NA,NA
 7431,2021-12-12,George Hollins,Jennings,MO,Male,26,NA,No,No,gun,Other,No,NA,NA
 7484,2021-12-12,Cristian Alanzo Anguiano,Corona,CA,Male,32,NA,No,No,sharp,Other,No,NA,NA
-7485,2021-12-13,NA,Estancia,NM,Male,NA,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7485,2021-12-13,NA,Estancia,NM,Male,NA,NA,No,No,unknown,Undetermined,NA,NA,NA
 7417,2021-12-14,William Gardner,Dayton,OH,Male,21,NA,Yes,No,gun,Other,No,NA,NA
 7486,2021-12-14,Kevin Glenn Swinson,Canetuck,NC,Male,45,NA,No,No,unknown,Other,NA,NA,NA
 7433,2021-12-15,Keith A. Hinrichsen,North Platte,NE,Male,52,NA,No,No,gun,Attack,No,NA,NA
@@ -6945,9 +6945,9 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7488,2021-12-15,Jahad Patterson,Elkhart,IN,Male,20,Black,No,No,gun,Undetermined,NA,NA,NA
 7489,2021-12-15,NA,North Richmond,CA,Male,45,NA,No,No,gun like,Other,Yes,NA,NA
 7434,2021-12-16,Christopher Anthony Alexander,Clinton,UT,Male,32,NA,No,No,sharp,Attack,Yes,NA,NA
-7487,2021-12-16,Brandon Joshua Mauldin,Anderson County,SC,Male,32,NA,No,No,undetermined,Undetermined,Yes,NA,NA
+7487,2021-12-16,Brandon Joshua Mauldin,Anderson County,SC,Male,32,NA,No,No,unknown,Undetermined,Yes,NA,NA
 7490,2021-12-16,Terrance Dogan,Memphis,TN,Male,27,NA,No,No,gun,Attack,Yes,NA,NA
-7491,2021-12-16,John H. Taylor,Memphis,TN,Male,18,NA,No,No,undetermined,Other,Yes,NA,NA
+7491,2021-12-16,John H. Taylor,Memphis,TN,Male,18,NA,No,No,unknown,Other,Yes,NA,NA
 7493,2021-12-16,NA,Madison,TN,Male,39,NA,No,Yes,gun,Attack,No,NA,NA
 7436,2021-12-18,NA,Charlotte,NC,Male,NA,NA,No,No,sharp,Attack,No,NA,NA
 7437,2021-12-18,Joshua Gonzalez,Vineland,NJ,Male,20,NA,No,No,vehicle,Attack,NA,NA,NA
@@ -6955,7 +6955,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7495,2021-12-18,Rosendo Olivio,Los Angeles,CA,Male,34,NA,No,No,sharp,Other,No,NA,NA
 7496,2021-12-19,Nakita Williams,Detroit,MI,Female,33,NA,Yes,Yes,gun like,Attack,No,NA,NA
 7455,2021-12-20,Eudes Pierre,New York,NY,Male,26,NA,Yes,Yes,sharp,Attack,NA,NA,NA
-7497,2021-12-20,Alexander Wheeler,New Lenox,IL,Male,21,NA,No,No,undetermined,Other,Yes,NA,NA
+7497,2021-12-20,Alexander Wheeler,New Lenox,IL,Male,21,NA,No,No,unknown,Other,Yes,NA,NA
 7498,2021-12-20,Marc Barnhart,Yorkville,IL,Male,68,NA,No,No,gun,Other,NA,NA,NA
 7441,2021-12-21,Brendan Pinkston,Burton,MI,Male,23,NA,No,No,gun,Attack,Yes,-83.666,42.975
 7444,2021-12-21,Shawn Martin,Savannah,GA,Male,45,White,No,No,sharp,Attack,No,-81.14,32.043
@@ -6986,7 +6986,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7518,2021-12-27,NA,Algona,WA,Male,NA,NA,No,No,gun,Attack,No,NA,NA
 7519,2021-12-28,Dwayne McDonald,Detroit,MI,Male,62,Black,No,No,gun,Attack,No,NA,NA
 7449,2021-12-29,Osman Sesay,Silver Spring,MD,Male,27,Black,No,No,gun,Attack,Yes,NA,NA
-7457,2021-12-29,Thelonious McKnight,Paterson,NJ,Male,25,Black,No,No,undetermined,Undetermined,NA,NA,NA
+7457,2021-12-29,Thelonious McKnight,Paterson,NJ,Male,25,Black,No,No,unknown,Undetermined,NA,NA,NA
 7460,2021-12-30,Kadeem Errol Livingston Smith,Pine Hills,FL,Male,28,Black,No,No,gun,Other,No,NA,NA
 7463,2021-12-31,NA,Beaumont,CA,Male,NA,NA,No,No,vehicle,Attack,Yes,NA,NA
 7492,2021-12-31,NA,Meridian,MS,Male,NA,NA,No,No,gun,Attack,No,NA,NA
@@ -6996,17 +6996,17 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7453,2022-01-03,Charles Corey Castro,Murphy,ID,Male,54,NA,No,No,unknown,Other,No,NA,NA
 7458,2022-01-03,Caleb Stanford,Mesa,AZ,Male,26,NA,No,No,sharp,Attack,No,NA,NA
 7459,2022-01-03,James Schild,Mesa,AZ,Male,49,NA,No,No,blunt,Other,No,NA,NA
-7447,2022-01-04,Roman Ivan Kokhanevych,Gresham,OR,Male,24,White,No,No,undetermined,Undetermined,Yes,NA,NA
+7447,2022-01-04,Roman Ivan Kokhanevych,Gresham,OR,Male,24,White,No,No,unknown,Undetermined,Yes,NA,NA
 7448,2022-01-04,Carl Schaede,Paulden,AZ,Male,53,NA,No,No,gun,Attack,Yes,NA,NA
 7452,2022-01-04,NA,Philadelphia,PA,Male,NA,NA,No,No,gun,Attack,No,NA,NA
 7454,2022-01-04,Stephanie Wilson,Bahama,NC,Female,28,NA,No,No,gun,Attack,NA,NA,NA
 7664,2022-01-05,Tony Edwards,Frankfort,KY,Male,53,NA,No,No,gun,Attack,No,NA,NA
 7669,2022-01-05,Abdul Timmons,Florence County,SC,Male,27,NA,No,Yes,gun,Other,Yes,NA,NA
-7670,2022-01-05,NA,Prescott,AZ,Female,NA,NA,No,No,undetermined,Other,NA,NA,NA
+7670,2022-01-05,NA,Prescott,AZ,Female,NA,NA,No,No,unknown,Other,NA,NA,NA
 7672,2022-01-06,Todd Fiepke,Wheat Ridge,CO,Male,49,NA,Yes,No,gun,Attack,No,NA,NA
 7673,2022-01-06,James Sutton,Keansburg,NJ,Male,55,NA,No,Yes,sharp,Attack,No,NA,NA
 7675,2022-01-08,Deaughn Willis,Baton Rouge,LA,Male,25,Black,No,No,gun,Attack,No,NA,NA
-7677,2022-01-09,Denrick Demond Stallings,Crawford County,GA,Male,47,NA,No,No,undetermined,Attack,Yes,NA,NA
+7677,2022-01-09,Denrick Demond Stallings,Crawford County,GA,Male,47,NA,No,No,unknown,Attack,Yes,NA,NA
 7678,2022-01-09,Orlando Taylor,Springfield,MA,Male,23,NA,No,Yes,sharp,Attack,Yes,NA,NA
 7680,2022-01-09,NA,Rialto,CA,Male,NA,NA,No,No,sharp,Other,No,NA,NA
 7681,2022-01-09,Luis Ku Huitzil,Vancouver,WA,Male,45,NA,No,No,sharp,Other,NA,NA,NA
@@ -7025,9 +7025,9 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7715,2022-01-14,Barry Dean Compton,Woolwine,VA,Male,64,NA,No,No,gun,Attack,NA,NA,NA
 7689,2022-01-16,Ismael Trinidad Montes,Gillette,WY,Male,22,NA,No,No,sharp,Attack,No,NA,NA
 7692,2022-01-16,Junnie Williams,North Charleston,SC,Male,35,Black,No,No,gun,Other,Yes,NA,NA
-7711,2022-01-16,Moses Portillo,Puyallup,WA,Male,22,NA,No,No,undetermined,Undetermined,No,NA,NA
+7711,2022-01-16,Moses Portillo,Puyallup,WA,Male,22,NA,No,No,unknown,Undetermined,No,NA,NA
 7849,2022-01-16,Steffon Griffin,Wagoner County,OK,Male,32,NA,Yes,No,sharp,Attack,NA,NA,NA
-7716,2022-01-17,Nathan Humphrey,Harris County,TX,Male,28,Black,No,No,undetermined,Attack,Yes,NA,NA
+7716,2022-01-17,Nathan Humphrey,Harris County,TX,Male,28,Black,No,No,unknown,Attack,Yes,NA,NA
 7683,2022-01-18,NA,Hemet,CA,NA,NA,NA,No,No,gun,Undetermined,Yes,NA,NA
 7686,2022-01-18,Tyler Marler,Wood River,IL,Male,31,NA,No,No,gun like,Attack,No,NA,NA
 7707,2022-01-18,NA,Huntington Park,CA,Male,NA,Hispanic,No,No,sharp,Other,Yes,NA,NA
@@ -7064,11 +7064,11 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7646,2022-02-02,Amir Locke,Minneapolis,MN,Male,22,Black,No,Yes,gun,Attack,No,NA,NA
 7703,2022-02-04,Phillip Dill,Evansville,IN,Male,34,NA,Yes,Yes,sharp,Attack,No,NA,NA
 7713,2022-02-04,NA,Tulsa,OK,Male,NA,NA,No,No,gun,Other,Yes,NA,NA
-7858,2022-02-04,Nicholas Rodin,Pineville,OR,Male,NA,NA,Yes,No,undetermined,Undetermined,NA,-120.826,44.204
+7858,2022-02-04,Nicholas Rodin,Pineville,OR,Male,NA,NA,Yes,No,unknown,Undetermined,NA,-120.826,44.204
 7700,2022-02-05,Michael Shane Carver,Lincoln County,NC,Male,38,NA,No,No,vehicle,Attack,Yes,NA,NA
-7691,2022-02-06,Robert Junior Langley,Georgetown County,SC,Male,46,Black,No,No,undetermined,Other,Yes,NA,NA
+7691,2022-02-06,Robert Junior Langley,Georgetown County,SC,Male,46,Black,No,No,unknown,Other,Yes,NA,NA
 7697,2022-02-06,Jason D. Ickler,Topeka,KS,Male,38,White,No,No,vehicle,Attack,Yes,NA,NA
-7698,2022-02-06,Richard Allen Meyers,Salem,OR,Male,40,NA,Yes,No,undetermined,Other,Yes,NA,NA
+7698,2022-02-06,Richard Allen Meyers,Salem,OR,Male,40,NA,Yes,No,unknown,Other,Yes,NA,NA
 7699,2022-02-06,Troy Allen Bain,Willis,VA,Male,58,NA,No,No,gun,Other,NA,NA,NA
 7690,2022-02-07,Charion Lockett,Houston,TX,Male,27,NA,No,Yes,gun,Attack,NA,NA,NA
 7695,2022-02-07,James David Fanning,Greenville,TX,Male,49,NA,No,No,gun,Attack,NA,NA,NA
@@ -7086,12 +7086,12 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7743,2022-02-09,Jayden J. Prunty,Jonesboro,AR,Male,22,NA,No,No,gun,Attack,NA,NA,NA
 7744,2022-02-09,Richard Malone,Lake Charles,LA,Male,41,NA,No,No,vehicle,Attack,Yes,NA,NA
 7734,2022-02-11,Dustin Booth,Monroe,OH,Male,35,NA,Yes,No,gun,Other,NA,NA,NA
-7735,2022-02-11,NA,Puyallup,WA,Male,NA,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7735,2022-02-11,NA,Puyallup,WA,Male,NA,NA,No,No,unknown,Undetermined,NA,NA,NA
 7726,2022-02-12,James Huber,Buffalo,NY,Male,38,NA,No,Yes,vehicle,Attack,Yes,NA,NA
 7738,2022-02-12,NA,Lexington,MA,Male,35,NA,No,No,sharp,Attack,No,NA,NA
 7739,2022-02-12,Ahmed Taqi,Dearborn,MI,Male,37,NA,No,No,gun,Attack,NA,NA,NA
 7731,2022-02-13,Terry Edwin Moser,Madisonville,TN,Male,43,NA,Yes,No,sharp,Other,No,NA,NA
-7732,2022-02-13,Andrew Stratton,Alvo,NE,Male,34,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7732,2022-02-13,Andrew Stratton,Alvo,NE,Male,34,NA,No,No,unknown,Undetermined,NA,NA,NA
 7737,2022-02-13,NA,Concord,NC,Male,NA,NA,No,No,unarmed,Attack,NA,NA,NA
 7730,2022-02-14,Alexander Kade Lanier,Oxford,AL,Male,26,NA,No,No,gun,Attack,Yes,NA,NA
 7733,2022-02-14,Blain D. Johnson,Columbia,MO,Male,37,NA,No,No,unknown,Other,NA,NA,NA
@@ -7103,7 +7103,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7840,2022-02-15,Jacob Salas-Tijerina,Amarillo,TX,Male,40,NA,Yes,No,gun,Attack,No,-101.88,35.218
 7746,2022-02-16,Roger Wayne Ellis,North Middleton,PA,Male,54,White,No,No,gun,Attack,No,NA,NA
 7747,2022-02-16,NA,Azusa,CA,Male,NA,White,No,No,gun,Attack,Yes,NA,NA
-7748,2022-02-16,Atiba Lewis,Plainsboro,NJ,Male,45,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7748,2022-02-16,Atiba Lewis,Plainsboro,NJ,Male,45,NA,No,No,unknown,Undetermined,NA,NA,NA
 7749,2022-02-16,Luis Alberto Rodriguez,Harris County,TX,Male,18,NA,No,No,gun,Other,No,NA,NA
 7753,2022-02-16,Daniel Vallee,Marrero,LA,Male,34,White,No,Yes,unarmed,Other,No,NA,NA
 7841,2022-02-16,David A. Babcock,Sedro-Woolley,WA,Male,51,NA,No,No,vehicle,Other,Yes,-122.211,48.522
@@ -7114,10 +7114,10 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7761,2022-02-17,Cody Chavez,Pleasanton,CA,Male,33,NA,No,No,sharp,Other,No,NA,NA
 7764,2022-02-17,John Michael Humphries,Odessa,TX,Male,45,NA,No,No,gun,Attack,Yes,NA,NA
 7765,2022-02-18,NA,Chehalis,WA,Male,32,NA,No,No,sharp,Attack,Yes,NA,NA
-7751,2022-02-19,Christopher Tkal,Walpole,NH,Male,57,NA,No,No,undetermined,Undetermined,NA,NA,NA
-7752,2022-02-19,NA,Douglas,AZ,Male,NA,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7751,2022-02-19,Christopher Tkal,Walpole,NH,Male,57,NA,No,No,unknown,Undetermined,NA,NA,NA
+7752,2022-02-19,NA,Douglas,AZ,Male,NA,NA,No,No,unknown,Undetermined,NA,NA,NA
 7754,2022-02-19,NA,Baltimore,MD,Male,NA,NA,No,Yes,vehicle,Attack,No,NA,NA
-7755,2022-02-19,Joel Michael Arevalo,Portland,OR,Male,30,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7755,2022-02-19,Joel Michael Arevalo,Portland,OR,Male,30,NA,No,No,unknown,Undetermined,NA,NA,NA
 7756,2022-02-19,Daniel Patrick Knight,Winter Park,FL,Male,39,NA,Yes,Yes,unarmed,Attack,No,NA,NA
 7758,2022-02-19,Mizael Corrales,San Diego,CA,Male,27,Hispanic,No,No,vehicle,Attack,Yes,NA,NA
 7763,2022-02-19,Alexandro Rosales,Bakersfield,CA,Male,41,NA,No,Yes,gun,Undetermined,NA,NA,NA
@@ -7125,24 +7125,24 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7762,2022-02-21,David Liles,Rogers,AR,Male,54,NA,Yes,No,sharp,Attack,No,NA,NA
 7766,2022-02-21,Brandon Cruz,Boerne,TX,Male,41,NA,Yes,No,vehicle,Attack,Yes,NA,NA
 7767,2022-02-22,Tracy Gaeta,Stockton,CA,Female,54,NA,No,No,vehicle,Attack,Yes,NA,NA
-7768,2022-02-22,Richard Ward,Pueblo West,CO,Male,32,NA,No,Yes,undetermined,Attack,NA,NA,NA
+7768,2022-02-22,Richard Ward,Pueblo West,CO,Male,32,NA,No,Yes,unknown,Attack,NA,NA,NA
 7771,2022-02-22,Matthew Deese,Perry,GA,Male,32,NA,Yes,No,gun,Other,NA,-83.712,32.476
 7839,2022-02-22,Robert Lee Pilkey,Maryville,TN,Male,28,NA,No,No,sharp,Undetermined,NA,NA,NA
 7769,2022-02-23,Daniel Ramirez,Hobbs,NM,Male,27,NA,No,Yes,gun,Attack,Yes,-103.141,32.719
 7770,2022-02-23,Steven Lewis Finfrock,Macon,GA,Male,63,NA,No,No,gun,Attack,No,-83.643,32.845
 7772,2022-02-23,Jacori Shaw,Reno,NV,Male,23,NA,No,No,gun,Attack,Yes,-119.8,39.478
-7773,2022-02-23,Keleen Rashad Connell,Birmingham,AL,Male,27,NA,No,No,undetermined,Undetermined,Yes,NA,NA
-7774,2022-02-23,Joey Gilbert Gauthreaux,Crowley,LA,Male,55,NA,No,No,undetermined,Undetermined,NA,NA,NA
+7773,2022-02-23,Keleen Rashad Connell,Birmingham,AL,Male,27,NA,No,No,unknown,Undetermined,Yes,NA,NA
+7774,2022-02-23,Joey Gilbert Gauthreaux,Crowley,LA,Male,55,NA,No,No,unknown,Undetermined,NA,NA,NA
 7838,2022-02-23,Czyz Deonte Harrison,Houston,TX,Male,35,NA,No,No,gun,Attack,Yes,-95.514,29.706
 7779,2022-02-24,Andrew Castellano,Edgewood,NM,Male,34,NA,No,No,gun,Attack,No,-106.204,35.031
-7837,2022-02-24,Steve Wohlwend,Tacoma,WA,Male,31,NA,No,Yes,undetermined,Other,NA,-122.435,47.252
-7776,2022-02-25,NA,Belen,NM,Male,NA,NA,No,No,undetermined,Undetermined,NA,-106.797,34.664
-7778,2022-02-25,NA,Detroit,MI,Male,NA,NA,No,No,undetermined,Other,Yes,NA,NA
+7837,2022-02-24,Steve Wohlwend,Tacoma,WA,Male,31,NA,No,Yes,unknown,Other,NA,-122.435,47.252
+7776,2022-02-25,NA,Belen,NM,Male,NA,NA,No,No,unknown,Undetermined,NA,-106.797,34.664
+7778,2022-02-25,NA,Detroit,MI,Male,NA,NA,No,No,unknown,Other,Yes,NA,NA
 7775,2022-02-26,Jacob Huerta,Beasley,TX,Male,37,NA,No,No,sharp,Other,No,-95.913,29.495
 7777,2022-02-27,John Charles Morieda,Shelley,ID,Male,34,NA,No,No,sharp,Other,No,-112.137,43.374
 7836,2022-02-27,Marcelo Alfredo Suarez,Houston,TX,Male,24,NA,No,No,gun,Attack,Yes,-95.286,29.848
-7815,2022-02-28,NA,Wellington,NV,Male,NA,NA,No,Yes,undetermined,Undetermined,NA,-119.394,38.767
-7835,2022-02-28,Kourtney Sherwood,Topsham,ME,Female,37,NA,No,No,undetermined,Undetermined,NA,-70,43.957
+7815,2022-02-28,NA,Wellington,NV,Male,NA,NA,No,Yes,unknown,Undetermined,NA,-119.394,38.767
+7835,2022-02-28,Kourtney Sherwood,Topsham,ME,Female,37,NA,No,No,unknown,Undetermined,NA,-70,43.957
 7785,2022-03-01,Thomas Siderio,Philadelphia,PA,Male,12,NA,No,No,gun,Other,Yes,NA,NA
 7811,2022-03-01,Luke Stash,South Connellsville,PA,Male,33,NA,No,No,gun,Attack,No,-79.586,39.991
 7814,2022-03-01,Darian Q. Bryant,Jacksonville,FL,Male,26,NA,No,No,gun,Attack,Yes,-81.752,30.306
@@ -7151,9 +7151,9 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7824,2022-03-02,Kevin C. Steinhauer,Collinsville,IL,Male,45,NA,No,No,gun,Attack,No,-90.028,38.662
 7784,2022-03-03,Jamarian Marquis McGhee,Araphoe County,CO,Male,29,NA,No,No,vehicle,Attack,NA,NA,NA
 7796,2022-03-03,Yan Li,San Diego,CA,Female,47,NA,Yes,Yes,sharp,Attack,No,-117.167,32.721
-7797,2022-03-03,Juan Herrera,Midland,TX,Male,14,NA,No,No,undetermined,Undetermined,NA,-102.171,32.046
-7807,2022-03-03,Alfred Calvin Moss,Tillamook County,OR,Male,44,NA,No,No,undetermined,Other,Yes,-123.972,45.146
-7808,2022-03-03,Kevin P. Zimmerman,Dunkirk,IN,Male,36,NA,No,No,undetermined,Undetermined,NA,-85.206,40.378
+7797,2022-03-03,Juan Herrera,Midland,TX,Male,14,NA,No,No,unknown,Undetermined,NA,-102.171,32.046
+7807,2022-03-03,Alfred Calvin Moss,Tillamook County,OR,Male,44,NA,No,No,unknown,Other,Yes,-123.972,45.146
+7808,2022-03-03,Kevin P. Zimmerman,Dunkirk,IN,Male,36,NA,No,No,unknown,Undetermined,NA,-85.206,40.378
 7812,2022-03-03,Michael Ramos,Boron,CA,Male,41,NA,No,No,unknown,Other,No,-117.657,35.001
 7828,2022-03-03,NA,Anaheim,CA,Male,41,NA,No,No,gun,Other,No,-117.92,33.827
 7829,2022-03-03,Edgar Ortiz,Bellflower,CA,Male,32,NA,Yes,No,blunt,Other,Yes,-118.151,33.875
@@ -7162,15 +7162,15 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7783,2022-03-05,NA,Seattle,WA,Male,NA,NA,No,Yes,gun,Attack,NA,NA,NA
 7780,2022-03-06,Lester Carlton Epps,Richmond,VA,Male,58,White,No,Yes,gun,Attack,No,-77.403,37.514
 7781,2022-03-06,Miguel Ruiz Rivera,Austin,TX,Male,28,NA,No,Yes,gun,Attack,NA,-97.705,30.333
-7782,2022-03-06,Jerry Lott,Peoria,AZ,Male,33,NA,No,Yes,undetermined,Other,Yes,-112.28,33.667
+7782,2022-03-06,Jerry Lott,Peoria,AZ,Male,33,NA,No,Yes,unknown,Other,Yes,-112.28,33.667
 7805,2022-03-07,NA,Jasper,TN,NA,NA,NA,No,No,gun,Attack,Yes,-85.634,35.055
 7806,2022-03-07,James Gregory,Colorado Springs,CO,Male,39,NA,No,No,gun,Attack,Yes,-104.777,38.839
-7804,2022-03-08,Antwon Leonard Cooper,Miami,FL,Male,34,Black,No,Yes,undetermined,Attack,NA,-80.213,25.84
+7804,2022-03-08,Antwon Leonard Cooper,Miami,FL,Male,34,Black,No,Yes,unknown,Attack,NA,-80.213,25.84
 7810,2022-03-08,Anthony Felix,Joplin,MO,Male,40,NA,No,No,gun,Attack,NA,-94.494,37.081
 7798,2022-03-09,Gabriel Scott Rau,Acworth,GA,Male,35,White,No,No,sharp,Other,No,-84.634,34.065
 7799,2022-03-09,Robert Charles Raymond,Brown City,MI,Male,47,White,No,No,gun,Attack,No,-83.017,43.168
 7834,2022-03-09,William Wayne Weldon,Clear Lake Shores,TX,Male,46,White,No,No,gun,Attack,No,-95.031,29.546
-7794,2022-03-11,Tyrea Pryor,Independence,MO,Male,39,Black,No,No,undetermined,Other,Yes,-94.413,39.101
+7794,2022-03-11,Tyrea Pryor,Independence,MO,Male,39,Black,No,No,unknown,Other,Yes,-94.413,39.101
 7795,2022-03-11,NA,Miami-Dade County,FL,Male,NA,NA,No,No,sharp,Other,Yes,-80.307,25.942
 7800,2022-03-11,Quentrice McAllister,Raymond,MS,Female,38,NA,No,No,gun,Attack,NA,-90.404,32.252
 7833,2022-03-11,Felix Tyler,Covington,TN,Male,42,Black,No,No,gun,Attack,No,-89.644,35.575
@@ -7197,7 +7197,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7826,2022-03-18,Faubricia Virtaux Gainer,Sterling,VA,Female,36,NA,No,No,sharp,Other,No,-77.387,39.051
 7853,2022-03-18,Riley W. Stephens,Louisville,KY,Male,NA,NA,No,No,sharp,Other,Yes,-85.731,38.239
 7854,2022-03-18,Billy Mitchell,Hutchinson County,TX,Male,31,NA,No,No,sharp,Attack,No,-101.418,35.734
-7832,2022-03-19,Rodney Robinson,Dewey Beach,DE,Male,21,NA,No,No,undetermined,Other,Yes,-75.075,38.696
+7832,2022-03-19,Rodney Robinson,Dewey Beach,DE,Male,21,NA,No,No,unknown,Other,Yes,-75.075,38.696
 7847,2022-03-19,Irvin D. Moorer-Charley,Columbia,SC,Male,34,Black,Yes,Yes,sharp,Attack,No,-81.055,34.106
 7851,2022-03-19,Collin Neztsosie,Albuquerque,NM,Male,33,NA,No,No,unarmed,Other,No,-106.498,35.068
 7852,2022-03-19,Richard Schaare,Peoria,AZ,Male,74,NA,No,Yes,gun,Attack,No,-112.251,33.849
@@ -7221,7 +7221,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7870,2022-03-27,Jose Antonio Suarez,Margate,FL,Male,82,NA,No,No,gun,Attack,NA,-80.221,26.231
 7874,2022-03-27,NA,Fort Mohave,AZ,Male,NA,NA,No,No,gun,Attack,Yes,-114.57,35.041
 7876,2022-03-27,Lawrence Knudsen,Maricopa,AZ,Male,56,NA,No,No,gun,Other,NA,-111.996,33.073
-7878,2022-03-27,David Luis Aguilera,Chaves County,NM,Male,35,NA,No,No,undetermined,Attack,Yes,-104.422,32.979
+7878,2022-03-27,David Luis Aguilera,Chaves County,NM,Male,35,NA,No,No,unknown,Attack,Yes,-104.422,32.979
 7879,2022-03-28,Michael Allensworth,Las Vegas,NV,Male,41,NA,No,No,gun,Attack,NA,-115.1,36.149
 7881,2022-03-29,Monica Vaught,Greenwood,IN,Female,49,NA,No,Yes,vehicle,Attack,Yes,-86.103,39.611
 7882,2022-03-29,Eric Putnam,Tucson,AZ,Male,27,NA,No,No,gun,Attack,NA,-110.809,32.216
@@ -7230,7 +7230,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7888,2022-03-29,Anthony Nunez,Hesperia,CA,Male,42,NA,No,No,gun,Other,No,-117.323,34.413
 7886,2022-03-30,Samantha L. Edgmond,Atkins,AR,Female,35,NA,No,No,blunt,Other,No,-92.964,35.243
 7885,2022-03-31,Hector Miguel Portuondo,Miami-Dade County,FL,Male,53,NA,No,No,gun,Other,No,-80.231,25.89
-7887,2022-03-31,Erik Poul Moller Nielsen,Columbia Township,MI,Male,36,NA,No,No,undetermined,Undetermined,NA,-84.29,42.1
+7887,2022-03-31,Erik Poul Moller Nielsen,Columbia Township,MI,Male,36,NA,No,No,unknown,Undetermined,NA,-84.29,42.1
 7899,2022-03-31,Michael Norton Stockton,Scappoose,OR,Male,39,NA,No,No,gun,Attack,NA,-122.88,45.768
 7901,2022-03-31,NA,Sioux Falls,SD,Male,NA,NA,No,No,sharp,Other,NA,-96.752,43.552
 7892,2022-04-01,James Sheets,Youngstown,OH,Male,35,White,No,Yes,gun,Other,Yes,NA,NA

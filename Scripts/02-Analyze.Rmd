@@ -6,8 +6,11 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
-
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
 library(tidyverse)
 library(readr)
 library(here)
@@ -22,9 +25,9 @@ library(ggalt)
 
 ## Import
 
-Don't forget to pull from the git before start, so as to get fresh data from WAPO.
+Don't forget to pull from the git before start (in the "01-Import.Rmd" file), so as to get fresh data from WAPO.
 
-```{r remedy001, message=FALSE, warning=FALSE, echo=FALSE}
+```{r remedy001, message=FALSE, warning=FALSE, include=FALSE}
 
 here::here("WAPO data-police-shootings")
 
@@ -36,7 +39,7 @@ df$date <- ymd(df$date)
 
 ## Armed Status Breakdown 
 
-```{r remedy002}
+```{r remedy002, include=FALSE}
 
 ## Fix "claimed" armed status to "unarmed" and equate "unknown" and "undetermined"
 df$armed_bucket <- df$armed_bucket %>%
@@ -54,10 +57,9 @@ df$armed_small <- df$armed_bucket %>%
     "armed" = "blunt",
     "armed" = "strange object",
     "armed" = "carjack",
-    "armed" = "explosive",
+    "armed" = "explosive/chemical",
     "armed" = "gun",
     "armed" = "vehicle",
-    "armed" = "chemical",
     "armed" = "taser"
   )
 

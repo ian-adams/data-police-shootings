@@ -18,7 +18,7 @@ library(skimr)
 
 Don't forget to pull from the git before start, so as to get fresh data from WAPO.
 
-```{r remedy001, message=FALSE, warning=FALSE, echo=FALSE}
+```{r remedy001, message=FALSE, warning=FALSE, include=FALSE}
 
 here::here("WAPO data-police-shootings")
 
@@ -52,7 +52,7 @@ df_full$armed_bucket <- df_full$armed %>%
     "blunt" = "baseball bat",
     "blunt" = "baseball bat and bottle",
     "blunt" = "baseball bat and fireplace poker",
-    "blunt" = "baseball bat and knife",
+    "sharp" = "baseball bat and knife",
     "blunt" = "baton",
     "gun like" = "BB gun",
     "gun like" = "BB gun and vehicle",
@@ -69,17 +69,17 @@ df_full$armed_bucket <- df_full$armed %>%
     "sharp" = "chain saw",
     "sharp" = "chainsaw",
     "blunt" = "chair",
-    "claim" = "claimed to be armed",
+    "unknown" = "claimed to be armed",
     "blunt" = "contractor's level",
     "strange" = "cordless drill",
     "sharp" = "crossbow",
     "blunt" = "crowbar",
-    "explosive" = "fireworks",
+    "explosive/chemical" = "fireworks",
     "blunt" = "flagpole",
     "blunt" = "flashlight",
     "blunt" = "garden tool",
     "sharp" = "glass shard",
-    "explosive" = "grenade",
+    "explosive/chemical" = "grenade",
     "gun" = "gun and car",
     "gun" = "gun and knife",
     "gun" = "gun and machete",
@@ -91,7 +91,7 @@ df_full$armed_bucket <- df_full$armed %>%
     "sharp" = "hatchet",
     "gun" = "hatchet and gun",
     "sharp" = "ice pick",
-    "explosive" = "incendiary device",
+    "explosive/chemical" = "incendiary device",
     "sharp" = "knife",
     "sharp" = "knife and vehicle",
     "sharp" = "lawn mower blade",
@@ -110,7 +110,7 @@ df_full$armed_bucket <- df_full$armed %>%
     "blunt" = "oar",
     "gun like" = "pellet gun",
     "strange" = "pen",
-    "chemical" = "pepper spray",
+    "explosive/chemical" = "pepper spray",
     "sharp" = "pick-axe",
     "blunt" = "piece of wood",
     "blunt" = "pipe",
@@ -137,7 +137,9 @@ df_full$armed_bucket <- df_full$armed %>%
     "blunt" = "walking stick",
     "strange" = "wasp spray",
     "blunt" = "wrench",
-    "sharp" = "machete and hammer"
+    "sharp" = "machete and hammer",
+    "unknown" = "carjack",
+    "unknown" = "undetermined"
   )
 
 ## Recoding df_full$gender into df_full$gender_rec
@@ -191,8 +193,14 @@ df_full$body_camera <- df_full$body_camera %>%
     "Yes" = "TRUE"
   )
 
+## Check for new "armed" statuses that need to be recoded in `armed_bucket` above
+
+summary(df_full$armed_bucket)
+
 #questionr:::irec()
 #skim(df_full)
+
+
 
 ```
 
