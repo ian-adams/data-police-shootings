@@ -3239,11 +3239,10 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 3587,2018-04-05,Nathaniel Prasad,Fremont,CA,Male,18,Asian,No,No,gun,Attack,Yes,-122.024,37.568
 3623,2018-04-05,Raymond Lyle Bell,Reynoldsville,WV,Male,59,White,No,Yes,gun,Other,Yes,-80.439,39.293
 4259,2018-04-05,Rafael Ramirez,South Bend,IN,Male,56,Hispanic,Yes,No,sharp,Other,No,-86.279,41.672
-4260,2018-04-05,Junior Davis Lopez,Las Vegas,NV,Male,22,Hispanic,Yes,No,gun,Attack,No,-115.041,36.163
 3588,2018-04-06,Jonathan Erick Alexander,Marysville,CA,Male,26,Black,No,No,gun,Attack,Yes,NA,NA
-3589,2018-04-06,Antonio Aquino,Las Vegas,NV,Male,34,Asian,No,No,gun,Attack,No,-115.041,36.167
 3590,2018-04-06,Daniel Allen Yielding,Searcy County,AR,Male,23,White,No,No,sharp,Attack,Yes,-92.599,35.953
 4258,2018-04-06,Mitchell Nelson,Federal Way,WA,Male,36,White,No,No,gun,Attack,No,-122.297,47.35
+4260,2018-04-06,Junior Davis Lopez,Las Vegas,NV,Male,22,Hispanic,Yes,No,gun,Attack,No,-115.041,36.164
 3591,2018-04-07,John A. Elifritz,Portland,OR,Male,48,White,Yes,No,sharp,Other,NA,-122.66,45.519
 3592,2018-04-07,Larry Siordia,Oroville,CA,Male,33,White,No,No,gun,Attack,No,-121.567,39.506
 3593,2018-04-08,Carlos Roman Urias,Cathedral City,CA,Male,24,Hispanic,No,No,gun like,Attack,No,-116.465,33.805
@@ -7159,21 +7158,22 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7828,2022-03-03,NA,Anaheim,CA,Male,41,NA,No,No,gun,Other,No,-117.92,33.827
 7829,2022-03-03,Edgar Ortiz,Bellflower,CA,Male,32,NA,Yes,No,blunt,Other,Yes,-118.151,33.875
 7822,2022-03-04,Samuel Yeatts Wilson,Hollywood,AL,Male,33,White,No,No,gun,Other,No,-85.961,34.726
+7880,2022-03-04,Judson Albahm,Jamesville,NY,Male,17,NA,Yes,Yes,gun like,Attack,Yes,-76.075,42.981
 7783,2022-03-05,NA,Seattle,WA,Male,NA,NA,No,Yes,gun,Attack,NA,NA,NA
 7780,2022-03-06,Lester Carlton Epps,Richmond,VA,Male,58,White,No,Yes,gun,Attack,No,-77.403,37.514
 7781,2022-03-06,Miguel Ruiz Rivera,Austin,TX,Male,28,NA,No,Yes,gun,Attack,NA,-97.705,30.333
 7782,2022-03-06,Jerry Lott,Peoria,AZ,Male,33,NA,No,Yes,undetermined,Other,Yes,-112.28,33.667
 7805,2022-03-07,NA,Jasper,TN,NA,NA,NA,No,No,gun,Attack,Yes,-85.634,35.055
 7806,2022-03-07,James Gregory,Colorado Springs,CO,Male,39,NA,No,No,gun,Attack,Yes,-104.777,38.839
-7804,2022-03-08,Antwon Leonard Cooper,Miami,FL,Male,34,Black,No,Yes,undetermined,Undetermined,NA,-80.213,25.84
+7804,2022-03-08,Antwon Leonard Cooper,Miami,FL,Male,34,Black,No,Yes,undetermined,Attack,NA,-80.213,25.84
 7810,2022-03-08,Anthony Felix,Joplin,MO,Male,40,NA,No,No,gun,Attack,NA,-94.494,37.081
 7798,2022-03-09,Gabriel Scott Rau,Acworth,GA,Male,35,White,No,No,sharp,Other,No,-84.634,34.065
 7799,2022-03-09,Robert Charles Raymond,Brown City,MI,Male,47,White,No,No,gun,Attack,No,-83.017,43.168
-7834,2022-03-09,William Weldon,Clear Lake Shores,TX,Male,46,White,No,No,gun,Attack,No,-95.031,29.546
-7833,2022-03-10,Felix Tyler,Covington,TN,Male,42,Black,No,No,gun,Attack,No,-89.644,35.575
+7834,2022-03-09,William Wayne Weldon,Clear Lake Shores,TX,Male,46,White,No,No,gun,Attack,No,-95.031,29.546
 7794,2022-03-11,Tyrea Pryor,Independence,MO,Male,39,Black,No,No,undetermined,Other,Yes,-94.413,39.101
 7795,2022-03-11,NA,Miami-Dade County,FL,Male,NA,NA,No,No,sharp,Other,Yes,-80.307,25.942
 7800,2022-03-11,Quentrice McAllister,Raymond,MS,Female,38,NA,No,No,gun,Attack,NA,-90.404,32.252
+7833,2022-03-11,Felix Tyler,Covington,TN,Male,42,Black,No,No,gun,Attack,No,-89.644,35.575
 7788,2022-03-12,Nicholas Edward Oden,Decatur,AL,Male,33,White,No,No,gun,Attack,Yes,NA,NA
 7790,2022-03-12,Zakareya Ibrahim,Tucson,AZ,Male,17,NA,Yes,No,sharp,Attack,No,-111.079,32.176
 7792,2022-03-12,William Taylor Parrott,Loganville,GA,Male,35,White,No,No,blunt,Other,No,-83.885,33.833
@@ -7181,34 +7181,67 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 7803,2022-03-12,Fred Westmoreland,Sonora,CA,Male,51,NA,No,No,gun,Attack,Yes,-120.305,37.985
 7809,2022-03-12,Paul Anthony Hardiman,Lauderdale County,AL,Male,44,White,No,No,gun,Other,NA,-87.953,34.982
 7789,2022-03-13,NA,Palmdale,CA,Male,NA,NA,No,No,vehicle,Attack,Yes,-118.006,34.567
-7791,2022-03-13,Gabriel Artz,Pasco,WA,Male,NA,NA,No,No,sharp,Other,No,NA,NA
+7791,2022-03-13,Gabriel T. Artz,Pasco,WA,Male,30,NA,No,No,sharp,Other,No,NA,NA
 7787,2022-03-14,NA,Albuquerque,NM,Male,NA,NA,No,No,gun,Attack,NA,-106.65,35.084
 7801,2022-03-14,Matthew J. Parks,Crest Hill,IL,Male,30,NA,No,No,sharp,Attack,NA,-88.138,41.547
 7802,2022-03-14,Toney S. Poulston,Covington,VA,Male,42,NA,No,No,gun,Attack,NA,-79.989,37.794
 7820,2022-03-14,Kevin Donel Johnson,San Antonio,TX,Male,28,Black,No,Yes,gun,Other,NA,-98.527,29.445
-7862,2022-03-14,NA,Shorewood,IL,Male,NA,NA,No,No,gun,Attack,No,-88.185,41.525
+7862,2022-03-14,Jose DeJesus Hernandez,Shorewood,IL,Male,NA,NA,No,No,gun,Attack,No,-88.185,41.525
 7817,2022-03-15,Jeremy Darryl Dayton,Spanaway,WA,Male,40,NA,No,No,gun,Attack,NA,-122.435,47.084
 7823,2022-03-15,Jason Peterson,Canton,GA,Male,47,NA,No,No,gun,Other,NA,-84.469,34.214
-7816,2022-03-16,NA,Tacoma,WA,Male,NA,NA,No,No,unknown,Other,NA,-122.486,47.217
-7830,2022-03-16,NA,Seattle,WA,Male,NA,NA,No,No,gun,Attack,Yes,-122.288,47.552
+7816,2022-03-16,Michael Mercado,Tacoma,WA,Male,37,NA,No,No,unknown,Other,NA,-122.486,47.217
+7830,2022-03-16,NA,Seattle,WA,Male,NA,NA,No,Yes,gun,Attack,Yes,-122.288,47.552
 7818,2022-03-17,James Emery,Bonne Terre,MO,Male,21,NA,No,No,gun,Attack,No,-90.538,37.922
 7827,2022-03-17,NA,Lehigh Acres,FL,Male,NA,NA,No,No,gun,Attack,NA,-81.714,26.582
-7863,2022-03-17,Greg Eugene Davis,Lake Mead,NV,Male,52,NA,No,No,vehicle,Other,NA,-115.026,36.196
-7826,2022-03-18,NA,Loudoun County,VA,Female,NA,NA,No,No,sharp,Other,No,-77.387,39.051
-7853,2022-03-18,NA,Louisville,KY,NA,NA,NA,No,No,sharp,Other,Yes,NA,NA
+7863,2022-03-17,Greg Eugene Davis,Lake Mead,NV,Male,52,NA,No,No,vehicle,Attack,NA,-115.026,36.196
+7826,2022-03-18,Faubricia Virtaux Gainer,Sterling,VA,Female,36,NA,No,No,sharp,Other,No,-77.387,39.051
+7853,2022-03-18,Riley W. Stephens,Louisville,KY,Male,NA,NA,No,No,sharp,Other,Yes,-85.731,38.239
 7854,2022-03-18,Billy Mitchell,Hutchinson County,TX,Male,31,NA,No,No,sharp,Attack,No,-101.418,35.734
 7832,2022-03-19,Rodney Robinson,Dewey Beach,DE,Male,21,NA,No,No,undetermined,Other,Yes,-75.075,38.696
 7847,2022-03-19,Irvin D. Moorer-Charley,Columbia,SC,Male,34,Black,Yes,Yes,sharp,Attack,No,-81.055,34.106
 7851,2022-03-19,Collin Neztsosie,Albuquerque,NM,Male,33,NA,No,No,unarmed,Other,No,-106.498,35.068
 7852,2022-03-19,Richard Schaare,Peoria,AZ,Male,74,NA,No,Yes,gun,Attack,No,-112.251,33.849
 7855,2022-03-19,NA,Hanson County,SD,Male,NA,NA,No,No,gun,Attack,NA,-97.716,43.159
-7856,2022-03-19,NA,Great Falls,MT,NA,NA,NA,No,No,gun,Other,No,-111.283,47.497
+7856,2022-03-19,Travis Don Sipes,Great Falls,MT,Male,34,NA,No,No,gun,Other,No,-111.283,47.497
 7842,2022-03-20,Nicholas Conklin,Kalamazoo,MI,Male,33,NA,No,No,gun,Attack,Yes,-85.59,42.282
 7857,2022-03-21,Michael D. Olson,Texarkana,AR,Male,30,NA,No,No,gun,Attack,NA,-94.03,33.419
-7860,2022-03-21,Jessica Schoverling,Tellico Plains,TN,Female,43,NA,No,No,gun,Attack,No,-84.34,35.372
+7860,2022-03-21,Jessica Amber Schoverling,Tellico Plains,TN,Female,43,NA,No,No,gun,Attack,No,-84.34,35.372
 7861,2022-03-21,NA,Gillette,WY,Male,NA,NA,No,No,gun,Attack,NA,-105.498,44.295
 7864,2022-03-22,NA,Discovery Bay,CA,Male,NA,NA,No,No,gun,Other,NA,-121.622,37.931
-7866,2022-03-22,NA,Chandler,AZ,Male,NA,NA,No,No,gun,Other,NA,-111.829,33.308
-7865,2022-03-23,Charles Henry Calhoun,Clayton County,GA,Male,68,NA,No,No,gun,Other,NA,-84.366,33.508
-7867,2022-03-23,NA,Commerce,GA,Male,NA,NA,No,No,blunt,Other,No,-83.385,34.271
+7866,2022-03-22,Alberto Noriega,Chandler,AZ,Male,27,NA,No,No,gun like,Other,Yes,-111.829,33.308
+7865,2022-03-23,Charles Henry Calhoun,Clayton County,GA,Male,68,NA,No,No,gun,Attack,NA,-84.366,33.508
+7867,2022-03-23,Felix Catarino,Commerce,GA,Male,52,NA,No,No,blunt,Other,No,-83.385,34.271
 7868,2022-03-24,Zy'shonne Johnson,Broward County,FL,Male,23,NA,No,No,gun,Other,NA,-80.178,26.121
+7872,2022-03-25,Miguel Estrella,Pittsfield,MA,Male,22,NA,Yes,No,sharp,Other,No,-73.263,42.461
+7877,2022-03-25,Bryan Thomas Otto,Dunnellon,FL,Male,46,NA,No,No,unknown,Attack,NA,-82.526,28.988
+7871,2022-03-26,Timothy Yocom,Ada,OK,Male,38,NA,No,No,gun,Attack,NA,-96.678,34.775
+7873,2022-03-26,NA,Rapid City,SD,Male,NA,NA,No,No,gun,Attack,No,-103.245,44.081
+7875,2022-03-26,Zachary Taylor Anderson,Indian River County,FL,Male,29,White,No,Yes,sharp,Attack,No,-80.393,27.659
+7869,2022-03-27,Frederick Clinton Miller,Lexington,KY,Male,43,NA,No,No,gun,Attack,No,-84.462,38.053
+7870,2022-03-27,Jose Antonio Suarez,Margate,FL,Male,82,NA,No,No,gun,Attack,NA,-80.221,26.231
+7874,2022-03-27,NA,Fort Mohave,AZ,Male,NA,NA,No,No,gun,Attack,Yes,-114.57,35.041
+7876,2022-03-27,Lawrence Knudsen,Maricopa,AZ,Male,56,NA,No,No,gun,Other,NA,-111.996,33.073
+7878,2022-03-27,David Luis Aguilera,Chaves County,NM,Male,35,NA,No,No,undetermined,Attack,Yes,-104.422,32.979
+7879,2022-03-28,Michael Allensworth,Las Vegas,NV,Male,41,NA,No,No,gun,Attack,NA,-115.1,36.149
+7881,2022-03-29,Monica Vaught,Greenwood,IN,Female,49,NA,No,Yes,vehicle,Attack,Yes,-86.103,39.611
+7882,2022-03-29,Eric Putnam,Tucson,AZ,Male,27,NA,No,No,gun,Attack,NA,-110.809,32.216
+7883,2022-03-29,Joseph Roy,Fresno,CA,Male,24,NA,No,No,sharp,Attack,No,-119.788,36.738
+7884,2022-03-29,Vance Brown,Mifflin Township,PA,Male,35,NA,No,No,gun,Attack,No,-76.308,41.028
+7888,2022-03-29,Anthony Nunez,Hesperia,CA,Male,42,NA,No,No,gun,Other,No,-117.323,34.413
+7886,2022-03-30,Samantha L. Edgmond,Atkins,AR,Female,35,NA,No,No,blunt,Other,No,-92.964,35.243
+7885,2022-03-31,Hector Miguel Portuondo,Miami-Dade County,FL,Male,53,NA,No,No,gun,Other,No,-80.231,25.89
+7887,2022-03-31,Erik Poul Moller Nielsen,Columbia Township,MI,Male,36,NA,No,No,undetermined,Undetermined,NA,-84.29,42.1
+7899,2022-03-31,Michael Norton Stockton,Scappoose,OR,Male,39,NA,No,No,gun,Attack,NA,-122.88,45.768
+7901,2022-03-31,NA,Sioux Falls,SD,Male,NA,NA,No,No,sharp,Other,NA,-96.752,43.552
+7892,2022-04-01,James Sheets,Youngstown,OH,Male,35,White,No,Yes,gun,Other,Yes,NA,NA
+7902,2022-04-01,Jimmy Ray Whiteside,Spartanburg County,SC,Male,63,NA,No,No,sharp,Other,NA,-81.978,34.92
+7889,2022-04-02,NA,Oklahoma City,OK,Male,NA,NA,No,No,gun,Attack,Yes,-97.274,35.629
+7895,2022-04-02,Jerry Raleigh Livingston,Charleston,TN,Male,39,NA,No,No,vehicle,Other,NA,-84.749,35.287
+7897,2022-04-02,James Allen Miller,Savannah,GA,Male,31,NA,No,No,sharp,Other,No,-81.141,31.964
+7893,2022-04-03,Christopher Hutson,Newport,TN,Male,34,NA,No,No,gun,Other,Yes,-83.195,35.955
+7896,2022-04-03,Ketura Wilson,Oak Forest,IL,Male,21,NA,Yes,No,gun,Attack,Yes,-87.756,41.603
+7890,2022-04-04,Patrick Lyoya,Grand Rapids,MI,Male,26,NA,No,No,unarmed,Attack,NA,-85.638,42.927
+7894,2022-04-04,NA,Jurupa Valley,CA,Male,NA,NA,No,No,vehicle,Attack,Yes,-117.506,33.975
+7891,2022-04-05,Joseph Miller,Laketon Township,MI,Male,37,NA,No,No,gun,Attack,No,-86.373,43.297
+7900,2022-04-05,Rance Tillman,Cheyenne,WY,Male,31,NA,No,No,gun,Attack,Yes,-104.767,41.163
+7903,2022-04-05,NA,Swan Quarter,NC,Male,67,NA,No,No,gun,Other,No,-76.316,35.423

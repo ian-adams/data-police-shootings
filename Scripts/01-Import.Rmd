@@ -136,7 +136,8 @@ df_full$armed_bucket <- df_full$armed %>%
     "vehicle" = "vehicle and machete",
     "blunt" = "walking stick",
     "strange" = "wasp spray",
-    "blunt" = "wrench"
+    "blunt" = "wrench",
+    "sharp" = "machete and hammer"
   )
 
 ## Recoding df_full$gender into df_full$gender_rec
