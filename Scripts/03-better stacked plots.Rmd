@@ -40,6 +40,7 @@ df$date <- ymd(df$date) # format as lubridate var
 df$year <- year(df$date) # extract year and create variable year
 df$month <- month(df$date, label = TRUE, abbr = TRUE) # extract month and create variable month
 df$day <- wday(df$date, label = TRUE, abbr = TRUE) # extract day of week, create variable day
+df$monthyear <- df %>% ym(date) ## not working - want month and date in the x axis!
 
 ## Change N/A to unknown category
 df$armed_bucket <- df$armed_bucket %>%
@@ -217,35 +218,124 @@ ggsave(filename = here("Output", "year-type-group.png"), bg="white")
 
 ```
 
-## Combining (old version)
+## Race
 
 ```{r remedy006}
+library(gghighlight)
 
-# dat3 %>% 
-#   ggplot(aes(x = year, fill = class_group, alpha = armed_bucket)) +
-#   geom_bar(col = 'white') + # Add lines for distinction
-#   scale_fill_manual(values = colors) +
-#   scale_alpha_manual(values = alpha_vals) +
-#   guides(
-#     fill = guide_none(),
-#     alpha = guide_legend(override.aes = list(fill = colors[c(2, 2, 2, 2, 1, 1, 1, 1, 3, 4)]))
-#   ) +
-#   labs(
-#     x = 'Year',
-#     y = 'Counts',
-#     alpha = 'Type',
-#     title = 'Fatal Police Shootings by Year and Suspect Weapon Type'
-#   )
-# 
-# ggsave(filename = here("Output", "year-type-group.pdf"))
-# ggsave(filename = here("Output", "year-type-group.jpg"))
-# ggsave(filename = here("Output", "year-type-group.png"), bg="white")
+colorsb <- c("#0072b2","#d55e00",  "#009e73",  "#f0e442") # scott color blind friendly
+
+## Recoding NA to undetermind
+df$race_rec <- df$race_rec %>%
+  fct_explicit_na("Undetermined")
+
+df %>% ggplot(aes(x=year, fill=race_rec)) +
+  geom_bar(col = 'white') +
+  scale_fill_manual(values = ggpubfigs::friendly_pal("ito_seven")) +
+  labs(
+    x = 'Year',
+    y = 'Counts',
+    title = 'Fatal Police Shootings by Year and Race',
+    fill = 'Race'
+  ) + scale_x_continuous(breaks = c(2015,2016,2017,2018,2019,2020,2021,2022)) 
+
+ggsave(filename = here("Output", "year-race.png"), bg="white")
+
+## highlight the "undetermined"
+df %>% ggplot(aes(x=year, fill=race_rec)) +
+  geom_bar(col = 'white') +
+  scale_fill_manual(values = ggpubfigs::friendly_pal("bright_seven")) +
+  labs(
+    x = 'Year',
+    y = 'Counts',
+    title = 'Fatal Police Shootings by Year and Race',
+    fill = 'Race'
+  ) + scale_x_continuous(breaks = c(2015,2016,2017,2018,2019,2020,2021,2022)) +
+  gghighlight(race_rec == 'Undetermined', use_direct_label = F)
+
+ggsave(filename = here("Output", "year-race-undetermined.png"), bg="white")
 
 ```
 
+## Race total 
 
+2015-2020 only! 2021 unidentified race is too overwhelmingly bad right now
 
+```{r remedy007}
+#Make "NA" into an explicit factor level
+df2 <- df %>% filter(year < 2021) ## Ignore 2021,2022
 
+df2$race_rec <- df2$race_rec %>%
+  fct_explicit_na("Unknown")
+
+df2$race_rec <- factor(df2$race_rec,
+                         levels = names(sort(table(df2$race_rec), 
+                                             decreasing = TRUE)))
+
+ggplot(df2, aes(x = race_rec)) + 
+  geom_bar(fill=ggpubfigs::friendly_pal("bright_seven")) +
+  geom_text(aes(label = sprintf("%0.2f", round(..count..)/sum(..count..),digits=2)), stat = "count", vjust = -.5, colour = "black") +
+  labs(
+    x = 'Race',
+    y = 'Counts',
+    title = 'Fatal Police Shootings by Race',
+    fill = 'Race',
+    caption = "Counts (axis) and proportions (label)"
+  )
+
+```
+
+## Better line plots
+
+```{r remedy007}
+
+library(gghighlight)
+
+df <- df %>% mutate(row_number= 1:n())
+
+yearly_counts <- df %>%
+  count(year, armed_bucket)
+
+yearly_counts %>% ggplot(aes(x = year, y = n, color = armed_bucket)) +
+    geom_line()
+
+## Or as one
+
+# Color-blind safe colors
+colors <- thematic::okabe_ito(11)[-3]
+
+df %>% filter(year < 2021) %>% na.omit() %>%
+  count(year,armed_bucket) %>%
+  ggplot(aes(x = year, y = n, color = armed_bucket)) +
+    geom_line(size = 1) +
+  scale_color_manual(values = colors) +
+  #coord_cartesian(xlim = c(15, 81), expand = F) +
+  scale_y_continuous(minor_breaks = NULL) +
+  #scale_x_date(date_breaks = "4 months", date_labels = "%B\n%y") +
+  labs(x = 'Time', y = 'Count', col = 'Weapon Type', title = "In fatal police shootings...") +
+  gghighlight(armed_bucket == 'gun' | armed_bucket=='gun like' | armed_bucket=="sharp", use_direct_label = T) +
+  annotate(
+    'text',
+    x = 2015,
+    y = 575,
+    label = 'most suspects were armed with a gun or bladed object',
+    hjust = 0,
+    vjust = 0,
+    family = 'firasans',
+    size = 5
+  )
+
+df$Month_Yr <- format(as.Date(df$Date), "%Y-%m")
+df$Month_Yr <- as.Date(as.yearmon(df$Month_Yr))
+ 
+
+ggplot(df) +
+  aes(x = date, y = row_number) +
+  geom_line(size = 0.5, colour = "#112446") +
+  scale_x_date(date_breaks = "4 months", date_labels = "%B\n%y") +
+  theme_minimal()
+
+```
 
 
 

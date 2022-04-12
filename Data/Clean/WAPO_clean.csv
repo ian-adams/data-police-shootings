@@ -4796,7 +4796,7 @@ id,date,name,city,state,gender,age,race_rec,mental_ill,body_camera,armed_bucket,
 5209,2019-11-23,Ariane Lamont McCree,Chester,SC,Male,28,Black,No,Yes,gun,Attack,Yes,-81.219,34.71
 5210,2019-11-23,Estevon Cruz,Pueblo,CO,Male,24,Hispanic,No,No,gun like,Attack,No,-104.649,38.256
 5211,2019-11-24,Steven Forrest Saucier,Gaines Township,MI,Male,34,White,No,No,gun,Attack,No,-85.549,42.782
-5223,2019-11-25,Nathaniel Pinnock,Los Angeles,CA,Male,22,Black,No,Yes,vehicle,Attack,Yes,-118.338,34.098
+5223,2019-11-25,Nathaniel Pinnock,Los Angeles,CA,Male,22,Black,No,Yes,sharp,Attack,Yes,-118.338,34.098
 5244,2019-11-25,Jason Quincey Niccum,Great Falls,MT,Male,42,White,No,No,gun,Other,No,-111.311,47.519
 5243,2019-11-26,Eric Sopp,Sparks,MD,Male,48,White,Yes,Yes,sharp,Attack,Yes,-76.641,39.705
 5245,2019-11-26,Hollis Lewis,Greeneville,TN,Male,51,White,No,Yes,gun,Attack,No,-82.855,36.166

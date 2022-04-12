@@ -33,7 +33,10 @@ here::here("WAPO data-police-shootings")
 
 df <- read_rds(here("Data", "Clean", "WAPO_clean.rds"))
 
-df$date <- ymd(df$date)
+df$date <- ymd(df$date) # format as lubridate var
+df$year <- year(df$date) # extract year and create variable year
+df$month <- month(df$date, label = TRUE, abbr = TRUE) # extract month and create variable month
+df$day <- wday(df$date, label = TRUE, abbr = TRUE) # extract day of week, create variable day
 
 ```
 
@@ -137,14 +140,15 @@ df$race_rec <- factor(df$race_rec,
 
 
 ggplot(df, aes(x = race_rec)) + 
-  geom_bar() 
-
+  geom_bar() +
+  geom_text(aes(label = sprintf("%0.2f", round(..count..)/sum(..count..),digits=2)), stat = "count", hjust = 0, colour = "black")
 
 ## Or flipped and with proportion
 
 ggplot(df, aes(x = race_rec)) + 
-  geom_bar(aes(y = (..count..)/sum(..count..))) +
-  coord_flip() 
+  geom_bar() +
+  coord_flip() +
+  geom_text(aes(label = sprintf("%0.2f", round(..count..)/sum(..count..),digits=2)), stat = "count", hjust = 0, colour = "black")
 
 ```
 
@@ -332,4 +336,21 @@ ggplot(data = df, aes(y = flee_bucket)) +
         scale_x_continuous(expand=c(0,0)) +
         scale_fill_gradient(low = "royalblue3", high = "navyblue") +
         labs(y = NULL, x = "Number of deaths")
+```
+
+## Basic line plots
+
+```{r remedy007}
+
+df <- df %>% mutate(row_number= 1:n())
+
+yearly_counts <- df %>%
+  count(year, armed_bucket)
+
+df %>% ggplot(aes(x=date, y=row_number)) +
+  geom_line(stat = "identity")
+  
+yearly_counts %>% ggplot(aes(x = year, y = n, color = armed_bucket)) +
+    geom_line()
+
 ```

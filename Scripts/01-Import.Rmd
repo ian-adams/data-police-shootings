@@ -32,6 +32,8 @@ urlfile="https://raw.githubusercontent.com/washingtonpost/data-police-shootings/
 
 df_full <-read_csv(url(urlfile))
 
+df_full$year <- year(df_full$date)
+
 ```
 
 
@@ -133,7 +135,7 @@ df_full$armed_bucket <- df_full$armed %>%
     "gun like" = "toy weapon",
     "unknown" = "unknown weapon",
     "gun" = "vehicle and gun",
-    "vehicle" = "vehicle and machete",
+    "sharp" = "vehicle and machete",
     "blunt" = "walking stick",
     "strange" = "wasp spray",
     "blunt" = "wrench",
