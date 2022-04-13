@@ -40,7 +40,7 @@ df$date <- ymd(df$date) # format as lubridate var
 df$year <- year(df$date) # extract year and create variable year
 df$month <- month(df$date, label = TRUE, abbr = TRUE) # extract month and create variable month
 df$day <- wday(df$date, label = TRUE, abbr = TRUE) # extract day of week, create variable day
-df$monthyear <- df %>% ym(date) ## not working - want month and date in the x axis!
+
 
 ## Change N/A to unknown category
 df$armed_bucket <- df$armed_bucket %>%
