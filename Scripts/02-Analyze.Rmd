@@ -13,6 +13,7 @@ knitr::opts_chunk$set(
 )
 library(tidyverse)
 library(readr)
+
 library(here)
 library(skimr)
 library(ggplot2)
@@ -174,7 +175,7 @@ ggplot(df, aes(x = age)) +
 
 ## Plotting over time
 
-```{time, fig.height=7, fig.width=9}
+```{r, fig.height=7, fig.width=9}
 
 df$dummy <- 1
 df$month_year <- floor_date(df$date, unit = "month")
