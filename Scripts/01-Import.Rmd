@@ -18,7 +18,7 @@ library(skimr)
 
 Don't forget to pull from the git before start, so as to get fresh data from WAPO.
 
-```{r remedy001, message=FALSE, warning=FALSE, include=FALSE}
+```{r remedy001, message=FALSE, warning=FALSE, echo=FALSE}
 
 here::here("WAPO data-police-shootings")
 
@@ -31,8 +31,6 @@ here::here("WAPO data-police-shootings")
 urlfile="https://raw.githubusercontent.com/washingtonpost/data-police-shootings/master/fatal-police-shootings-data.csv"
 
 df_full <-read_csv(url(urlfile))
-
-df_full$year <- year(df_full$date)
 
 ```
 
@@ -54,7 +52,7 @@ df_full$armed_bucket <- df_full$armed %>%
     "blunt" = "baseball bat",
     "blunt" = "baseball bat and bottle",
     "blunt" = "baseball bat and fireplace poker",
-    "sharp" = "baseball bat and knife",
+    "blunt" = "baseball bat and knife",
     "blunt" = "baton",
     "gun like" = "BB gun",
     "gun like" = "BB gun and vehicle",
@@ -71,7 +69,7 @@ df_full$armed_bucket <- df_full$armed %>%
     "sharp" = "chain saw",
     "sharp" = "chainsaw",
     "blunt" = "chair",
-    "unknown" = "claimed to be armed",
+    "undetermined" = "claimed to be armed",
     "blunt" = "contractor's level",
     "strange" = "cordless drill",
     "sharp" = "crossbow",
@@ -135,13 +133,12 @@ df_full$armed_bucket <- df_full$armed %>%
     "gun like" = "toy weapon",
     "unknown" = "unknown weapon",
     "gun" = "vehicle and gun",
-    "sharp" = "vehicle and machete",
+    "vehicle" = "vehicle and machete",
     "blunt" = "walking stick",
     "strange" = "wasp spray",
     "blunt" = "wrench",
     "sharp" = "machete and hammer",
-    "unknown" = "carjack",
-    "unknown" = "undetermined"
+    "undetermine"
   )
 
 ## Recoding df_full$gender into df_full$gender_rec
