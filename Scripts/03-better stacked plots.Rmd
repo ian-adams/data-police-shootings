@@ -318,15 +318,15 @@ df %>% filter(year < 2021) %>% na.omit() %>%
     'text',
     x = 2015,
     y = 575,
-    label = 'most suspects were armed with a gun or bladed object',
+    label = '...most suspects were armed with a gun or bladed object',
     hjust = 0,
     vjust = 0,
     family = 'firasans',
     size = 5
   )
 
-df$Month_Yr <- format(as.Date(df$Date), "%Y-%m")
-df$Month_Yr <- as.Date(as.yearmon(df$Month_Yr))
+df$Month_Yr <- format(as.Date(df$date), "%Y-%m")
+#df$Month_Yr <- as.Date(as.yearmon(df$Month_Yr))
  
 
 ggplot(df) +
