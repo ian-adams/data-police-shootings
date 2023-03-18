@@ -43,6 +43,7 @@ df$day <- wday(df$date, label = TRUE, abbr = TRUE) # extract day of week, create
 
 ## Armed Status Breakdown 
 
+This may no longer be needed - check new armed status indicators from V2 WAPO
 ```{r remedy002, include=FALSE}
 
 ## Fix "claimed" armed status to "unarmed" and equate "unknown" and "undetermined"
@@ -140,13 +141,13 @@ df$race_rec <- factor(df$race_rec,
 
 
 
-ggplot(df, aes(x = race_rec)) + 
+ggplot(df, aes(x = race)) + 
   geom_bar() +
   geom_text(aes(label = sprintf("%0.2f", round(..count..)/sum(..count..),digits=2)), stat = "count", hjust = 0, colour = "black")
 
 ## Or flipped and with proportion
 
-ggplot(df, aes(x = race_rec)) + 
+ggplot(df, aes(x = race)) + 
   geom_bar() +
   coord_flip() +
   geom_text(aes(label = sprintf("%0.2f", round(..count..)/sum(..count..),digits=2)), stat = "count", hjust = 0, colour = "black")
@@ -177,6 +178,19 @@ ggplot(df, aes(x = age)) +
 
 ```{r, fig.height=7, fig.width=9}
 
+# assuming your tibble is called `df`
+events_summarized <- df %>%
+  mutate(year = lubridate::year(date)) %>%
+  group_by(year) %>%
+  summarize(total_events = n())
+
+ggplot(events_summarized, aes(x = year, y = total_events)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Total events by year")
+
+
+
+## Or some earlier, harder ways (but maybe prettier? can fix above)
 df$dummy <- 1
 df$month_year <- floor_date(df$date, unit = "month")
 df$year       <- year(df$date)
@@ -206,10 +220,12 @@ ggplot(data = df, aes(x = month(date, label = TRUE))) +
 yearly_shootings <- df %>%
   group_by(year) %>% 
   summarize(dummy = sum(dummy))
+
 ggplot(yearly_shootings, aes(x = year, 
                              y = dummy)) +
   geom_line()
 ## OR
+
 ggplot(data = df, aes(x = date)) + 
         geom_histogram(aes(fill = ..count..), bins = 25) +
         theme_minimal() +
@@ -230,6 +246,93 @@ ggplot(data = df, aes(x = wday(date, label = TRUE))) +
 
 ```
 
+## Over time with population
+
+```{r remedy007}
+
+#library(tidycensus)
+
+# set your Census API key here
+#census_api_key("e0ec52f1c5358231d666ff8dce8c15eb40002b78", install = TRUE, overwrite = TRUE)
+
+#Manually create population tibble
+pop_data <- tribble(
+  ~year, ~estimate,
+  2015, 324607776,
+  2016, 327210198,
+  2017, 329791231,
+  2018, 332140037,
+  2019, 334319671,
+  2020, 335942003,
+  2021, 336997624,
+  2022, 338289857
+)
+
+pop_data <- pop_data %>% mutate(NAME = "United States")
+
+df2022 <- df %>%
+  filter(year >= 2015 & year <= 2022)
+
+# join with events data and calculate normalized events
+events_normalized <- df2022 %>%
+  mutate(year = lubridate::year(date)) %>%
+  group_by(year) %>%
+  summarize(total_events = n()) %>%
+  left_join(pop_data, by = "year") %>%
+  mutate(events_per_capita = total_events / estimate * 1000000)
+
+ggplot(events_normalized, aes(x = year, y = events_per_capita)) +
+  geom_bar(stat = "identity") +
+  labs(title = "US Police Shooting Deaths per 1,000,000 people by year") +
+  labs(y="Fatal shootings per capita") +
+  labs(caption = "Source: Washington Post & United Nations - World Population Prospects")
+
+```
+
+## Add uncertainty
+
+```{r remedy008}
+
+
+# Define color palette for the bars
+colors <- c("#d3d3d3", "#ff7f0e", "#1f77b4", "#2ca02c", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f")
+
+# Join with events data and calculate normalized events
+events_normalized <- df2022 %>%
+  mutate(year = lubridate::year(date)) %>%
+  group_by(year) %>%
+  summarize(total_events = n()) %>%
+  left_join(pop_data, by = "year") %>%
+  mutate(
+    events_per_capita = total_events / estimate * 1000000,
+    se = events_per_capita / sqrt(0.92 * total_events)
+  )
+
+# Plot the bar chart with error bars and labels
+ggplot(events_normalized, aes(x = year, y = events_per_capita)) +
+  geom_bar(stat = "identity", color = "white", size = 0.2, fill="#7777AB") +
+  #scale_fill_manual(values = colors) +
+  geom_errorbar(aes(ymin = events_per_capita, ymax = events_per_capita + 1.96 * se), 
+                 width = 0.2, color = "black", size = 0.8) +
+  geom_text(aes(label = sprintf("%.2f", events_per_capita), y = events_per_capita/2), vjust = 1.5) +
+  labs(title = "US Police Shooting Deaths per 1,000,000 people by year") +
+  labs(subtitle = "assuming 92% counting accuracy") +
+  labs(y = "Fatal shootings per capita") +
+  labs(x = "Year") +
+  labs(caption = "Source: Washington Post and United Nations - World Population Prospects \n Courtesy: Ian Adams and Justin Nix") +
+  theme_bw() +
+  theme(
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14),
+    plot.title = element_text(size = 16, face = "bold"),
+    legend.position = "none"
+  ) +
+  scale_x_continuous(breaks = events_normalized$year, labels = events_normalized$year)
+
+
+ggsave(filename = here("Output", "pop_normal_error.jpg"), height = 5, width = 8)
+
+```
 
 ## Top 15 States
 
@@ -354,4 +457,4 @@ df %>% ggplot(aes(x=date, y=row_number)) +
 yearly_counts %>% ggplot(aes(x = year, y = n, color = armed_bucket)) +
     geom_line()
 
-```
+

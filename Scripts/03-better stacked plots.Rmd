@@ -221,39 +221,48 @@ ggsave(filename = here("Output", "year-type-group.png"), bg="white")
 ## Race
 
 ```{r remedy006}
+library(ggplot2)
 library(gghighlight)
+library(dplyr)
+library(forcats)
+library(lubridate)
 
-colorsb <- c("#0072b2","#d55e00",  "#009e73",  "#f0e442") # scott color blind friendly
+# Get the current date
+current_date <- format(today(), "%m/%d/%Y")
+
+colorsb <- c("#0072b2","#d55e00", "#009e73", "#f0e442", "#56b4e9", "#cc79a7", "#999999", "#E69F00") # extended color palette
 
 ## Recoding NA to undetermind
-df$race_rec <- df$race_rec %>%
+df$race <- df$race %>%
   fct_explicit_na("Undetermined")
 
-df %>% ggplot(aes(x=year, fill=race_rec)) +
+# Calculate the percentage of undetermined race for each year
+df_percent <- df %>%
+  group_by(year, race) %>%
+  summarize(count = n()) %>%
+  mutate(total = sum(count),
+         percent = count / total * 100) %>%
+  filter(race == "Undetermined")
+
+# Create the bar plot
+p <- df %>% ggplot(aes(x=year, fill=race)) +
   geom_bar(col = 'white') +
-  scale_fill_manual(values = ggpubfigs::friendly_pal("ito_seven")) +
+  scale_fill_manual(values = colorsb) +
   labs(
     x = 'Year',
     y = 'Counts',
     title = 'Fatal Police Shootings by Year and Race',
+    subtitle = paste0('WaPo Fatal Shootings Data as of ', current_date),
     fill = 'Race'
-  ) + scale_x_continuous(breaks = c(2015,2016,2017,2018,2019,2020,2021,2022)) 
+  ) + scale_x_continuous(breaks = c(2015,2016,2017,2018,2019,2020,2021,2022,2023)) #+
+  gghighlight(race == 'Undetermined', use_direct_label = F)
 
-ggsave(filename = here("Output", "year-race.png"), bg="white")
+# Add percentage labels for undetermined race
+p + geom_text(data = df_percent, aes(x = year, y = count, label = paste0(round(percent, 1), "%")), position = position_stack(vjust = 0.5), color = "black")
 
-## highlight the "undetermined"
-df %>% ggplot(aes(x=year, fill=race_rec)) +
-  geom_bar(col = 'white') +
-  scale_fill_manual(values = ggpubfigs::friendly_pal("bright_seven")) +
-  labs(
-    x = 'Year',
-    y = 'Counts',
-    title = 'Fatal Police Shootings by Year and Race',
-    fill = 'Race'
-  ) + scale_x_continuous(breaks = c(2015,2016,2017,2018,2019,2020,2021,2022)) +
-  gghighlight(race_rec == 'Undetermined', use_direct_label = F)
+# Save the plot
+ggsave(filename = here("Output", "undetermined_highlight.png"), bg="white")
 
-ggsave(filename = here("Output", "year-race-undetermined.png"), bg="white")
 
 ```
 

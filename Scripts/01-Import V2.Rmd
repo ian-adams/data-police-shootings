@@ -1,0 +1,66 @@
+---
+title: "import V2"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+
+library(tidyverse)
+library(readr)
+library(here)
+library(skimr)
+```
+
+
+## Import
+
+Don't forget to pull from the git before start, so as to get fresh data from WAPO.
+
+```{r remedy001, message=FALSE, warning=FALSE, echo=FALSE}
+
+here::here("WAPO data-police-shootings")
+
+
+## Or PULL DIRECTLY FROM WAPO GITHUB
+
+urlfile="https://raw.githubusercontent.com/washingtonpost/data-police-shootings/master/v2/fatal-police-shootings-data.csv"
+
+df_full <-read_csv(url(urlfile))
+
+urlfile="https://raw.githubusercontent.com/washingtonpost/data-police-shootings/master/v2/fatal-police-shootings-agencies.csv"
+
+df_agency <- read_csv(url(urlfile))
+
+```
+
+## Merge
+
+Merge on agency id
+
+```{r}
+
+df_agency <- df_agency %>% rename("agency_state" = "state")
+df_agency <- df_agency %>% rename("agency_name" = "name")
+
+
+df_agency <- df_agency %>% rename("agency_ids" = "id")
+df_agency$agency_ids <- as.character(df_agency$agency_ids)
+df_full$agency_ids <- as.character(df_full$agency_ids)
+
+df_all <- left_join(df_full,df_agency, by= "agency_ids")
+```
+
+
+## Save out
+
+```{r}
+
+write_rds(df_all, file = here("Data", "Clean", "WAPO_clean.rds"))
+
+write_csv(df_all, file = here("Data", "Clean", "WAPO_clean.csv"))
+
+
+```
+
