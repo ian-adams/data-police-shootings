@@ -6,97 +6,208 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-	echo = FALSE,
-	message = FALSE,
-	warning = FALSE
-)
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+
 library(tidyverse)
 library(readr)
-
 library(here)
-library(skimr)
+
 library(ggplot2)
 library(lubridate)
-library(dplyr)
 
+library(gghighlight)
 library(ggstance)
 library(ggalt)
+
 ```
 
-## Import
+## Source new data
 
-Don't forget to pull from the git before start (in the "01-Import.Rmd" file), so as to get fresh data from WAPO.
+This is just running the source file `01-Import V2.R` which pulls the latest WaPo data, merges it, and saves it out.
 
-```{r remedy001, message=FALSE, warning=FALSE, include=FALSE}
+```{r setup, include=FALSE}
 
-here::here("WAPO data-police-shootings")
+# Source the Wapo data import .R script
 
-df <- read_rds(here("Data", "Clean", "WAPO_clean.rds"))
+#source("~/Library/CloudStorage/GoogleDrive-adams.po@gmail.com/Other computers/My Computer/R/WAPO data-police-shootings/Scripts/01-Import V2.R")
 
-df$date <- ymd(df$date) # format as lubridate var
-df$year <- year(df$date) # extract year and create variable year
-df$month <- month(df$date, label = TRUE, abbr = TRUE) # extract month and create variable month
-df$day <- wday(df$date, label = TRUE, abbr = TRUE) # extract day of week, create variable day
+source("Scripts/01-Import V2.R")
+
+df_all$date <- ymd(df_all$date) # format as lubridate var
+df_all$year <- lubridate::year(df_all$date) # extract year and create variable year
+df_all$month <- month(df_all$date, label = TRUE, abbr = TRUE) # extract month and create variable month
+df_all$day <- wday(df_all$date, label = TRUE, abbr = TRUE) # extract day of week, create variable day
+
+```
+
+## US, region, and state population 2010-2019
+
+```{r}
+
+library(readxl)
+library(stringr)
+
+
+## First try - just uses 2019 population data for every rate calculation - obviously wrong since pop growing, but we don't have population data after 2019, so this works.
+state_pop <- read_excel(here("Data","Raw","population_state_region_2010-2019.xlsx"))
+
+# Create a state abbreviation mapping
+state_mapping <- data.frame(full_name = state.name, abbreviation = state.abb)
+
+# Clean the state_pop dataset
+state_pop_clean <- state_pop %>%
+  filter(!name %in% c("United States", "Northeast", "Midwest", "South", "West", "Puerto Rico")) %>%
+  mutate(state = gsub("^\\.", "", name)) %>%
+  left_join(state_mapping, by = c("state" = "full_name")) %>%
+  select(abbreviation, population = `2019`)
+
+# Aggregate the police_shootings dataset by state and year
+police_shootings_agg <- df_all %>%
+  group_by(state, year) %>%
+  summarise(total_shootings = n()) %>%
+  ungroup()
+
+# Join the two datasets
+combined_data <- left_join(police_shootings_agg, state_pop_clean, by = c("state" = "abbreviation"))
+
+# Calculate the rate of police shootings per 1 million residents for each year
+combined_data <- combined_data %>%
+  mutate(rate_per_million = (total_shootings / population) * 1e6)
+
+# Spread the data so each year is a separate column
+combined_data_spread <- combined_data %>%
+  select(-total_shootings) %>%
+  spread(year, rate_per_million)
+
+# Display the resulting dataset
+glimpse(combined_data_spread)
+
+## Alternative method - use the right population data for each year, but will only do 2015-2019 because we don't have pop data after 2019
+
+
+# Create a state abbreviation mapping
+state_mapping <- data.frame(full_name = state.name, abbreviation = state.abb)
+
+# Clean and reshape the state_pop dataset
+state_pop_long <- state_pop %>%
+  filter(!name %in% c("United States", "Northeast", "Midwest", "South", "West", "Puerto Rico")) %>%
+  mutate(state = gsub("^\\.", "", name)) %>%
+  left_join(state_mapping, by = c("state" = "full_name")) %>%
+  select(abbreviation, everything(), -name) %>%
+  gather(year, population, `2010`:`2019`) %>%
+  mutate(year = as.integer(year))
+
+# Aggregate the police_shootings dataset by state and year
+police_shootings_agg <- df_all %>%
+  filter(year >= 2015 & year <= 2023) %>%
+  group_by(state, year) %>%
+  summarise(total_shootings = n()) %>%
+  ungroup()
+
+# Join the two datasets
+combined_data <- left_join(police_shootings_agg, state_pop_long, by = c("state" = "abbreviation", "year"))
+
+# Calculate the rate of police shootings per 1 million residents for each year
+combined_data <- combined_data %>%
+  mutate(rate_per_million = (total_shootings / population) * 1e6)
+
+# Spread the data so each year is a separate column
+combined_data_spread <- combined_data %>%
+  select(-total_shootings) %>%
+  spread(year, rate_per_million)
+
+# Display the resulting dataset
+glimpse(combined_data_spread)
+
+
+```
+
+
+## Cumulative line plots like jnixy's
+
+```{r remedy007}
+
+# Load the required packages
+library(ggthemes)
+library(extrafont)
+library(ggrepel)
+
+df <- df_all
+
+# Shape data
+
+shootings_data <- df %>%
+  arrange(date) %>%
+  mutate(year = as.numeric(format(date, "%Y"))) %>%
+  group_by(year, date) %>%
+  summarize(daily_count = n()) %>%
+  ungroup()
+
+shootings_data <- shootings_data %>%
+  group_by(year) %>%
+  mutate(cum_count = cumsum(daily_count)) %>%
+  ungroup()
+
+# Load fonts
+loadfonts(device = "win", quiet = TRUE)
+
+# Store the current date in a variable
+current_date <- Sys.Date()
+formatted_date <- format(current_date, "%B %d, %Y")
+
+## Calculate mean data
+mean_shootings_data <- shootings_data %>%
+  filter(year < 2023) %>%
+  mutate(formatted_date = format(date, "%m-%d")) %>%
+  group_by(formatted_date) %>%
+  summarize(mean_cum_count = mean(cum_count), .groups = 'drop') %>%
+  mutate(date = as.Date(paste0("2022-", formatted_date), format = "%Y-%m-%d"))
+
+# Plot the figure
+ggplot(shootings_data, aes(x = format(date, "%m-%d"), y = cum_count, group = factor(year))) +
+  geom_point(aes(color = factor(year)), alpha = 0.5, size = 1) +
+  gghighlight(year == 2023, use_direct_label = FALSE) +
+  scale_x_discrete(name = "Month",
+                   breaks = format(seq(as.Date("2022-01-01"), as.Date("2022-12-31"), by = "1 month"), "%m-%d"),
+                   labels = format(seq(as.Date("2022-01-01"), as.Date("2022-12-31"), by = "1 month"), "%b"),
+                   expand = c(0.01, 0.9)) + # Expanding the x-axis limits
+  scale_y_continuous(name = "Cumulative Count of Deaths", limits = c(0, 1150)) +
+  theme_tufte() +
+  theme(panel.grid.minor = element_blank(),
+        legend.position = "none",
+        text = element_text(family = "Arial", color = "black"),
+        axis.text.x = element_text(angle = 90, vjust = 0.5),
+        axis.text.y = element_text(angle = 0, hjust = 0.5),
+        plot.title = element_text(size = 14, hjust = 0, face = "bold"),
+        plot.title.position = "plot",
+        plot.caption = element_text(size = 10, hjust = 1)) +
+  geom_text_repel(data = shootings_data %>% group_by(year) %>% filter(date == max(date)),
+                  aes(x = format(date, "%m-%d"), y = cum_count, label = year),
+                  size = 3) +
+  labs(title = "Cumulative U.S. Police Lethal Shootings by Year",
+       subtitle = paste("as of", formatted_date),
+       caption = "Source: Ian T. Adams \ndata via Washington Post")
+
+
+
+## Save it
+ggsave(filename = here("Output", "cumulative_daily_count.jpg"), height = 8, width = 8)
 
 ```
 
 ## Armed Status Breakdown 
 
-This may no longer be needed - check new armed status indicators from V2 WAPO
+
 ```{r remedy002, include=FALSE}
 
-## Fix "claimed" armed status to "unarmed" and equate "unknown" and "undetermined"
-df$armed_bucket <- df$armed_bucket %>%
-  fct_recode(
-    "unarmed" = "claim",
-    "unknown" = "undetermined"
-  )
-
-## Recoding df$armed_bucket into df$armed_bucket_rec
-df$armed_small <- df$armed_bucket %>%
-  fct_recode(
-    "armed" = "strange",
-    "armed" = "gun like",
-    "armed" = "sharp",
-    "armed" = "blunt",
-    "armed" = "strange object",
-    "armed" = "carjack",
-    "armed" = "explosive/chemical",
-    "armed" = "gun",
-    "armed" = "vehicle",
-    "armed" = "taser"
-  )
-
-## Armed Status by Race
-p1 <- df %>% 
-  na.omit(race_rec) %>%
-  ggplot(aes(x = race_rec, fill = armed_small)) +
-  geom_bar(position = "stack")
-
-## Armed status by gender
-
-p2 <- df %>% 
-  na.omit(gender) %>%
-  ggplot(aes(x = gender, fill = armed_small)) +
-  geom_bar(position = "stack")
-
-## Shootings by armed and threat status
-
-p3 <- df %>%
- filter(!is.na(armed_bucket)) %>%
- ggplot() +
-  aes(x = armed_small, fill = threat) +
-  geom_bar(position = "stack") +
-  scale_fill_hue(direction = 1) +
-  labs(
-    y = "Number of Shootings",
-    x = NULL,
-    title = "Police Fatal Shootings",
-    subtitle = "2015-2022, by armed and threat status",
-    caption = "Data from Washington Post Police Shootings Database"
-  ) +
-  hrbrthemes::theme_ipsum_tw()
+ggplot(df, aes(x = armed_with)) +
+  geom_bar(fill = "#619CFF") +
+  labs(title = "Weapons used in police shootings",
+       x = "Armed with",
+       y = "Count") +
+  theme_minimal()
 
 ggsave(p3, filename = here("Output", "time_armed_threat.jpg"))
 
@@ -174,77 +285,6 @@ ggplot(df, aes(x = age)) +
 ```
 
 
-## Plotting over time
-
-```{r, fig.height=7, fig.width=9}
-
-# assuming your tibble is called `df`
-events_summarized <- df %>%
-  mutate(year = lubridate::year(date)) %>%
-  group_by(year) %>%
-  summarize(total_events = n())
-
-ggplot(events_summarized, aes(x = year, y = total_events)) +
-  geom_bar(stat = "identity") +
-  labs(title = "Total events by year")
-
-
-
-## Or some earlier, harder ways (but maybe prettier? can fix above)
-df$dummy <- 1
-df$month_year <- floor_date(df$date, unit = "month")
-df$year       <- year(df$date)
-
-
-monthly_shootings <- df %>%
-  group_by(month_year) %>% 
-  summarize(dummy = sum(dummy))
-
-#head(monthly_shootings)
-
-## Plot shootings by month
-ggplot(monthly_shootings, aes(x = month_year,
-                              y = dummy)) +
-  geom_line()
-
-## Shootings per month overall
-ggplot(data = df, aes(x = month(date, label = TRUE))) + 
-        geom_bar(aes(fill = ..count..)) +
-        theme_minimal() +
-        theme(legend.position = "none") +
-        scale_y_continuous(expand=c(0,0)) +
-        scale_fill_gradient(low = "royalblue3", high = "navyblue") +
-        labs(x = NULL, y = "Number of deaths")
-
-## Plot shootings by year
-yearly_shootings <- df %>%
-  group_by(year) %>% 
-  summarize(dummy = sum(dummy))
-
-ggplot(yearly_shootings, aes(x = year, 
-                             y = dummy)) +
-  geom_line()
-## OR
-
-ggplot(data = df, aes(x = date)) + 
-        geom_histogram(aes(fill = ..count..), bins = 25) +
-        theme_minimal() +
-        theme(legend.position = "none") +
-        scale_fill_gradient(low = "royalblue3", high = "navyblue") +
-        labs(x = NULL, y = "Number of deaths")
-
-
-## Weekday analysis
-
-ggplot(data = df, aes(x = wday(date, label = TRUE))) + 
-        geom_bar(aes(fill = ..count..)) +
-        theme_minimal() +
-        theme(legend.position = "none") +
-        scale_y_continuous(expand=c(0,0)) +
-        scale_fill_gradient(low = "royalblue3", high = "navyblue") +
-        labs(x = NULL, y = "Number of deaths")
-
-```
 
 ## Over time with population
 
@@ -270,7 +310,7 @@ pop_data <- tribble(
 
 pop_data <- pop_data %>% mutate(NAME = "United States")
 
-df2022 <- df %>%
+df2022 <- df_all %>%
   filter(year >= 2015 & year <= 2022)
 
 # join with events data and calculate normalized events
@@ -442,19 +482,43 @@ ggplot(data = df, aes(y = flee_bucket)) +
         labs(y = NULL, x = "Number of deaths")
 ```
 
-## Basic line plots
 
-```{r remedy007}
 
-df <- df %>% mutate(row_number= 1:n())
 
-yearly_counts <- df %>%
-  count(year, armed_bucket)
+## Compare Axon stock price with police killings
 
-df %>% ggplot(aes(x=date, y=row_number)) +
-  geom_line(stat = "identity")
-  
-yearly_counts %>% ggplot(aes(x = year, y = n, color = armed_bucket)) +
-    geom_line()
+```{r remedy010}
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
