@@ -133,6 +133,7 @@ glimpse(combined_data_spread)
 library(ggthemes)
 library(extrafont)
 library(ggrepel)
+library(gghighlight)
 
 df <- df_all
 
