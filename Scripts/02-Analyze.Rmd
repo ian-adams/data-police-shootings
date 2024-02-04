@@ -21,6 +21,14 @@ library(gghighlight)
 library(ggstance)
 library(ggalt)
 
+library(ggthemes)
+library(extrafont)
+library(ggrepel)
+
+library(readxl)
+library(stringr)
+
+
 ```
 
 ## Source new data
@@ -42,98 +50,15 @@ df_all$day <- wday(df_all$date, label = TRUE, abbr = TRUE) # extract day of week
 
 ```
 
-## US, region, and state population 2010-2019
-
-```{r}
-
-library(readxl)
-library(stringr)
-
-
-## First try - just uses 2019 population data for every rate calculation - obviously wrong since pop growing, but we don't have population data after 2019, so this works.
-state_pop <- read_excel(here("Data","Raw","population_state_region_2010-2019.xlsx"))
-
-# Create a state abbreviation mapping
-state_mapping <- data.frame(full_name = state.name, abbreviation = state.abb)
-
-# Clean the state_pop dataset
-state_pop_clean <- state_pop %>%
-  filter(!name %in% c("United States", "Northeast", "Midwest", "South", "West", "Puerto Rico")) %>%
-  mutate(state = gsub("^\\.", "", name)) %>%
-  left_join(state_mapping, by = c("state" = "full_name")) %>%
-  select(abbreviation, population = `2019`)
-
-# Aggregate the police_shootings dataset by state and year
-police_shootings_agg <- df_all %>%
-  group_by(state, year) %>%
-  summarise(total_shootings = n()) %>%
-  ungroup()
-
-# Join the two datasets
-combined_data <- left_join(police_shootings_agg, state_pop_clean, by = c("state" = "abbreviation"))
-
-# Calculate the rate of police shootings per 1 million residents for each year
-combined_data <- combined_data %>%
-  mutate(rate_per_million = (total_shootings / population) * 1e6)
-
-# Spread the data so each year is a separate column
-combined_data_spread <- combined_data %>%
-  select(-total_shootings) %>%
-  spread(year, rate_per_million)
-
-# Display the resulting dataset
-glimpse(combined_data_spread)
-
-## Alternative method - use the right population data for each year, but will only do 2015-2019 because we don't have pop data after 2019
-
-
-# Create a state abbreviation mapping
-state_mapping <- data.frame(full_name = state.name, abbreviation = state.abb)
-
-# Clean and reshape the state_pop dataset
-state_pop_long <- state_pop %>%
-  filter(!name %in% c("United States", "Northeast", "Midwest", "South", "West", "Puerto Rico")) %>%
-  mutate(state = gsub("^\\.", "", name)) %>%
-  left_join(state_mapping, by = c("state" = "full_name")) %>%
-  select(abbreviation, everything(), -name) %>%
-  gather(year, population, `2010`:`2019`) %>%
-  mutate(year = as.integer(year))
-
-# Aggregate the police_shootings dataset by state and year
-police_shootings_agg <- df_all %>%
-  filter(year >= 2015 & year <= 2023) %>%
-  group_by(state, year) %>%
-  summarise(total_shootings = n()) %>%
-  ungroup()
-
-# Join the two datasets
-combined_data <- left_join(police_shootings_agg, state_pop_long, by = c("state" = "abbreviation", "year"))
-
-# Calculate the rate of police shootings per 1 million residents for each year
-combined_data <- combined_data %>%
-  mutate(rate_per_million = (total_shootings / population) * 1e6)
-
-# Spread the data so each year is a separate column
-combined_data_spread <- combined_data %>%
-  select(-total_shootings) %>%
-  spread(year, rate_per_million)
-
-# Display the resulting dataset
-glimpse(combined_data_spread)
-
-
-```
-
-
 ## Cumulative line plots like jnixy's
 
 ```{r remedy007}
 
 # Load the required packages
-library(ggthemes)
-library(extrafont)
-library(ggrepel)
-library(gghighlight)
+# library(ggthemes)
+# library(extrafont)
+# library(ggrepel)
+# library(gghighlight)
 
 df <- df_all
 
@@ -158,18 +83,29 @@ loadfonts(device = "win", quiet = TRUE)
 current_date <- Sys.Date()
 formatted_date <- format(current_date, "%B %d, %Y")
 
+# Determine the current year
+current_year <- as.numeric(format(Sys.Date(), "%Y"))
+
 ## Calculate mean data
 mean_shootings_data <- shootings_data %>%
-  filter(year < 2023) %>%
+  filter(year < 2024) %>%
   mutate(formatted_date = format(date, "%m-%d")) %>%
   group_by(formatted_date) %>%
   summarize(mean_cum_count = mean(cum_count), .groups = 'drop') %>%
   mutate(date = as.Date(paste0("2022-", formatted_date), format = "%Y-%m-%d"))
 
+# Determine the first and latest year in the data
+min_year <- min(shootings_data$year)
+latest_year <- max(shootings_data$year)
+
+# Dynamic title construction
+plot_title <- paste("Cumulative U.S. Police Lethal Shootings by Year,", min_year, "-", latest_year)
+
+
 # Plot the figure
 ggplot(shootings_data, aes(x = format(date, "%m-%d"), y = cum_count, group = factor(year))) +
   geom_point(aes(color = factor(year)), alpha = 0.5, size = 1) +
-  gghighlight(year == 2023, use_direct_label = FALSE) +
+  gghighlight(year == latest_year, use_direct_label = FALSE) +
   scale_x_discrete(name = "Month",
                    breaks = format(seq(as.Date("2022-01-01"), as.Date("2022-12-31"), by = "1 month"), "%m-%d"),
                    labels = format(seq(as.Date("2022-01-01"), as.Date("2022-12-31"), by = "1 month"), "%b"),
@@ -187,7 +123,7 @@ ggplot(shootings_data, aes(x = format(date, "%m-%d"), y = cum_count, group = fac
   geom_text_repel(data = shootings_data %>% group_by(year) %>% filter(date == max(date)),
                   aes(x = format(date, "%m-%d"), y = cum_count, label = year),
                   size = 3) +
-  labs(title = "Cumulative U.S. Police Lethal Shootings by Year",
+  labs(title = plot_title,
        subtitle = paste("as of", formatted_date),
        caption = "Source: Ian T. Adams \ndata via Washington Post")
 
@@ -195,6 +131,191 @@ ggplot(shootings_data, aes(x = format(date, "%m-%d"), y = cum_count, group = fac
 
 ## Save it
 ggsave(filename = here("Output", "cumulative_daily_count.jpg"), height = 8, width = 8)
+
+```
+
+## Race Breakdowns
+
+```{r remedy005}
+
+## Recoding df_all$race
+df_all$race <- df_all$race %>%
+  fct_recode(
+    "Asian" = "A",
+    "Black" = "B",
+    "Other" = "B;H",
+    "Hispanic" = "H",
+    "Native American" = "N",
+    "Other" = "O",
+    "White" = "W"
+  )
+
+
+#Make "NA" into an explicit factor level
+df_all$race <- df_all$race %>%
+  fct_na_value_to_level("Unknown")
+
+
+## Percentage by race
+temp <- table(df_all$race) / nrow(df_all) * 100
+temp <- sort(temp)
+temp <- round(temp, digits = 2)
+temp
+
+## Barplot by race
+
+df_all$race <- factor(df_all$race,
+                         levels = names(sort(table(df_all$race), 
+                                             decreasing = TRUE)))
+# Store the current date in a variable
+current_date <- Sys.Date()
+formatted_date <- format(current_date, "%B %d, %Y")
+
+# Determine the first and latest year in the data
+min_year <- min(df_all$year)
+latest_year <- max(df_all$year)
+
+# Dynamic title construction
+plot_title <- paste("Distribution of Police Lethal Shootings by Race,", min_year, "-", latest_year)
+
+ggplot(df_all, aes(x = race)) + 
+  geom_bar(fill = "steelblue", color = "black") +
+  geom_text(aes(label = sprintf("%0.2f%%", (..count..)/sum(..count..)*100)),
+            stat = "count", vjust = -0.5, color = "black") +
+  theme_tufte() +
+  theme(panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        text = element_text(family = "Arial", color = "black"),
+        axis.title.x = element_blank(),
+        axis.title.y = element_text(size = 12),
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        plot.title = element_text(size = 14, hjust = 0, face = "bold"),
+        plot.title.position = "plot") +
+  labs(y = "Count", title = plot_title, subtitle = paste("as of", formatted_date),
+       caption = "Source: Ian T. Adams \ndata via Washington Post")
+
+# Save the plot
+ggsave(filename = here("Output", "race_distribution_barplot.jpg"), height = 8, width = 8)
+
+
+##########
+######### Unknown race plot
+
+# extended color palette
+colorsb <- c("#0072b2","#d55e00", "#009e73", "#f0e442", "#56b4e9", "#cc79a7", "#999999", "#E69F00")
+
+
+# Calculate the percentage of undetermined race for each year
+df_percent <- df_all %>%
+  group_by(year, race) %>%
+  summarize(count = n()) %>%
+  mutate(total = sum(count),
+         percent = count / total * 100) %>%
+  filter(race == "Unknown")
+
+# Create the bar plot
+p <- df_all %>% ggplot(aes(x=year, fill=race)) +
+  geom_bar(col = 'white') +
+  scale_fill_manual(values = colorsb) +
+  labs(
+    x = 'Year',
+    y = 'Counts',
+    title = 'Fatal Police Shootings by Year and Race (with % of unknown)',
+    subtitle = paste0('as of ', formatted_date),
+    caption = "Source: Ian T. Adams \ndata via Washington Post",
+    fill = 'Race'
+  ) + scale_x_continuous(breaks = c(2015,2016,2017,2018,2019,2020,2021,2022,2023, 2024)) #+
+  #gghighlight(race == 'Unknown', use_direct_label = F)
+
+# Add percentage labels for undetermined race
+p + geom_text(data = df_percent, aes(x = year, y = count, label = paste0(round(percent, 1), "%")), position = position_stack(vjust = 0.5), color = "black")
+
+# Save the plot
+ggsave(filename = here("Output", "undetermined_highlight.png"), bg="white")
+
+
+############
+############ Rolling average of unknowns
+
+library(slider)
+
+# Assuming df_all has a date column in YYYY-MM-DD format
+df_all$date <- as.Date(df_all$date)
+
+# Set the rolling window size (e.g., 60 days)
+rolling_window <- 90  # Can be changed to 30, 90, etc.
+
+# Calculate the rolling percentage of unknown race
+rolling_percent_unknown <- df_all %>%
+  group_by(date) %>%
+  summarize(unknown_count = sum(race == "Unknown", na.rm = TRUE),
+            total_count = n()) %>%
+  ungroup() %>%
+  mutate(unknown_percent = unknown_count / total_count * 100) %>%
+  mutate(rolling_avg = slide_dbl(unknown_percent, mean, .before = rolling_window - 1, .complete = TRUE))
+
+# Plotting
+ggplot(rolling_percent_unknown, aes(x = date, y = rolling_avg)) +
+  geom_line(color = "steelblue") +
+  theme_minimal() +
+  labs(x = "Date",
+       y = "Rolling Average of Unknown Race (%)",
+       title = paste("Rolling Average of Unknown Race Percentage in Police Shootings"),
+       subtitle = paste("Rolling window:", rolling_window, "days"),
+       caption = "Source: Ian T. Adams \ndata via Washington Post")
+
+# Save the plot
+ggsave(filename = here("Output", "rolling_avg_unknown_race.jpg"), height = 8, width = 12)
+
+
+
+
+
+
+
+
+## Or flipped and with proportion
+
+# ggplot(df_all, aes(x = race)) + 
+#   geom_bar() +
+#   coord_flip() +
+#   geom_text(aes(label = sprintf("%0.2f", round(..count..)/sum(..count..),digits=2)), stat = "count", hjust = 0, colour = "black")
+
+```
+
+## National dot map simple
+
+```{r remedy003}
+
+# Load the packages
+
+library(ggmap)
+library(maps)
+library(sf)
+library("rnaturalearth")
+library("rnaturalearthdata")
+
+
+# Filter out rows with NA in latitude or longitude
+df_filtered <- df_all %>%
+    filter(!is.na(latitude) & !is.na(longitude))
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+class(world)
+
+sites <- st_as_sf(df_filtered, coords = c("longitude", "latitude"), 
+    crs = 4326, agr = "constant")
+
+ggplot(data = world) +
+    geom_sf() +
+    geom_sf(data = sites, size = .5, shape = 10, fill = "darkred") +
+    # You can adjust these limits to show the whole USA
+    coord_sf(xlim = c(-125, -66), ylim = c(24, 49), expand = TRUE)
+
+
+
+# Save the plot
+ggsave(filename = here("Output", "state_pins_all.jpg"), height = 8, width = 12)
 
 ```
 
@@ -231,40 +352,7 @@ table(df$gender) / nrow(df) * 100
 
 ```
 
-## Race Breakdowns
 
-```{r remedy005}
-
-## Percentage by race
-temp <- table(df$race_rec) / nrow(df) * 100
-temp <- sort(temp)
-temp <- round(temp, digits = 2)
-temp
-
-## Barplot by race
-
-#Make "NA" into an explicit factor level
-df$race_rec <- df$race_rec %>%
-  fct_explicit_na("Unknown")
-
-df$race_rec <- factor(df$race_rec,
-                         levels = names(sort(table(df$race_rec), 
-                                             decreasing = TRUE)))
-
-
-
-ggplot(df, aes(x = race)) + 
-  geom_bar() +
-  geom_text(aes(label = sprintf("%0.2f", round(..count..)/sum(..count..),digits=2)), stat = "count", hjust = 0, colour = "black")
-
-## Or flipped and with proportion
-
-ggplot(df, aes(x = race)) + 
-  geom_bar() +
-  coord_flip() +
-  geom_text(aes(label = sprintf("%0.2f", round(..count..)/sum(..count..),digits=2)), stat = "count", hjust = 0, colour = "black")
-
-```
 
 ## Age Breakdowns
 
