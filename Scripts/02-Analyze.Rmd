@@ -14,8 +14,8 @@ library(tidyverse)
 library(readr)
 library(here)
 
-library(ggplot2)
-library(lubridate)
+#library(ggplot2)
+#library(lubridate)
 
 library(gghighlight)
 library(ggstance)
@@ -26,7 +26,10 @@ library(extrafont)
 library(ggrepel)
 
 library(readxl)
-library(stringr)
+#library(stringr)
+
+# Load fonts
+loadfonts(device = "win", quiet = TRUE)
 
 
 ```
@@ -55,20 +58,21 @@ df_all$day <- wday(df_all$date, label = TRUE, abbr = TRUE) # extract day of week
 ```{r remedy007}
 
 # Load the required packages
-# library(ggthemes)
-# library(extrafont)
-# library(ggrepel)
-# library(gghighlight)
+library(ggplot2)
+library(dplyr)
+library(ggrepel)
+library(ggthemes)
+library(extrafont)
 
+# Assuming 'df_all' is your dataset and 'date' is the column storing the shooting dates
 df <- df_all
 
 # Shape data
-
 shootings_data <- df %>%
   arrange(date) %>%
   mutate(year = as.numeric(format(date, "%Y"))) %>%
   group_by(year, date) %>%
-  summarize(daily_count = n()) %>%
+  summarize(daily_count = n(), .groups = 'drop') %>%
   ungroup()
 
 shootings_data <- shootings_data %>%
@@ -76,8 +80,8 @@ shootings_data <- shootings_data %>%
   mutate(cum_count = cumsum(daily_count)) %>%
   ungroup()
 
-# Load fonts
-loadfonts(device = "win", quiet = TRUE)
+# Load fonts (only if necessary, usually on Windows)
+# loadfonts(device = "win", quiet = TRUE)
 
 # Store the current date in a variable
 current_date <- Sys.Date()
@@ -86,13 +90,11 @@ formatted_date <- format(current_date, "%B %d, %Y")
 # Determine the current year
 current_year <- as.numeric(format(Sys.Date(), "%Y"))
 
-## Calculate mean data
-mean_shootings_data <- shootings_data %>%
-  filter(year < 2024) %>%
-  mutate(formatted_date = format(date, "%m-%d")) %>%
-  group_by(formatted_date) %>%
-  summarize(mean_cum_count = mean(cum_count), .groups = 'drop') %>%
-  mutate(date = as.Date(paste0("2022-", formatted_date), format = "%Y-%m-%d"))
+# Calculate current year's shootings count (ensure 2024 data is included in df_all)
+current_year_count <- shootings_data %>%
+  filter(year == current_year) %>%
+  summarize(total_count = max(cum_count)) %>%
+  pull(total_count)
 
 # Determine the first and latest year in the data
 min_year <- min(shootings_data$year)
@@ -101,15 +103,14 @@ latest_year <- max(shootings_data$year)
 # Dynamic title construction
 plot_title <- paste("Cumulative U.S. Police Lethal Shootings by Year,", min_year, "-", latest_year)
 
-
 # Plot the figure
-ggplot(shootings_data, aes(x = format(date, "%m-%d"), y = cum_count, group = factor(year))) +
+p <- ggplot(shootings_data, aes(x = format(date, "%m-%d"), y = cum_count, group = factor(year))) +
   geom_point(aes(color = factor(year)), alpha = 0.5, size = 1) +
   gghighlight(year == latest_year, use_direct_label = FALSE) +
   scale_x_discrete(name = "Month",
                    breaks = format(seq(as.Date("2022-01-01"), as.Date("2022-12-31"), by = "1 month"), "%m-%d"),
                    labels = format(seq(as.Date("2022-01-01"), as.Date("2022-12-31"), by = "1 month"), "%b"),
-                   expand = c(0.01, 0.9)) + # Expanding the x-axis limits
+                   expand = c(0.01, 0.9)) +
   scale_y_continuous(name = "Cumulative Count of Deaths", limits = c(0, 1150)) +
   theme_tufte() +
   theme(panel.grid.minor = element_blank(),
@@ -121,16 +122,17 @@ ggplot(shootings_data, aes(x = format(date, "%m-%d"), y = cum_count, group = fac
         plot.title.position = "plot",
         plot.caption = element_text(size = 10, hjust = 1)) +
   geom_text_repel(data = shootings_data %>% group_by(year) %>% filter(date == max(date)),
-                  aes(x = format(date, "%m-%d"), y = cum_count, label = year),
+                  aes(x = format(date, "%m-%d"), y = cum_count, label = paste(year, "(", cum_count, ")")),
                   size = 3) +
   labs(title = plot_title,
        subtitle = paste("as of", formatted_date),
        caption = "Source: Ian T. Adams \ndata via Washington Post")
 
+p
 
+# Save it
+ggsave(filename = "Output/cumulative_daily_count.jpg", plot = p, height = 8, width = 8)
 
-## Save it
-ggsave(filename = here("Output", "cumulative_daily_count.jpg"), height = 8, width = 8)
 
 ```
 
@@ -147,7 +149,11 @@ df_all$race <- df_all$race %>%
     "Hispanic" = "H",
     "Native American" = "N",
     "Other" = "O",
-    "White" = "W"
+    "White" = "W",
+    "Other" = "N;H",
+    "Other" = "W;B",
+    "Other" = "W;B;N",
+    "Other" = "W;H"
   )
 
 
@@ -224,8 +230,8 @@ p <- df_all %>% ggplot(aes(x=year, fill=race)) +
     subtitle = paste0('as of ', formatted_date),
     caption = "Source: Ian T. Adams \ndata via Washington Post",
     fill = 'Race'
-  ) + scale_x_continuous(breaks = c(2015,2016,2017,2018,2019,2020,2021,2022,2023, 2024)) #+
-  #gghighlight(race == 'Unknown', use_direct_label = F)
+  ) + scale_x_continuous(breaks = c(2015,2016,2017,2018,2019,2020,2021,2022,2023, 2024)) +
+  gghighlight(race == 'Unknown', use_direct_label = F)
 
 # Add percentage labels for undetermined race
 p + geom_text(data = df_percent, aes(x = year, y = count, label = paste0(round(percent, 1), "%")), position = position_stack(vjust = 0.5), color = "black")
@@ -233,6 +239,25 @@ p + geom_text(data = df_percent, aes(x = year, y = count, label = paste0(round(p
 # Save the plot
 ggsave(filename = here("Output", "undetermined_highlight.png"), bg="white")
 
+##### barplot with all races no highlight
+# Create the bar plot
+p <- df_all %>% ggplot(aes(x=year, fill=race)) +
+  geom_bar(col = 'white') +
+  scale_fill_manual(values = colorsb) +
+  labs(
+    x = 'Year',
+    y = 'Counts',
+    title = 'Fatal Police Shootings by Year and Race (with % of unknown)',
+    subtitle = paste0('as of ', formatted_date),
+    caption = "Source: Ian T. Adams \ndata via Washington Post",
+    fill = 'Race'
+  ) + scale_x_continuous(breaks = c(2015,2016,2017,2018,2019,2020,2021,2022,2023, 2024)) 
+
+# Add percentage labels for undetermined race
+p + geom_text(data = df_percent, aes(x = year, y = count, label = paste0(round(percent, 1), "%")), position = position_stack(vjust = 0.5), color = "black")
+
+# Save the plot
+ggsave(filename = here("Output", "undetermined.png"), bg="white")
 
 ############
 ############ Rolling average of unknowns
@@ -379,12 +404,13 @@ ggplot(df, aes(x = age)) +
 
 ```{r remedy007}
 
-#library(tidycensus)
+library(tidycensus)
 
 # set your Census API key here
-#census_api_key("e0ec52f1c5358231d666ff8dce8c15eb40002b78", install = TRUE, overwrite = TRUE)
+census_api_key("e0ec52f1c5358231d666ff8dce8c15eb40002b78", install = TRUE, overwrite = TRUE)
 
 #Manually create population tibble
+# sourced from https://www.worldometers.info/world-population/us-population/
 pop_data <- tribble(
   ~year, ~estimate,
   2015, 324607776,
@@ -394,16 +420,17 @@ pop_data <- tribble(
   2019, 334319671,
   2020, 335942003,
   2021, 336997624,
-  2022, 338289857
+  2022, 338289857,
+  2023, 339996563
 )
 
 pop_data <- pop_data %>% mutate(NAME = "United States")
 
-df2022 <- df_all %>%
-  filter(year >= 2015 & year <= 2022)
+df2023 <- df_all %>%
+  filter(year >= 2015 & year <= 2023)
 
 # join with events data and calculate normalized events
-events_normalized <- df2022 %>%
+events_normalized <- df2023 %>%
   mutate(year = lubridate::year(date)) %>%
   group_by(year) %>%
   summarize(total_events = n()) %>%
@@ -427,7 +454,7 @@ ggplot(events_normalized, aes(x = year, y = events_per_capita)) +
 colors <- c("#d3d3d3", "#ff7f0e", "#1f77b4", "#2ca02c", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f")
 
 # Join with events data and calculate normalized events
-events_normalized <- df2022 %>%
+events_normalized <- df2023 %>%
   mutate(year = lubridate::year(date)) %>%
   group_by(year) %>%
   summarize(total_events = n()) %>%
