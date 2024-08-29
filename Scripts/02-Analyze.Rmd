@@ -365,7 +365,7 @@ ggsave(p3, filename = here("Output", "time_armed_threat.jpg"))
 
 ```{r remedy003}
 
-temp <- table(df$armed_bucket) / nrow(df) * 100
+temp <- table(df_all$armed_with) / nrow(df) * 100
 temp <- sort(temp, decreasing = TRUE)
 temp <- round(temp, digits = 2)
 temp
@@ -373,27 +373,32 @@ temp
 ## Gender Breakdowns
 
 ```{r remedy004}
-table(df$gender) / nrow(df) * 100
+table(df_all$gender) / nrow(df) * 100
 
 ```
 
+## Flee breakdowns
 
+```{r remedy007}
+table(df_all$flee_status) / nrow(df) * 100
+
+```
 
 ## Age Breakdowns
 
 ```{r remedy006}
 ## Histogram
-ggplot(df, aes(x = age)) + 
+ggplot(df_all, aes(x = age)) + 
   geom_histogram(aes(y = (..count..)/sum(..count..)))
 
 ## Density
 
-ggplot(df, aes(x = age)) + 
+ggplot(df_all, aes(x = age)) + 
   geom_density()
 
 ## Simple Stat Count
 
-ggplot(df, aes(x = age)) + 
+ggplot(df_all, aes(x = age)) + 
   stat_count(aes(y = (..count..)/sum(..count..)))
 
 ```
@@ -493,7 +498,7 @@ ggsave(filename = here("Output", "pop_normal_error.jpg"), height = 5, width = 8)
 ## Top 15 States
 
 ```{r, fig.height=9, fig.width=9}
-stateinfo <- df %>% group_by(state) %>% summarise(n = n()) %>% 
+stateinfo <- df_all %>% group_by(state) %>% summarise(n = n()) %>% 
         arrange(desc(n)) %>% top_n(15) %>% 
         mutate(state = factor(state, levels = rev(unique(state))))
 
@@ -524,7 +529,7 @@ ggplot(stateinfo) +
     caption = "Washington Post data"
   ) +
   coord_flip() +
-  hrbrthemes::theme_ipsum_tw() +
+  hrbrthemes::theme_ipsum_es() +
   theme(legend.position = "none")
 ```
 
@@ -533,27 +538,52 @@ ggplot(stateinfo) +
 
 ```{r}
 
-df$armed_bucket <- df$armed_bucket %>%
+df_all$armed_with <- df_all$armed_with %>%
   fct_explicit_na("unknown")
 
-armedinfo <- df %>% group_by(armed_bucket) %>% summarise(n = n()) %>% 
+armedinfo <- df_all %>% group_by(armed_with) %>% summarise(n = n()) %>% 
         arrange(desc(n)) %>% top_n(15) %>% 
-        mutate(armed = factor(armed_bucket, levels = rev(unique(armed_bucket))))
+        mutate(armed = factor(armed_with, levels = rev(unique(armed_with))))
 
-## For testing only, drop all "unknowns"
-# armedinfo$armed <- armedinfo$armed %>%
-#   fct_recode(
-#     NULL = "unknown"
-#   )
+## Recoding armedinfo$armed_with into armedinfo$armed_with_rec
+armedinfo$armed_with_rec <- armedinfo$armed_with %>%
+  fct_recode(
+    "Blunt" = "blunt_object",
+    "Blunt" = "blunt_object;blunt_object",
+    "Knife" = "blunt_object;knife",
+    "Blunt" = "blunt_object;other",
+    "Gun" = "gun",
+    "Gun" = "gun;knife",
+    "Gun" = "gun;other",
+    "Gun" = "gun;vehicle",
+    "Knife" = "knife",
+    "Knife" = "knife;blunt_object",
+    "Knife" = "knife;knife",
+    "Knife" = "knife;replica",
+    "Knife" = "knife;vehicle",
+    "Other" = "other",
+    "Knife" = "other;blunt_object;knife",
+    "Gun" = "other;gun",
+    "Knife" = "other;knife",
+    "Other" = "replica",
+    "Knife" = "replica;knife",
+    "Other" = "replica;vehicle",
+    "Unarmed" = "unarmed",
+    "Unknown" = "undetermined",
+    "Unknown" = "unknown",
+    "Vehicle" = "vehicle",
+    "Gun" = "vehicle;gun",
+    "Knife" = "vehicle;knife",
+    "Knife" = "vehicle;knife;other"
+  )
 
 
 ## add percentage column for labeling
 armedinfo <- armedinfo %>% dplyr::mutate(perc = scales::percent(n / sum(n), accuracy = .1, trim = FALSE)) %>% drop_na()
 
 
-
 ## Plot it
-p1 <- ggplot(data = armedinfo, aes(x = n, y = armed)) +
+p1 <- ggplot(data = armedinfo, aes(x = n, y = armed_with_rec)) +
   geom_barh(stat = "identity", aes(fill = n)) +
   theme_minimal(base_size = 13) +
   theme(legend.position = "none") +
@@ -563,14 +593,14 @@ p1 <- ggplot(data = armedinfo, aes(x = n, y = armed)) +
     y = NULL,
     x = "Number of deaths",
     title = "Top Suspect Weapon Types in Police Fatal Shootings",
-    subtitle = "2015-2022",
-    caption = "Washington Post data"
+    subtitle = "2015-2024",
+    caption = "Ian T. Adams, based on Washington Post data"
   ) +
   geom_text(aes(label = perc),
             hjust = -.25,
             size = 4, fontface = "bold", family = "Fira Sans")
 
-p1 + coord_cartesian(xlim = c(0, 4800), clip = "off")
+p1 + coord_cartesian(xlim = c(0, 6300), clip = "off")
 
 ## Save it
 ggsave(filename = here("Output", "top15_suspect-weapon-type.jpg"))
@@ -586,10 +616,10 @@ ggsave(filename = here("Output", "top15_suspect-weapon-type.jpg"))
 ### Was the Person Killed Fleeing?
 
 ```{r}
-df$flee_bucket <- df$flee_bucket %>%
+df_all$flee_status <- df_all$flee_status %>%
   fct_explicit_na("Unknown")
 
-ggplot(data = df, aes(y = flee_bucket)) + 
+ggplot(data = df, aes(y = flee_status)) + 
         geom_barh(aes(fill = ..count..)) +
         theme_minimal(base_size = 13) +
         theme(legend.position = "none") +
@@ -599,15 +629,6 @@ ggplot(data = df, aes(y = flee_bucket)) +
 ```
 
 
-
-
-## Compare Axon stock price with police killings
-
-```{r remedy010}
-
-
-
-```
 
 
 
